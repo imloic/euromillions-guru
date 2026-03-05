@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <radialGradient id="bg" cx="35%" cy="30%" r="65%">
+      <stop offset="0%" stop-color="#F5A623"/>
+      <stop offset="100%" stop-color="#E8621C"/>
+    </radialGradient>
+    <radialGradient id="shine" cx="38%" cy="28%" r="50%">
+      <stop offset="0%" stop-color="rgba(255,255,255,0.4)"/>
+      <stop offset="100%" stop-color="rgba(255,255,255,0)"/>
+    </radialGradient>
+    <radialGradient id="star" cx="35%" cy="30%" r="65%">
+      <stop offset="0%" stop-color="#FFD700"/>
+      <stop offset="100%" stop-color="#F5A623"/>
+    </radialGradient>
+  </defs>
+  <!-- Ball -->
+  <circle cx="32" cy="32" r="30" fill="url(#bg)" stroke="#5C3317" stroke-width="2"/>
+  <circle cx="32" cy="32" r="30" fill="url(#shine)"/>
+  <!-- Star -->
+  <polygon points="32,12 36.5,24 49,24 39,31.5 42.5,44 32,36.5 21.5,44 25,31.5 15,24 27.5,24" fill="url(#star)" stroke="#5C3317" stroke-width="1.2" stroke-linejoin="round"/>
+</svg>
