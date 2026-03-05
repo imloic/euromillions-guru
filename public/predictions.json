@@ -1,0 +1,7420 @@
+[
+  {
+    "generatedAt": "(backtest-weighted70-30+trend25)",
+    "forDrawAfter": "02/04/2024",
+    "balls": [
+      13,
+      19,
+      20,
+      23,
+      42
+    ],
+    "stars": [
+      5,
+      12
+    ],
+    "qualityScore": 0,
+    "strategy": "weighted-20-7a3r+trend-25",
+    "result": {
+      "drawDate": "05/04/2024",
+      "drawBalls": [
+        13,
+        18,
+        26,
+        35,
+        37
+      ],
+      "drawStars": [
+        8,
+        11
+      ],
+      "matchedBalls": 1,
+      "matchedStars": 0,
+      "rank": 0,
+      "rankLabel": "1+0",
+      "gain": 0,
+      "net": -2.5
+    }
+  },
+  {
+    "generatedAt": "(backtest-weighted70-30+trend25)",
+    "forDrawAfter": "05/04/2024",
+    "balls": [
+      13,
+      17,
+      19,
+      20,
+      23
+    ],
+    "stars": [
+      5,
+      12
+    ],
+    "qualityScore": 0,
+    "strategy": "weighted-20-7a3r+trend-25",
+    "result": {
+      "drawDate": "09/04/2024",
+      "drawBalls": [
+        19,
+        23,
+        26,
+        27,
+        46
+      ],
+      "drawStars": [
+        2,
+        10
+      ],
+      "matchedBalls": 2,
+      "matchedStars": 0,
+      "rank": 13,
+      "rankLabel": "2+0",
+      "gain": 3.6,
+      "net": 1.1
+    }
+  },
+  {
+    "generatedAt": "(backtest-weighted70-30+trend25)",
+    "forDrawAfter": "09/04/2024",
+    "balls": [
+      13,
+      19,
+      20,
+      23,
+      26
+    ],
+    "stars": [
+      5,
+      12
+    ],
+    "qualityScore": 0,
+    "strategy": "weighted-20-7a3r+trend-25",
+    "result": {
+      "drawDate": "12/04/2024",
+      "drawBalls": [
+        2,
+        3,
+        12,
+        16,
+        45
+      ],
+      "drawStars": [
+        2,
+        11
+      ],
+      "matchedBalls": 0,
+      "matchedStars": 0,
+      "rank": 0,
+      "rankLabel": "0+0",
+      "gain": 0,
+      "net": -2.5
+    }
+  },
+  {
+    "generatedAt": "(backtest-weighted70-30+trend25)",
+    "forDrawAfter": "12/04/2024",
+    "balls": [
+      13,
+      19,
+      20,
+      23,
+      26
+    ],
+    "stars": [
+      5,
+      12
+    ],
+    "qualityScore": 0,
+    "strategy": "weighted-20-7a3r+trend-25",
+    "result": {
+      "drawDate": "16/04/2024",
+      "drawBalls": [
+        22,
+        29,
+        31,
+        39,
+        46
+      ],
+      "drawStars": [
+        3,
+        7
+      ],
+      "matchedBalls": 0,
+      "matchedStars": 0,
+      "rank": 0,
+      "rankLabel": "0+0",
+      "gain": 0,
+      "net": -2.5
+    }
+  },
+  {
+    "generatedAt": "(backtest-weighted70-30+trend25)",
+    "forDrawAfter": "16/04/2024",
+    "balls": [
+      13,
+      19,
+      20,
+      23,
+      26
+    ],
+    "stars": [
+      3,
+      5
+    ],
+    "qualityScore": 0,
+    "strategy": "weighted-20-7a3r+trend-25",
+    "result": {
+      "drawDate": "19/04/2024",
+      "drawBalls": [
+        10,
+        20,
+        40,
+        44,
+        46
+      ],
+      "drawStars": [
+        1,
+        3
+      ],
+      "matchedBalls": 1,
+      "matchedStars": 1,
+      "rank": 0,
+      "rankLabel": "1+1",
+      "gain": 0,
+      "net": -2.5
+    }
+  },
+  {
+    "generatedAt": "(backtest-weighted70-30+trend25)",
+    "forDrawAfter": "19/04/2024",
+    "balls": [
+      13,
+      19,
+      20,
+      23,
+      26
+    ],
+    "stars": [
+      1,
+      5
+    ],
+    "qualityScore": 0,
+    "strategy": "weighted-20-7a3r+trend-25",
+    "result": {
+      "drawDate": "23/04/2024",
+      "drawBalls": [
+        6,
+        9,
+        11,
+        32,
+        49
+      ],
+      "drawStars": [
+        2,
+        10
+      ],
+      "matchedBalls": 0,
+      "matchedStars": 0,
+      "rank": 0,
+      "rankLabel": "0+0",
+      "gain": 0,
+      "net": -2.5
+    }
+  },
+  {
+    "generatedAt": "(backtest-weighted70-30+trend25)",
+    "forDrawAfter": "23/04/2024",
+    "balls": [
+      19,
+      20,
+      23,
+      26,
+      44
+    ],
+    "stars": [
+      1,
+      5
+    ],
+    "qualityScore": 0,
+    "strategy": "weighted-20-7a3r+trend-25",
+    "result": {
+      "drawDate": "26/04/2024",
+      "drawBalls": [
+        2,
+        20,
+        39,
+        40,
+        47
+      ],
+      "drawStars": [
+        4,
+        8
+      ],
+      "matchedBalls": 1,
+      "matchedStars": 0,
+      "rank": 0,
+      "rankLabel": "1+0",
+      "gain": 0,
+      "net": -2.5
+    }
+  },
+  {
+    "generatedAt": "(backtest-weighted70-30+trend25)",
+    "forDrawAfter": "26/04/2024",
+    "balls": [
+      19,
+      20,
+      23,
+      26,
+      44
+    ],
+    "stars": [
+      4,
+      5
+    ],
+    "qualityScore": 0,
+    "strategy": "weighted-20-7a3r+trend-25",
+    "result": {
+      "drawDate": "30/04/2024",
+      "drawBalls": [
+        13,
+        22,
+        24,
+        33,
+        47
+      ],
+      "drawStars": [
+        1,
+        5
+      ],
+      "matchedBalls": 0,
+      "matchedStars": 1,
+      "rank": 0,
+      "rankLabel": "0+1",
+      "gain": 0,
+      "net": -2.5
+    }
+  },
+  {
+    "generatedAt": "(backtest-weighted70-30+trend25)",
+    "forDrawAfter": "30/04/2024",
+    "balls": [
+      13,
+      19,
+      20,
+      23,
+      44
+    ],
+    "stars": [
+      1,
+      4
+    ],
+    "qualityScore": 0,
+    "strategy": "weighted-20-7a3r+trend-25",
+    "result": {
+      "drawDate": "03/05/2024",
+      "drawBalls": [
+        6,
+        9,
+        10,
+        30,
+        49
+      ],
+      "drawStars": [
+        3,
+        4
+      ],
+      "matchedBalls": 0,
+      "matchedStars": 1,
+      "rank": 0,
+      "rankLabel": "0+1",
+      "gain": 0,
+      "net": -2.5
+    }
+  },
+  {
+    "generatedAt": "(backtest-weighted70-30+trend25)",
+    "forDrawAfter": "03/05/2024",
+    "balls": [
+      13,
+      19,
+      20,
+      23,
+      44
+    ],
+    "stars": [
+      1,
+      4
+    ],
+    "qualityScore": 0,
+    "strategy": "weighted-20-7a3r+trend-25",
+    "result": {
+      "drawDate": "07/05/2024",
+      "drawBalls": [
+        35,
+        36,
+        41,
+        42,
+        45
+      ],
+      "drawStars": [
+        6,
+        11
+      ],
+      "matchedBalls": 0,
+      "matchedStars": 0,
+      "rank": 0,
+      "rankLabel": "0+0",
+      "gain": 0,
+      "net": -2.5
+    }
+  },
+  {
+    "generatedAt": "(backtest-weighted70-30+trend25)",
+    "forDrawAfter": "07/05/2024",
+    "balls": [
+      13,
+      19,
+      20,
+      23,
+      44
+    ],
+    "stars": [
+      1,
+      4
+    ],
+    "qualityScore": 0,
+    "strategy": "weighted-20-7a3r+trend-25",
+    "result": {
+      "drawDate": "10/05/2024",
+      "drawBalls": [
+        13,
+        28,
+        29,
+        44,
+        48
+      ],
+      "drawStars": [
+        4,
+        12
+      ],
+      "matchedBalls": 2,
+      "matchedStars": 1,
+      "rank": 12,
+      "rankLabel": "2+1",
+      "gain": 6.1,
+      "net": 3.5999999999999996
+    }
+  },
+  {
+    "generatedAt": "(backtest-weighted70-30+trend25)",
+    "forDrawAfter": "10/05/2024",
+    "balls": [
+      13,
+      16,
+      23,
+      26,
+      44
+    ],
+    "stars": [
+      1,
+      4
+    ],
+    "qualityScore": 0,
+    "strategy": "weighted-20-7a3r+trend-25",
+    "result": {
+      "drawDate": "14/05/2024",
+      "drawBalls": [
+        2,
+        8,
+        17,
+        28,
+        35
+      ],
+      "drawStars": [
+        7,
+        9
+      ],
+      "matchedBalls": 0,
+      "matchedStars": 0,
+      "rank": 0,
+      "rankLabel": "0+0",
+      "gain": 0,
+      "net": -2.5
+    }
+  },
+  {
+    "generatedAt": "(backtest-weighted70-30+trend25)",
+    "forDrawAfter": "14/05/2024",
+    "balls": [
+      13,
+      23,
+      26,
+      35,
+      44
+    ],
+    "stars": [
+      3,
+      4
+    ],
+    "qualityScore": 0,
+    "strategy": "weighted-20-7a3r+trend-25",
+    "result": {
+      "drawDate": "17/05/2024",
+      "drawBalls": [
+        18,
+        31,
+        32,
+        41,
+        46
+      ],
+      "drawStars": [
+        1,
+        10
+      ],
+      "matchedBalls": 0,
+      "matchedStars": 0,
+      "rank": 0,
+      "rankLabel": "0+0",
+      "gain": 0,
+      "net": -2.5
+    }
+  },
+  {
+    "generatedAt": "(backtest-weighted70-30+trend25)",
+    "forDrawAfter": "17/05/2024",
+    "balls": [
+      13,
+      23,
+      26,
+      35,
+      44
+    ],
+    "stars": [
+      1,
+      4
+    ],
+    "qualityScore": 0,
+    "strategy": "weighted-20-7a3r+trend-25",
+    "result": {
+      "drawDate": "21/05/2024",
+      "drawBalls": [
+        11,
+        13,
+        14,
+        34,
+        48
+      ],
+      "drawStars": [
+        7,
+        9
+      ],
+      "matchedBalls": 1,
+      "matchedStars": 0,
+      "rank": 0,
+      "rankLabel": "1+0",
+      "gain": 0,
+      "net": -2.5
+    }
+  },
+  {
+    "generatedAt": "(backtest-weighted70-30+trend25)",
+    "forDrawAfter": "21/05/2024",
+    "balls": [
+      13,
+      23,
+      26,
+      35,
+      44
+    ],
+    "stars": [
+      1,
+      4
+    ],
+    "qualityScore": 0,
+    "strategy": "weighted-20-7a3r+trend-25",
+    "result": {
+      "drawDate": "24/05/2024",
+      "drawBalls": [
+        9,
+        12,
+        18,
+        22,
+        50
+      ],
+      "drawStars": [
+        1,
+        3
+      ],
+      "matchedBalls": 0,
+      "matchedStars": 1,
+      "rank": 0,
+      "rankLabel": "0+1",
+      "gain": 0,
+      "net": -2.5
+    }
+  },
+  {
+    "generatedAt": "(backtest-weighted70-30+trend25)",
+    "forDrawAfter": "24/05/2024",
+    "balls": [
+      13,
+      23,
+      26,
+      35,
+      44
+    ],
+    "stars": [
+      1,
+      4
+    ],
+    "qualityScore": 0,
+    "strategy": "weighted-20-7a3r+trend-25",
+    "result": {
+      "drawDate": "28/05/2024",
+      "drawBalls": [
+        16,
+        18,
+        35,
+        36,
+        41
+      ],
+      "drawStars": [
+        6,
+        7
+      ],
+      "matchedBalls": 1,
+      "matchedStars": 0,
+      "rank": 0,
+      "rankLabel": "1+0",
+      "gain": 0,
+      "net": -2.5
+    }
+  },
+  {
+    "generatedAt": "(backtest-weighted70-30+trend25)",
+    "forDrawAfter": "28/05/2024",
+    "balls": [
+      13,
+      23,
+      26,
+      35,
+      44
+    ],
+    "stars": [
+      1,
+      3
+    ],
+    "qualityScore": 0,
+    "strategy": "weighted-20-7a3r+trend-25",
+    "result": {
+      "drawDate": "31/05/2024",
+      "drawBalls": [
+        4,
+        7,
+        16,
+        33,
+        34
+      ],
+      "drawStars": [
+        7,
+        8
+      ],
+      "matchedBalls": 0,
+      "matchedStars": 0,
+      "rank": 0,
+      "rankLabel": "0+0",
+      "gain": 0,
+      "net": -2.5
+    }
+  },
+  {
+    "generatedAt": "(backtest-weighted70-30+trend25)",
+    "forDrawAfter": "31/05/2024",
+    "balls": [
+      13,
+      16,
+      26,
+      29,
+      35
+    ],
+    "stars": [
+      1,
+      4
+    ],
+    "qualityScore": 0,
+    "strategy": "weighted-20-7a3r+trend-25",
+    "result": {
+      "drawDate": "04/06/2024",
+      "drawBalls": [
+        6,
+        7,
+        9,
+        14,
+        43
+      ],
+      "drawStars": [
+        3,
+        4
+      ],
+      "matchedBalls": 0,
+      "matchedStars": 1,
+      "rank": 0,
+      "rankLabel": "0+1",
+      "gain": 0,
+      "net": -2.5
+    }
+  },
+  {
+    "generatedAt": "(backtest-weighted70-30+trend25)",
+    "forDrawAfter": "04/06/2024",
+    "balls": [
+      9,
+      13,
+      16,
+      23,
+      35
+    ],
+    "stars": [
+      1,
+      3
+    ],
+    "qualityScore": 0,
+    "strategy": "weighted-20-7a3r+trend-25",
+    "result": {
+      "drawDate": "07/06/2024",
+      "drawBalls": [
+        15,
+        16,
+        26,
+        30,
+        37
+      ],
+      "drawStars": [
+        5,
+        8
+      ],
+      "matchedBalls": 1,
+      "matchedStars": 0,
+      "rank": 0,
+      "rankLabel": "1+0",
+      "gain": 0,
+      "net": -2.5
+    }
+  },
+  {
+    "generatedAt": "(backtest-weighted70-30+trend25)",
+    "forDrawAfter": "07/06/2024",
+    "balls": [
+      9,
+      13,
+      16,
+      26,
+      35
+    ],
+    "stars": [
+      1,
+      3
+    ],
+    "qualityScore": 0,
+    "strategy": "weighted-20-7a3r+trend-25",
+    "result": {
+      "drawDate": "11/06/2024",
+      "drawBalls": [
+        7,
+        15,
+        34,
+        45,
+        48
+      ],
+      "drawStars": [
+        7,
+        9
+      ],
+      "matchedBalls": 0,
+      "matchedStars": 0,
+      "rank": 0,
+      "rankLabel": "0+0",
+      "gain": 0,
+      "net": -2.5
+    }
+  },
+  {
+    "generatedAt": "(backtest-weighted70-30+trend25)",
+    "forDrawAfter": "11/06/2024",
+    "balls": [
+      9,
+      13,
+      16,
+      26,
+      35
+    ],
+    "stars": [
+      1,
+      3
+    ],
+    "qualityScore": 0,
+    "strategy": "weighted-20-7a3r+trend-25",
+    "result": {
+      "drawDate": "14/06/2024",
+      "drawBalls": [
+        2,
+        13,
+        16,
+        24,
+        32
+      ],
+      "drawStars": [
+        1,
+        7
+      ],
+      "matchedBalls": 2,
+      "matchedStars": 1,
+      "rank": 12,
+      "rankLabel": "2+1",
+      "gain": 5.1,
+      "net": 2.5999999999999996
+    }
+  },
+  {
+    "generatedAt": "(backtest-weighted70-30+trend25)",
+    "forDrawAfter": "14/06/2024",
+    "balls": [
+      2,
+      9,
+      13,
+      16,
+      35
+    ],
+    "stars": [
+      1,
+      7
+    ],
+    "qualityScore": 0,
+    "strategy": "weighted-20-7a3r+trend-25",
+    "result": {
+      "drawDate": "18/06/2024",
+      "drawBalls": [
+        3,
+        11,
+        33,
+        34,
+        36
+      ],
+      "drawStars": [
+        1,
+        12
+      ],
+      "matchedBalls": 0,
+      "matchedStars": 1,
+      "rank": 0,
+      "rankLabel": "0+1",
+      "gain": 0,
+      "net": -2.5
+    }
+  },
+  {
+    "generatedAt": "(backtest-weighted70-30+trend25)",
+    "forDrawAfter": "18/06/2024",
+    "balls": [
+      2,
+      9,
+      13,
+      16,
+      34
+    ],
+    "stars": [
+      1,
+      7
+    ],
+    "qualityScore": 0,
+    "strategy": "weighted-20-7a3r+trend-25",
+    "result": {
+      "drawDate": "21/06/2024",
+      "drawBalls": [
+        3,
+        4,
+        7,
+        11,
+        17
+      ],
+      "drawStars": [
+        3,
+        12
+      ],
+      "matchedBalls": 0,
+      "matchedStars": 0,
+      "rank": 0,
+      "rankLabel": "0+0",
+      "gain": 0,
+      "net": -2.5
+    }
+  },
+  {
+    "generatedAt": "(backtest-weighted70-30+trend25)",
+    "forDrawAfter": "21/06/2024",
+    "balls": [
+      7,
+      11,
+      13,
+      16,
+      34
+    ],
+    "stars": [
+      1,
+      7
+    ],
+    "qualityScore": 0,
+    "strategy": "weighted-20-7a3r+trend-25",
+    "result": {
+      "drawDate": "25/06/2024",
+      "drawBalls": [
+        14,
+        16,
+        37,
+        45,
+        49
+      ],
+      "drawStars": [
+        5,
+        7
+      ],
+      "matchedBalls": 1,
+      "matchedStars": 1,
+      "rank": 0,
+      "rankLabel": "1+1",
+      "gain": 0,
+      "net": -2.5
+    }
+  },
+  {
+    "generatedAt": "(backtest-weighted70-30+trend25)",
+    "forDrawAfter": "25/06/2024",
+    "balls": [
+      7,
+      11,
+      13,
+      16,
+      34
+    ],
+    "stars": [
+      1,
+      7
+    ],
+    "qualityScore": 0,
+    "strategy": "weighted-20-7a3r+trend-25",
+    "result": {
+      "drawDate": "28/06/2024",
+      "drawBalls": [
+        10,
+        16,
+        18,
+        22,
+        35
+      ],
+      "drawStars": [
+        1,
+        10
+      ],
+      "matchedBalls": 1,
+      "matchedStars": 1,
+      "rank": 0,
+      "rankLabel": "1+1",
+      "gain": 0,
+      "net": -2.5
+    }
+  },
+  {
+    "generatedAt": "(backtest-weighted70-30+trend25)",
+    "forDrawAfter": "28/06/2024",
+    "balls": [
+      7,
+      11,
+      13,
+      16,
+      35
+    ],
+    "stars": [
+      1,
+      7
+    ],
+    "qualityScore": 0,
+    "strategy": "weighted-20-7a3r+trend-25",
+    "result": {
+      "drawDate": "02/07/2024",
+      "drawBalls": [
+        2,
+        7,
+        34,
+        35,
+        46
+      ],
+      "drawStars": [
+        6,
+        8
+      ],
+      "matchedBalls": 2,
+      "matchedStars": 0,
+      "rank": 13,
+      "rankLabel": "2+0",
+      "gain": 4.3,
+      "net": 1.7999999999999998
+    }
+  },
+  {
+    "generatedAt": "(backtest-weighted70-30+trend25)",
+    "forDrawAfter": "02/07/2024",
+    "balls": [
+      7,
+      13,
+      16,
+      34,
+      35
+    ],
+    "stars": [
+      1,
+      7
+    ],
+    "qualityScore": 0,
+    "strategy": "weighted-20-7a3r+trend-25",
+    "result": {
+      "drawDate": "05/07/2024",
+      "drawBalls": [
+        11,
+        13,
+        29,
+        31,
+        47
+      ],
+      "drawStars": [
+        1,
+        11
+      ],
+      "matchedBalls": 1,
+      "matchedStars": 1,
+      "rank": 0,
+      "rankLabel": "1+1",
+      "gain": 0,
+      "net": -2.5
+    }
+  },
+  {
+    "generatedAt": "(backtest-weighted70-30+trend25)",
+    "forDrawAfter": "05/07/2024",
+    "balls": [
+      7,
+      13,
+      16,
+      34,
+      35
+    ],
+    "stars": [
+      1,
+      7
+    ],
+    "qualityScore": 0,
+    "strategy": "weighted-20-7a3r+trend-25",
+    "result": {
+      "drawDate": "09/07/2024",
+      "drawBalls": [
+        6,
+        15,
+        19,
+        28,
+        39
+      ],
+      "drawStars": [
+        7,
+        11
+      ],
+      "matchedBalls": 0,
+      "matchedStars": 1,
+      "rank": 0,
+      "rankLabel": "0+1",
+      "gain": 0,
+      "net": -2.5
+    }
+  },
+  {
+    "generatedAt": "(backtest-weighted70-30+trend25)",
+    "forDrawAfter": "09/07/2024",
+    "balls": [
+      7,
+      11,
+      16,
+      34,
+      35
+    ],
+    "stars": [
+      1,
+      7
+    ],
+    "qualityScore": 0,
+    "strategy": "weighted-20-7a3r+trend-25",
+    "result": {
+      "drawDate": "12/07/2024",
+      "drawBalls": [
+        12,
+        18,
+        24,
+        25,
+        39
+      ],
+      "drawStars": [
+        8,
+        10
+      ],
+      "matchedBalls": 0,
+      "matchedStars": 0,
+      "rank": 0,
+      "rankLabel": "0+0",
+      "gain": 0,
+      "net": -2.5
+    }
+  },
+  {
+    "generatedAt": "(backtest-weighted70-30+trend25)",
+    "forDrawAfter": "12/07/2024",
+    "balls": [
+      7,
+      11,
+      16,
+      34,
+      35
+    ],
+    "stars": [
+      1,
+      7
+    ],
+    "qualityScore": 0,
+    "strategy": "weighted-20-7a3r+trend-25",
+    "result": {
+      "drawDate": "16/07/2024",
+      "drawBalls": [
+        2,
+        32,
+        35,
+        36,
+        39
+      ],
+      "drawStars": [
+        7,
+        8
+      ],
+      "matchedBalls": 1,
+      "matchedStars": 1,
+      "rank": 0,
+      "rankLabel": "1+1",
+      "gain": 0,
+      "net": -2.5
+    }
+  },
+  {
+    "generatedAt": "(backtest-weighted70-30+trend25)",
+    "forDrawAfter": "16/07/2024",
+    "balls": [
+      7,
+      11,
+      16,
+      34,
+      35
+    ],
+    "stars": [
+      1,
+      7
+    ],
+    "qualityScore": 0,
+    "strategy": "weighted-20-7a3r+trend-25",
+    "result": {
+      "drawDate": "19/07/2024",
+      "drawBalls": [
+        15,
+        22,
+        35,
+        44,
+        48
+      ],
+      "drawStars": [
+        6,
+        7
+      ],
+      "matchedBalls": 1,
+      "matchedStars": 1,
+      "rank": 0,
+      "rankLabel": "1+1",
+      "gain": 0,
+      "net": -2.5
+    }
+  },
+  {
+    "generatedAt": "(backtest-weighted70-30+trend25)",
+    "forDrawAfter": "19/07/2024",
+    "balls": [
+      7,
+      15,
+      16,
+      34,
+      35
+    ],
+    "stars": [
+      1,
+      7
+    ],
+    "qualityScore": 0,
+    "strategy": "weighted-20-7a3r+trend-25",
+    "result": {
+      "drawDate": "23/07/2024",
+      "drawBalls": [
+        4,
+        8,
+        10,
+        16,
+        34
+      ],
+      "drawStars": [
+        4,
+        8
+      ],
+      "matchedBalls": 2,
+      "matchedStars": 0,
+      "rank": 13,
+      "rankLabel": "2+0",
+      "gain": 3.8,
+      "net": 1.2999999999999998
+    }
+  },
+  {
+    "generatedAt": "(backtest-weighted70-30+trend25)",
+    "forDrawAfter": "23/07/2024",
+    "balls": [
+      7,
+      15,
+      16,
+      34,
+      35
+    ],
+    "stars": [
+      1,
+      7
+    ],
+    "qualityScore": 0,
+    "strategy": "weighted-20-7a3r+trend-25",
+    "result": {
+      "drawDate": "26/07/2024",
+      "drawBalls": [
+        4,
+        19,
+        23,
+        35,
+        37
+      ],
+      "drawStars": [
+        4,
+        8
+      ],
+      "matchedBalls": 1,
+      "matchedStars": 0,
+      "rank": 0,
+      "rankLabel": "1+0",
+      "gain": 0,
+      "net": -2.5
+    }
+  },
+  {
+    "generatedAt": "(backtest-weighted70-30+trend25)",
+    "forDrawAfter": "26/07/2024",
+    "balls": [
+      7,
+      15,
+      16,
+      34,
+      35
+    ],
+    "stars": [
+      7,
+      8
+    ],
+    "qualityScore": 0,
+    "strategy": "weighted-20-7a3r+trend-25",
+    "result": {
+      "drawDate": "30/07/2024",
+      "drawBalls": [
+        9,
+        25,
+        28,
+        37,
+        38
+      ],
+      "drawStars": [
+        2,
+        8
+      ],
+      "matchedBalls": 0,
+      "matchedStars": 1,
+      "rank": 0,
+      "rankLabel": "0+1",
+      "gain": 0,
+      "net": -2.5
+    }
+  },
+  {
+    "generatedAt": "(backtest-weighted70-30+trend25)",
+    "forDrawAfter": "30/07/2024",
+    "balls": [
+      7,
+      16,
+      34,
+      35,
+      37
+    ],
+    "stars": [
+      7,
+      8
+    ],
+    "qualityScore": 0,
+    "strategy": "weighted-20-7a3r+trend-25",
+    "result": {
+      "drawDate": "02/08/2024",
+      "drawBalls": [
+        5,
+        7,
+        12,
+        33,
+        46
+      ],
+      "drawStars": [
+        3,
+        12
+      ],
+      "matchedBalls": 1,
+      "matchedStars": 0,
+      "rank": 0,
+      "rankLabel": "1+0",
+      "gain": 0,
+      "net": -2.5
+    }
+  },
+  {
+    "generatedAt": "(backtest-weighted70-30+trend25)",
+    "forDrawAfter": "02/08/2024",
+    "balls": [
+      7,
+      16,
+      34,
+      35,
+      37
+    ],
+    "stars": [
+      7,
+      8
+    ],
+    "qualityScore": 0,
+    "strategy": "weighted-20-7a3r+trend-25",
+    "result": {
+      "drawDate": "06/08/2024",
+      "drawBalls": [
+        1,
+        18,
+        27,
+        41,
+        50
+      ],
+      "drawStars": [
+        2,
+        12
+      ],
+      "matchedBalls": 0,
+      "matchedStars": 0,
+      "rank": 0,
+      "rankLabel": "0+0",
+      "gain": 0,
+      "net": -2.5
+    }
+  },
+  {
+    "generatedAt": "(backtest-weighted70-30+trend25)",
+    "forDrawAfter": "06/08/2024",
+    "balls": [
+      7,
+      16,
+      34,
+      35,
+      37
+    ],
+    "stars": [
+      7,
+      8
+    ],
+    "qualityScore": 0,
+    "strategy": "weighted-20-7a3r+trend-25",
+    "result": {
+      "drawDate": "09/08/2024",
+      "drawBalls": [
+        21,
+        23,
+        25,
+        33,
+        44
+      ],
+      "drawStars": [
+        4,
+        10
+      ],
+      "matchedBalls": 0,
+      "matchedStars": 0,
+      "rank": 0,
+      "rankLabel": "0+0",
+      "gain": 0,
+      "net": -2.5
+    }
+  },
+  {
+    "generatedAt": "(backtest-weighted70-30+trend25)",
+    "forDrawAfter": "09/08/2024",
+    "balls": [
+      7,
+      15,
+      16,
+      35,
+      37
+    ],
+    "stars": [
+      7,
+      8
+    ],
+    "qualityScore": 0,
+    "strategy": "weighted-20-7a3r+trend-25",
+    "result": {
+      "drawDate": "13/08/2024",
+      "drawBalls": [
+        15,
+        16,
+        39,
+        40,
+        47
+      ],
+      "drawStars": [
+        1,
+        6
+      ],
+      "matchedBalls": 2,
+      "matchedStars": 0,
+      "rank": 13,
+      "rankLabel": "2+0",
+      "gain": 4.4,
+      "net": 1.9000000000000004
+    }
+  },
+  {
+    "generatedAt": "(backtest-weighted70-30+trend25)",
+    "forDrawAfter": "13/08/2024",
+    "balls": [
+      7,
+      15,
+      16,
+      35,
+      37
+    ],
+    "stars": [
+      7,
+      8
+    ],
+    "qualityScore": 0,
+    "strategy": "weighted-20-7a3r+trend-25",
+    "result": {
+      "drawDate": "16/08/2024",
+      "drawBalls": [
+        15,
+        17,
+        29,
+        45,
+        49
+      ],
+      "drawStars": [
+        1,
+        10
+      ],
+      "matchedBalls": 1,
+      "matchedStars": 0,
+      "rank": 0,
+      "rankLabel": "1+0",
+      "gain": 0,
+      "net": -2.5
+    }
+  },
+  {
+    "generatedAt": "(backtest-weighted70-30+trend25)",
+    "forDrawAfter": "16/08/2024",
+    "balls": [
+      7,
+      15,
+      16,
+      34,
+      35
+    ],
+    "stars": [
+      7,
+      8
+    ],
+    "qualityScore": 0,
+    "strategy": "weighted-20-7a3r+trend-25",
+    "result": {
+      "drawDate": "20/08/2024",
+      "drawBalls": [
+        7,
+        10,
+        13,
+        18,
+        26
+      ],
+      "drawStars": [
+        3,
+        12
+      ],
+      "matchedBalls": 1,
+      "matchedStars": 0,
+      "rank": 0,
+      "rankLabel": "1+0",
+      "gain": 0,
+      "net": -2.5
+    }
+  },
+  {
+    "generatedAt": "(backtest-weighted70-30+trend25)",
+    "forDrawAfter": "20/08/2024",
+    "balls": [
+      7,
+      15,
+      16,
+      35,
+      39
+    ],
+    "stars": [
+      7,
+      8
+    ],
+    "qualityScore": 0,
+    "strategy": "weighted-20-7a3r+trend-25",
+    "result": {
+      "drawDate": "23/08/2024",
+      "drawBalls": [
+        9,
+        15,
+        24,
+        47,
+        50
+      ],
+      "drawStars": [
+        8,
+        9
+      ],
+      "matchedBalls": 1,
+      "matchedStars": 1,
+      "rank": 0,
+      "rankLabel": "1+1",
+      "gain": 0,
+      "net": -2.5
+    }
+  },
+  {
+    "generatedAt": "(backtest-weighted70-30+trend25)",
+    "forDrawAfter": "23/08/2024",
+    "balls": [
+      7,
+      15,
+      16,
+      35,
+      39
+    ],
+    "stars": [
+      7,
+      8
+    ],
+    "qualityScore": 0,
+    "strategy": "weighted-20-7a3r+trend-25",
+    "result": {
+      "drawDate": "27/08/2024",
+      "drawBalls": [
+        1,
+        8,
+        11,
+        42,
+        47
+      ],
+      "drawStars": [
+        4,
+        11
+      ],
+      "matchedBalls": 0,
+      "matchedStars": 0,
+      "rank": 0,
+      "rankLabel": "0+0",
+      "gain": 0,
+      "net": -2.5
+    }
+  },
+  {
+    "generatedAt": "(backtest-weighted70-30+trend25)",
+    "forDrawAfter": "27/08/2024",
+    "balls": [
+      7,
+      15,
+      16,
+      35,
+      39
+    ],
+    "stars": [
+      1,
+      8
+    ],
+    "qualityScore": 0,
+    "strategy": "weighted-20-7a3r+trend-25",
+    "result": {
+      "drawDate": "30/08/2024",
+      "drawBalls": [
+        3,
+        24,
+        27,
+        33,
+        42
+      ],
+      "drawStars": [
+        4,
+        6
+      ],
+      "matchedBalls": 0,
+      "matchedStars": 0,
+      "rank": 0,
+      "rankLabel": "0+0",
+      "gain": 0,
+      "net": -2.5
+    }
+  },
+  {
+    "generatedAt": "(backtest-weighted70-30+trend25)",
+    "forDrawAfter": "30/08/2024",
+    "balls": [
+      10,
+      15,
+      16,
+      35,
+      39
+    ],
+    "stars": [
+      1,
+      8
+    ],
+    "qualityScore": 0,
+    "strategy": "weighted-20-7a3r+trend-25",
+    "result": {
+      "drawDate": "03/09/2024",
+      "drawBalls": [
+        7,
+        9,
+        11,
+        16,
+        45
+      ],
+      "drawStars": [
+        2,
+        5
+      ],
+      "matchedBalls": 1,
+      "matchedStars": 0,
+      "rank": 0,
+      "rankLabel": "1+0",
+      "gain": 0,
+      "net": -2.5
+    }
+  },
+  {
+    "generatedAt": "(backtest-weighted70-30+trend25)",
+    "forDrawAfter": "03/09/2024",
+    "balls": [
+      7,
+      15,
+      16,
+      35,
+      39
+    ],
+    "stars": [
+      1,
+      8
+    ],
+    "qualityScore": 0,
+    "strategy": "weighted-20-7a3r+trend-25",
+    "result": {
+      "drawDate": "06/09/2024",
+      "drawBalls": [
+        12,
+        14,
+        34,
+        41,
+        47
+      ],
+      "drawStars": [
+        3,
+        4
+      ],
+      "matchedBalls": 0,
+      "matchedStars": 0,
+      "rank": 0,
+      "rankLabel": "0+0",
+      "gain": 0,
+      "net": -2.5
+    }
+  },
+  {
+    "generatedAt": "(backtest-weighted70-30+trend25)",
+    "forDrawAfter": "06/09/2024",
+    "balls": [
+      7,
+      15,
+      35,
+      39,
+      47
+    ],
+    "stars": [
+      1,
+      8
+    ],
+    "qualityScore": 0,
+    "strategy": "weighted-20-7a3r+trend-25",
+    "result": {
+      "drawDate": "10/09/2024",
+      "drawBalls": [
+        6,
+        29,
+        46,
+        47,
+        48
+      ],
+      "drawStars": [
+        2,
+        9
+      ],
+      "matchedBalls": 1,
+      "matchedStars": 0,
+      "rank": 0,
+      "rankLabel": "1+0",
+      "gain": 0,
+      "net": -2.5
+    }
+  },
+  {
+    "generatedAt": "(backtest-weighted70-30+trend25)",
+    "forDrawAfter": "10/09/2024",
+    "balls": [
+      15,
+      23,
+      29,
+      39,
+      47
+    ],
+    "stars": [
+      4,
+      8
+    ],
+    "qualityScore": 0,
+    "strategy": "weighted-20-7a3r+trend-25",
+    "result": {
+      "drawDate": "13/09/2024",
+      "drawBalls": [
+        10,
+        15,
+        17,
+        31,
+        42
+      ],
+      "drawStars": [
+        4,
+        12
+      ],
+      "matchedBalls": 1,
+      "matchedStars": 1,
+      "rank": 0,
+      "rankLabel": "1+1",
+      "gain": 0,
+      "net": -2.5
+    }
+  },
+  {
+    "generatedAt": "(backtest-weighted70-30+trend25)",
+    "forDrawAfter": "13/09/2024",
+    "balls": [
+      10,
+      15,
+      23,
+      42,
+      47
+    ],
+    "stars": [
+      4,
+      8
+    ],
+    "qualityScore": 0,
+    "strategy": "weighted-20-7a3r+trend-25",
+    "result": {
+      "drawDate": "17/09/2024",
+      "drawBalls": [
+        20,
+        30,
+        32,
+        41,
+        44
+      ],
+      "drawStars": [
+        1,
+        10
+      ],
+      "matchedBalls": 0,
+      "matchedStars": 0,
+      "rank": 0,
+      "rankLabel": "0+0",
+      "gain": 0,
+      "net": -2.5
+    }
+  },
+  {
+    "generatedAt": "(backtest-weighted70-30+trend25)",
+    "forDrawAfter": "17/09/2024",
+    "balls": [
+      10,
+      15,
+      42,
+      44,
+      47
+    ],
+    "stars": [
+      4,
+      8
+    ],
+    "qualityScore": 0,
+    "strategy": "weighted-20-7a3r+trend-25",
+    "result": {
+      "drawDate": "20/09/2024",
+      "drawBalls": [
+        16,
+        25,
+        29,
+        34,
+        37
+      ],
+      "drawStars": [
+        3,
+        7
+      ],
+      "matchedBalls": 0,
+      "matchedStars": 0,
+      "rank": 0,
+      "rankLabel": "0+0",
+      "gain": 0,
+      "net": -2.5
+    }
+  },
+  {
+    "generatedAt": "(backtest-weighted70-30+trend25)",
+    "forDrawAfter": "20/09/2024",
+    "balls": [
+      15,
+      16,
+      42,
+      44,
+      47
+    ],
+    "stars": [
+      4,
+      8
+    ],
+    "qualityScore": 0,
+    "strategy": "weighted-20-7a3r+trend-25",
+    "result": {
+      "drawDate": "24/09/2024",
+      "drawBalls": [
+        18,
+        20,
+        21,
+        36,
+        49
+      ],
+      "drawStars": [
+        3,
+        5
+      ],
+      "matchedBalls": 0,
+      "matchedStars": 0,
+      "rank": 0,
+      "rankLabel": "0+0",
+      "gain": 0,
+      "net": -2.5
+    }
+  },
+  {
+    "generatedAt": "(backtest-weighted70-30+trend25)",
+    "forDrawAfter": "24/09/2024",
+    "balls": [
+      15,
+      16,
+      42,
+      44,
+      47
+    ],
+    "stars": [
+      4,
+      8
+    ],
+    "qualityScore": 0,
+    "strategy": "weighted-20-7a3r+trend-25",
+    "result": {
+      "drawDate": "27/09/2024",
+      "drawBalls": [
+        7,
+        20,
+        21,
+        27,
+        38
+      ],
+      "drawStars": [
+        5,
+        12
+      ],
+      "matchedBalls": 0,
+      "matchedStars": 0,
+      "rank": 0,
+      "rankLabel": "0+0",
+      "gain": 0,
+      "net": -2.5
+    }
+  },
+  {
+    "generatedAt": "(backtest-weighted70-30+trend25)",
+    "forDrawAfter": "27/09/2024",
+    "balls": [
+      7,
+      15,
+      16,
+      21,
+      42
+    ],
+    "stars": [
+      4,
+      8
+    ],
+    "qualityScore": 0,
+    "strategy": "weighted-20-7a3r+trend-25",
+    "result": {
+      "drawDate": "01/10/2024",
+      "drawBalls": [
+        8,
+        22,
+        29,
+        41,
+        42
+      ],
+      "drawStars": [
+        9,
+        11
+      ],
+      "matchedBalls": 1,
+      "matchedStars": 0,
+      "rank": 0,
+      "rankLabel": "1+0",
+      "gain": 0,
+      "net": -2.5
+    }
+  },
+  {
+    "generatedAt": "(backtest-weighted70-30+trend25)",
+    "forDrawAfter": "01/10/2024",
+    "balls": [
+      7,
+      15,
+      21,
+      29,
+      42
+    ],
+    "stars": [
+      4,
+      8
+    ],
+    "qualityScore": 0,
+    "strategy": "weighted-20-7a3r+trend-25",
+    "result": {
+      "drawDate": "04/10/2024",
+      "drawBalls": [
+        4,
+        8,
+        16,
+        17,
+        20
+      ],
+      "drawStars": [
+        1,
+        6
+      ],
+      "matchedBalls": 0,
+      "matchedStars": 0,
+      "rank": 0,
+      "rankLabel": "0+0",
+      "gain": 0,
+      "net": -2.5
+    }
+  },
+  {
+    "generatedAt": "(backtest-weighted70-30+trend25)",
+    "forDrawAfter": "04/10/2024",
+    "balls": [
+      7,
+      15,
+      20,
+      29,
+      42
+    ],
+    "stars": [
+      4,
+      8
+    ],
+    "qualityScore": 0,
+    "strategy": "weighted-20-7a3r+trend-25",
+    "result": {
+      "drawDate": "08/10/2024",
+      "drawBalls": [
+        7,
+        14,
+        19,
+        34,
+        40
+      ],
+      "drawStars": [
+        6,
+        8
+      ],
+      "matchedBalls": 1,
+      "matchedStars": 1,
+      "rank": 0,
+      "rankLabel": "1+1",
+      "gain": 0,
+      "net": -2.5
+    }
+  },
+  {
+    "generatedAt": "(backtest-weighted70-30+trend25)",
+    "forDrawAfter": "08/10/2024",
+    "balls": [
+      7,
+      15,
+      20,
+      29,
+      42
+    ],
+    "stars": [
+      4,
+      8
+    ],
+    "qualityScore": 0,
+    "strategy": "weighted-20-7a3r+trend-25",
+    "result": {
+      "drawDate": "11/10/2024",
+      "drawBalls": [
+        16,
+        23,
+        32,
+        46,
+        49
+      ],
+      "drawStars": [
+        4,
+        5
+      ],
+      "matchedBalls": 0,
+      "matchedStars": 1,
+      "rank": 0,
+      "rankLabel": "0+1",
+      "gain": 0,
+      "net": -2.5
+    }
+  },
+  {
+    "generatedAt": "(backtest-weighted70-30+trend25)",
+    "forDrawAfter": "11/10/2024",
+    "balls": [
+      15,
+      16,
+      20,
+      29,
+      42
+    ],
+    "stars": [
+      3,
+      4
+    ],
+    "qualityScore": 0,
+    "strategy": "weighted-20-7a3r+trend-25",
+    "result": {
+      "drawDate": "15/10/2024",
+      "drawBalls": [
+        2,
+        15,
+        32,
+        36,
+        48
+      ],
+      "drawStars": [
+        3,
+        9
+      ],
+      "matchedBalls": 1,
+      "matchedStars": 1,
+      "rank": 0,
+      "rankLabel": "1+1",
+      "gain": 0,
+      "net": -2.5
+    }
+  },
+  {
+    "generatedAt": "(backtest-weighted70-30+trend25)",
+    "forDrawAfter": "15/10/2024",
+    "balls": [
+      15,
+      16,
+      20,
+      29,
+      42
+    ],
+    "stars": [
+      3,
+      4
+    ],
+    "qualityScore": 0,
+    "strategy": "weighted-20-7a3r+trend-25",
+    "result": {
+      "drawDate": "18/10/2024",
+      "drawBalls": [
+        4,
+        15,
+        23,
+        30,
+        39
+      ],
+      "drawStars": [
+        1,
+        12
+      ],
+      "matchedBalls": 1,
+      "matchedStars": 0,
+      "rank": 0,
+      "rankLabel": "1+0",
+      "gain": 0,
+      "net": -2.5
+    }
+  },
+  {
+    "generatedAt": "(backtest-weighted70-30+trend25)",
+    "forDrawAfter": "18/10/2024",
+    "balls": [
+      15,
+      16,
+      20,
+      29,
+      42
+    ],
+    "stars": [
+      3,
+      4
+    ],
+    "qualityScore": 0,
+    "strategy": "weighted-20-7a3r+trend-25",
+    "result": {
+      "drawDate": "22/10/2024",
+      "drawBalls": [
+        3,
+        13,
+        27,
+        30,
+        46
+      ],
+      "drawStars": [
+        1,
+        2
+      ],
+      "matchedBalls": 0,
+      "matchedStars": 0,
+      "rank": 0,
+      "rankLabel": "0+0",
+      "gain": 0,
+      "net": -2.5
+    }
+  },
+  {
+    "generatedAt": "(backtest-weighted70-30+trend25)",
+    "forDrawAfter": "22/10/2024",
+    "balls": [
+      7,
+      15,
+      20,
+      29,
+      42
+    ],
+    "stars": [
+      1,
+      3
+    ],
+    "qualityScore": 0,
+    "strategy": "weighted-20-7a3r+trend-25",
+    "result": {
+      "drawDate": "25/10/2024",
+      "drawBalls": [
+        4,
+        17,
+        20,
+        25,
+        45
+      ],
+      "drawStars": [
+        8,
+        9
+      ],
+      "matchedBalls": 1,
+      "matchedStars": 0,
+      "rank": 0,
+      "rankLabel": "1+0",
+      "gain": 0,
+      "net": -2.5
+    }
+  },
+  {
+    "generatedAt": "(backtest-weighted70-30+trend25)",
+    "forDrawAfter": "25/10/2024",
+    "balls": [
+      7,
+      15,
+      16,
+      20,
+      42
+    ],
+    "stars": [
+      1,
+      3
+    ],
+    "qualityScore": 0,
+    "strategy": "weighted-20-7a3r+trend-25",
+    "result": {
+      "drawDate": "29/10/2024",
+      "drawBalls": [
+        1,
+        2,
+        19,
+        30,
+        45
+      ],
+      "drawStars": [
+        10,
+        12
+      ],
+      "matchedBalls": 0,
+      "matchedStars": 0,
+      "rank": 0,
+      "rankLabel": "0+0",
+      "gain": 0,
+      "net": -2.5
+    }
+  },
+  {
+    "generatedAt": "(backtest-weighted70-30+trend25)",
+    "forDrawAfter": "29/10/2024",
+    "balls": [
+      15,
+      16,
+      20,
+      30,
+      42
+    ],
+    "stars": [
+      1,
+      4
+    ],
+    "qualityScore": 0,
+    "strategy": "weighted-20-7a3r+trend-25",
+    "result": {
+      "drawDate": "01/11/2024",
+      "drawBalls": [
+        7,
+        33,
+        38,
+        44,
+        50
+      ],
+      "drawStars": [
+        2,
+        7
+      ],
+      "matchedBalls": 0,
+      "matchedStars": 0,
+      "rank": 0,
+      "rankLabel": "0+0",
+      "gain": 0,
+      "net": -2.5
+    }
+  },
+  {
+    "generatedAt": "(backtest-weighted70-30+trend25)",
+    "forDrawAfter": "01/11/2024",
+    "balls": [
+      7,
+      16,
+      20,
+      30,
+      42
+    ],
+    "stars": [
+      1,
+      4
+    ],
+    "qualityScore": 0,
+    "strategy": "weighted-20-7a3r+trend-25",
+    "result": {
+      "drawDate": "05/11/2024",
+      "drawBalls": [
+        1,
+        8,
+        19,
+        37,
+        50
+      ],
+      "drawStars": [
+        6,
+        9
+      ],
+      "matchedBalls": 0,
+      "matchedStars": 0,
+      "rank": 0,
+      "rankLabel": "0+0",
+      "gain": 0,
+      "net": -2.5
+    }
+  },
+  {
+    "generatedAt": "(backtest-weighted70-30+trend25)",
+    "forDrawAfter": "05/11/2024",
+    "balls": [
+      7,
+      16,
+      19,
+      20,
+      30
+    ],
+    "stars": [
+      1,
+      9
+    ],
+    "qualityScore": 0,
+    "strategy": "weighted-20-7a3r+trend-25",
+    "result": {
+      "drawDate": "08/11/2024",
+      "drawBalls": [
+        2,
+        33,
+        35,
+        42,
+        48
+      ],
+      "drawStars": [
+        1,
+        3
+      ],
+      "matchedBalls": 0,
+      "matchedStars": 1,
+      "rank": 0,
+      "rankLabel": "0+1",
+      "gain": 0,
+      "net": -2.5
+    }
+  },
+  {
+    "generatedAt": "(backtest-weighted70-30+trend25)",
+    "forDrawAfter": "08/11/2024",
+    "balls": [
+      7,
+      16,
+      19,
+      20,
+      30
+    ],
+    "stars": [
+      1,
+      3
+    ],
+    "qualityScore": 0,
+    "strategy": "weighted-20-7a3r+trend-25",
+    "result": {
+      "drawDate": "12/11/2024",
+      "drawBalls": [
+        10,
+        11,
+        12,
+        22,
+        50
+      ],
+      "drawStars": [
+        1,
+        10
+      ],
+      "matchedBalls": 0,
+      "matchedStars": 1,
+      "rank": 0,
+      "rankLabel": "0+1",
+      "gain": 0,
+      "net": -2.5
+    }
+  },
+  {
+    "generatedAt": "(backtest-weighted70-30+trend25)",
+    "forDrawAfter": "12/11/2024",
+    "balls": [
+      19,
+      20,
+      30,
+      42,
+      50
+    ],
+    "stars": [
+      1,
+      3
+    ],
+    "qualityScore": 0,
+    "strategy": "weighted-20-7a3r+trend-25",
+    "result": {
+      "drawDate": "15/11/2024",
+      "drawBalls": [
+        7,
+        8,
+        34,
+        39,
+        44
+      ],
+      "drawStars": [
+        2,
+        6
+      ],
+      "matchedBalls": 0,
+      "matchedStars": 0,
+      "rank": 0,
+      "rankLabel": "0+0",
+      "gain": 0,
+      "net": -2.5
+    }
+  },
+  {
+    "generatedAt": "(backtest-weighted70-30+trend25)",
+    "forDrawAfter": "15/11/2024",
+    "balls": [
+      7,
+      19,
+      20,
+      44,
+      50
+    ],
+    "stars": [
+      1,
+      9
+    ],
+    "qualityScore": 0,
+    "strategy": "weighted-20-7a3r+trend-25",
+    "result": {
+      "drawDate": "19/11/2024",
+      "drawBalls": [
+        4,
+        13,
+        20,
+        28,
+        49
+      ],
+      "drawStars": [
+        7,
+        12
+      ],
+      "matchedBalls": 1,
+      "matchedStars": 0,
+      "rank": 0,
+      "rankLabel": "1+0",
+      "gain": 0,
+      "net": -2.5
+    }
+  },
+  {
+    "generatedAt": "(backtest-weighted70-30+trend25)",
+    "forDrawAfter": "19/11/2024",
+    "balls": [
+      7,
+      19,
+      20,
+      44,
+      50
+    ],
+    "stars": [
+      1,
+      2
+    ],
+    "qualityScore": 0,
+    "strategy": "weighted-20-7a3r+trend-25",
+    "result": {
+      "drawDate": "22/11/2024",
+      "drawBalls": [
+        10,
+        11,
+        12,
+        29,
+        31
+      ],
+      "drawStars": [
+        8,
+        11
+      ],
+      "matchedBalls": 0,
+      "matchedStars": 0,
+      "rank": 0,
+      "rankLabel": "0+0",
+      "gain": 0,
+      "net": -2.5
+    }
+  },
+  {
+    "generatedAt": "(backtest-weighted70-30+trend25)",
+    "forDrawAfter": "22/11/2024",
+    "balls": [
+      7,
+      19,
+      20,
+      44,
+      50
+    ],
+    "stars": [
+      1,
+      2
+    ],
+    "qualityScore": 0,
+    "strategy": "weighted-20-7a3r+trend-25",
+    "result": {
+      "drawDate": "26/11/2024",
+      "drawBalls": [
+        7,
+        11,
+        25,
+        31,
+        40
+      ],
+      "drawStars": [
+        9,
+        12
+      ],
+      "matchedBalls": 1,
+      "matchedStars": 0,
+      "rank": 0,
+      "rankLabel": "1+0",
+      "gain": 0,
+      "net": -2.5
+    }
+  },
+  {
+    "generatedAt": "(backtest-weighted70-30+trend25)",
+    "forDrawAfter": "26/11/2024",
+    "balls": [
+      4,
+      7,
+      19,
+      20,
+      50
+    ],
+    "stars": [
+      1,
+      9
+    ],
+    "qualityScore": 0,
+    "strategy": "weighted-20-7a3r+trend-25",
+    "result": {
+      "drawDate": "29/11/2024",
+      "drawBalls": [
+        8,
+        17,
+        18,
+        29,
+        43
+      ],
+      "drawStars": [
+        5,
+        9
+      ],
+      "matchedBalls": 0,
+      "matchedStars": 1,
+      "rank": 0,
+      "rankLabel": "0+1",
+      "gain": 0,
+      "net": -2.5
+    }
+  },
+  {
+    "generatedAt": "(backtest-weighted70-30+trend25)",
+    "forDrawAfter": "29/11/2024",
+    "balls": [
+      4,
+      7,
+      8,
+      19,
+      20
+    ],
+    "stars": [
+      1,
+      9
+    ],
+    "qualityScore": 0,
+    "strategy": "weighted-20-7a3r+trend-25",
+    "result": {
+      "drawDate": "03/12/2024",
+      "drawBalls": [
+        23,
+        25,
+        34,
+        46,
+        47
+      ],
+      "drawStars": [
+        6,
+        8
+      ],
+      "matchedBalls": 0,
+      "matchedStars": 0,
+      "rank": 0,
+      "rankLabel": "0+0",
+      "gain": 0,
+      "net": -2.5
+    }
+  },
+  {
+    "generatedAt": "(backtest-weighted70-30+trend25)",
+    "forDrawAfter": "03/12/2024",
+    "balls": [
+      7,
+      8,
+      19,
+      20,
+      23
+    ],
+    "stars": [
+      1,
+      9
+    ],
+    "qualityScore": 0,
+    "strategy": "weighted-20-7a3r+trend-25",
+    "result": {
+      "drawDate": "06/12/2024",
+      "drawBalls": [
+        14,
+        25,
+        39,
+        44,
+        47
+      ],
+      "drawStars": [
+        6,
+        10
+      ],
+      "matchedBalls": 0,
+      "matchedStars": 0,
+      "rank": 0,
+      "rankLabel": "0+0",
+      "gain": 0,
+      "net": -2.5
+    }
+  },
+  {
+    "generatedAt": "(backtest-weighted70-30+trend25)",
+    "forDrawAfter": "06/12/2024",
+    "balls": [
+      7,
+      8,
+      23,
+      25,
+      44
+    ],
+    "stars": [
+      1,
+      6
+    ],
+    "qualityScore": 0,
+    "strategy": "weighted-20-7a3r+trend-25",
+    "result": {
+      "drawDate": "10/12/2024",
+      "drawBalls": [
+        5,
+        24,
+        25,
+        29,
+        47
+      ],
+      "drawStars": [
+        5,
+        9
+      ],
+      "matchedBalls": 1,
+      "matchedStars": 0,
+      "rank": 0,
+      "rankLabel": "1+0",
+      "gain": 0,
+      "net": -2.5
+    }
+  },
+  {
+    "generatedAt": "(backtest-weighted70-30+trend25)",
+    "forDrawAfter": "10/12/2024",
+    "balls": [
+      7,
+      19,
+      23,
+      25,
+      44
+    ],
+    "stars": [
+      1,
+      9
+    ],
+    "qualityScore": 0,
+    "strategy": "weighted-20-7a3r+trend-25",
+    "result": {
+      "drawDate": "13/12/2024",
+      "drawBalls": [
+        1,
+        15,
+        25,
+        42,
+        50
+      ],
+      "drawStars": [
+        4,
+        10
+      ],
+      "matchedBalls": 1,
+      "matchedStars": 0,
+      "rank": 0,
+      "rankLabel": "1+0",
+      "gain": 0,
+      "net": -2.5
+    }
+  },
+  {
+    "generatedAt": "(backtest-weighted70-30+trend25)",
+    "forDrawAfter": "13/12/2024",
+    "balls": [
+      7,
+      23,
+      25,
+      44,
+      50
+    ],
+    "stars": [
+      6,
+      9
+    ],
+    "qualityScore": 0,
+    "strategy": "weighted-20-7a3r+trend-25",
+    "result": {
+      "drawDate": "17/12/2024",
+      "drawBalls": [
+        1,
+        3,
+        4,
+        21,
+        29
+      ],
+      "drawStars": [
+        2,
+        7
+      ],
+      "matchedBalls": 0,
+      "matchedStars": 0,
+      "rank": 0,
+      "rankLabel": "0+0",
+      "gain": 0,
+      "net": -2.5
+    }
+  },
+  {
+    "generatedAt": "(backtest-weighted70-30+trend25)",
+    "forDrawAfter": "17/12/2024",
+    "balls": [
+      23,
+      25,
+      29,
+      44,
+      50
+    ],
+    "stars": [
+      6,
+      9
+    ],
+    "qualityScore": 0,
+    "strategy": "weighted-20-7a3r+trend-25",
+    "result": {
+      "drawDate": "20/12/2024",
+      "drawBalls": [
+        10,
+        14,
+        21,
+        33,
+        50
+      ],
+      "drawStars": [
+        6,
+        9
+      ],
+      "matchedBalls": 1,
+      "matchedStars": 2,
+      "rank": 11,
+      "rankLabel": "1+2",
+      "gain": 5.8,
+      "net": 3.3
+    }
+  },
+  {
+    "generatedAt": "(backtest-weighted70-30+trend25)",
+    "forDrawAfter": "20/12/2024",
+    "balls": [
+      4,
+      25,
+      29,
+      44,
+      50
+    ],
+    "stars": [
+      6,
+      9
+    ],
+    "qualityScore": 0,
+    "strategy": "weighted-20-7a3r+trend-25",
+    "result": {
+      "drawDate": "24/12/2024",
+      "drawBalls": [
+        6,
+        10,
+        16,
+        23,
+        24
+      ],
+      "drawStars": [
+        11,
+        12
+      ],
+      "matchedBalls": 0,
+      "matchedStars": 0,
+      "rank": 0,
+      "rankLabel": "0+0",
+      "gain": 0,
+      "net": -2.5
+    }
+  },
+  {
+    "generatedAt": "(backtest-weighted70-30+trend25)",
+    "forDrawAfter": "24/12/2024",
+    "balls": [
+      10,
+      23,
+      25,
+      29,
+      50
+    ],
+    "stars": [
+      6,
+      9
+    ],
+    "qualityScore": 0,
+    "strategy": "weighted-20-7a3r+trend-25",
+    "result": {
+      "drawDate": "27/12/2024",
+      "drawBalls": [
+        12,
+        22,
+        27,
+        33,
+        45
+      ],
+      "drawStars": [
+        4,
+        8
+      ],
+      "matchedBalls": 0,
+      "matchedStars": 0,
+      "rank": 0,
+      "rankLabel": "0+0",
+      "gain": 0,
+      "net": -2.5
+    }
+  },
+  {
+    "generatedAt": "(backtest-weighted70-30+trend25)",
+    "forDrawAfter": "27/12/2024",
+    "balls": [
+      10,
+      25,
+      29,
+      44,
+      50
+    ],
+    "stars": [
+      6,
+      9
+    ],
+    "qualityScore": 0,
+    "strategy": "weighted-20-7a3r+trend-25",
+    "result": {
+      "drawDate": "31/12/2024",
+      "drawBalls": [
+        19,
+        24,
+        26,
+        28,
+        33
+      ],
+      "drawStars": [
+        8,
+        12
+      ],
+      "matchedBalls": 0,
+      "matchedStars": 0,
+      "rank": 0,
+      "rankLabel": "0+0",
+      "gain": 0,
+      "net": -2.5
+    }
+  },
+  {
+    "generatedAt": "(backtest-weighted70-30+trend25)",
+    "forDrawAfter": "31/12/2024",
+    "balls": [
+      10,
+      25,
+      29,
+      44,
+      50
+    ],
+    "stars": [
+      6,
+      9
+    ],
+    "qualityScore": 0,
+    "strategy": "weighted-20-7a3r+trend-25",
+    "result": {
+      "drawDate": "03/01/2025",
+      "drawBalls": [
+        3,
+        19,
+        29,
+        35,
+        37
+      ],
+      "drawStars": [
+        1,
+        9
+      ],
+      "matchedBalls": 1,
+      "matchedStars": 1,
+      "rank": 0,
+      "rankLabel": "1+1",
+      "gain": 0,
+      "net": -2.5
+    }
+  },
+  {
+    "generatedAt": "(backtest-weighted70-30+trend25)",
+    "forDrawAfter": "03/01/2025",
+    "balls": [
+      10,
+      19,
+      25,
+      29,
+      50
+    ],
+    "stars": [
+      9,
+      12
+    ],
+    "qualityScore": 0,
+    "strategy": "weighted-20-7a3r+trend-25",
+    "result": {
+      "drawDate": "07/01/2025",
+      "drawBalls": [
+        20,
+        33,
+        35,
+        41,
+        47
+      ],
+      "drawStars": [
+        4,
+        12
+      ],
+      "matchedBalls": 0,
+      "matchedStars": 1,
+      "rank": 0,
+      "rankLabel": "0+1",
+      "gain": 0,
+      "net": -2.5
+    }
+  },
+  {
+    "generatedAt": "(backtest-weighted70-30+trend25)",
+    "forDrawAfter": "07/01/2025",
+    "balls": [
+      10,
+      25,
+      29,
+      33,
+      50
+    ],
+    "stars": [
+      9,
+      12
+    ],
+    "qualityScore": 0,
+    "strategy": "weighted-20-7a3r+trend-25",
+    "result": {
+      "drawDate": "10/01/2025",
+      "drawBalls": [
+        12,
+        27,
+        36,
+        37,
+        42
+      ],
+      "drawStars": [
+        6,
+        7
+      ],
+      "matchedBalls": 0,
+      "matchedStars": 0,
+      "rank": 0,
+      "rankLabel": "0+0",
+      "gain": 0,
+      "net": -2.5
+    }
+  },
+  {
+    "generatedAt": "(backtest-weighted70-30+trend25)",
+    "forDrawAfter": "10/01/2025",
+    "balls": [
+      10,
+      19,
+      25,
+      29,
+      50
+    ],
+    "stars": [
+      9,
+      12
+    ],
+    "qualityScore": 0,
+    "strategy": "weighted-20-7a3r+trend-25",
+    "result": {
+      "drawDate": "14/01/2025",
+      "drawBalls": [
+        18,
+        20,
+        29,
+        41,
+        48
+      ],
+      "drawStars": [
+        5,
+        9
+      ],
+      "matchedBalls": 1,
+      "matchedStars": 1,
+      "rank": 0,
+      "rankLabel": "1+1",
+      "gain": 0,
+      "net": -2.5
+    }
+  },
+  {
+    "generatedAt": "(backtest-weighted70-30+trend25)",
+    "forDrawAfter": "14/01/2025",
+    "balls": [
+      10,
+      12,
+      25,
+      29,
+      50
+    ],
+    "stars": [
+      6,
+      9
+    ],
+    "qualityScore": 0,
+    "strategy": "weighted-20-7a3r+trend-25",
+    "result": {
+      "drawDate": "17/01/2025",
+      "drawBalls": [
+        8,
+        15,
+        24,
+        35,
+        42
+      ],
+      "drawStars": [
+        6,
+        8
+      ],
+      "matchedBalls": 0,
+      "matchedStars": 1,
+      "rank": 0,
+      "rankLabel": "0+1",
+      "gain": 0,
+      "net": -2.5
+    }
+  },
+  {
+    "generatedAt": "(backtest-weighted70-30+trend25)",
+    "forDrawAfter": "17/01/2025",
+    "balls": [
+      10,
+      25,
+      29,
+      42,
+      50
+    ],
+    "stars": [
+      6,
+      9
+    ],
+    "qualityScore": 0,
+    "strategy": "weighted-20-7a3r+trend-25",
+    "result": {
+      "drawDate": "21/01/2025",
+      "drawBalls": [
+        6,
+        8,
+        14,
+        27,
+        41
+      ],
+      "drawStars": [
+        4,
+        5
+      ],
+      "matchedBalls": 0,
+      "matchedStars": 0,
+      "rank": 0,
+      "rankLabel": "0+0",
+      "gain": 0,
+      "net": -2.5
+    }
+  },
+  {
+    "generatedAt": "(backtest-weighted70-30+trend25)",
+    "forDrawAfter": "21/01/2025",
+    "balls": [
+      10,
+      24,
+      25,
+      29,
+      42
+    ],
+    "stars": [
+      6,
+      9
+    ],
+    "qualityScore": 0,
+    "strategy": "weighted-20-7a3r+trend-25",
+    "result": {
+      "drawDate": "24/01/2025",
+      "drawBalls": [
+        2,
+        11,
+        19,
+        30,
+        49
+      ],
+      "drawStars": [
+        3,
+        8
+      ],
+      "matchedBalls": 0,
+      "matchedStars": 0,
+      "rank": 0,
+      "rankLabel": "0+0",
+      "gain": 0,
+      "net": -2.5
+    }
+  },
+  {
+    "generatedAt": "(backtest-weighted70-30+trend25)",
+    "forDrawAfter": "24/01/2025",
+    "balls": [
+      10,
+      19,
+      25,
+      29,
+      42
+    ],
+    "stars": [
+      6,
+      9
+    ],
+    "qualityScore": 0,
+    "strategy": "weighted-20-7a3r+trend-25",
+    "result": {
+      "drawDate": "28/01/2025",
+      "drawBalls": [
+        9,
+        37,
+        41,
+        42,
+        49
+      ],
+      "drawStars": [
+        1,
+        9
+      ],
+      "matchedBalls": 1,
+      "matchedStars": 1,
+      "rank": 0,
+      "rankLabel": "1+1",
+      "gain": 0,
+      "net": -2.5
+    }
+  },
+  {
+    "generatedAt": "(backtest-weighted70-30+trend25)",
+    "forDrawAfter": "28/01/2025",
+    "balls": [
+      10,
+      19,
+      25,
+      29,
+      42
+    ],
+    "stars": [
+      6,
+      9
+    ],
+    "qualityScore": 0,
+    "strategy": "weighted-20-7a3r+trend-25",
+    "result": {
+      "drawDate": "31/01/2025",
+      "drawBalls": [
+        22,
+        30,
+        41,
+        44,
+        49
+      ],
+      "drawStars": [
+        2,
+        7
+      ],
+      "matchedBalls": 0,
+      "matchedStars": 0,
+      "rank": 0,
+      "rankLabel": "0+0",
+      "gain": 0,
+      "net": -2.5
+    }
+  },
+  {
+    "generatedAt": "(backtest-weighted70-30+trend25)",
+    "forDrawAfter": "31/01/2025",
+    "balls": [
+      19,
+      24,
+      25,
+      29,
+      42
+    ],
+    "stars": [
+      6,
+      9
+    ],
+    "qualityScore": 0,
+    "strategy": "weighted-20-7a3r+trend-25",
+    "result": {
+      "drawDate": "04/02/2025",
+      "drawBalls": [
+        3,
+        4,
+        29,
+        39,
+        43
+      ],
+      "drawStars": [
+        5,
+        10
+      ],
+      "matchedBalls": 1,
+      "matchedStars": 0,
+      "rank": 0,
+      "rankLabel": "1+0",
+      "gain": 0,
+      "net": -2.5
+    }
+  },
+  {
+    "generatedAt": "(backtest-weighted70-30+trend25)",
+    "forDrawAfter": "04/02/2025",
+    "balls": [
+      19,
+      24,
+      25,
+      29,
+      42
+    ],
+    "stars": [
+      6,
+      9
+    ],
+    "qualityScore": 0,
+    "strategy": "weighted-20-7a3r+trend-25",
+    "result": {
+      "drawDate": "07/02/2025",
+      "drawBalls": [
+        10,
+        23,
+        24,
+        29,
+        45
+      ],
+      "drawStars": [
+        8,
+        10
+      ],
+      "matchedBalls": 2,
+      "matchedStars": 0,
+      "rank": 13,
+      "rankLabel": "2+0",
+      "gain": 3.7,
+      "net": 1.2000000000000002
+    }
+  },
+  {
+    "generatedAt": "(backtest-weighted70-30+trend25)",
+    "forDrawAfter": "07/02/2025",
+    "balls": [
+      23,
+      24,
+      25,
+      29,
+      42
+    ],
+    "stars": [
+      8,
+      9
+    ],
+    "qualityScore": 0,
+    "strategy": "weighted-20-7a3r+trend-25",
+    "result": {
+      "drawDate": "11/02/2025",
+      "drawBalls": [
+        3,
+        21,
+        36,
+        41,
+        46
+      ],
+      "drawStars": [
+        1,
+        6
+      ],
+      "matchedBalls": 0,
+      "matchedStars": 0,
+      "rank": 0,
+      "rankLabel": "0+0",
+      "gain": 0,
+      "net": -2.5
+    }
+  },
+  {
+    "generatedAt": "(backtest-weighted70-30+trend25)",
+    "forDrawAfter": "11/02/2025",
+    "balls": [
+      19,
+      24,
+      29,
+      41,
+      42
+    ],
+    "stars": [
+      8,
+      9
+    ],
+    "qualityScore": 0,
+    "strategy": "weighted-20-7a3r+trend-25",
+    "result": {
+      "drawDate": "14/02/2025",
+      "drawBalls": [
+        4,
+        14,
+        31,
+        36,
+        38
+      ],
+      "drawStars": [
+        3,
+        10
+      ],
+      "matchedBalls": 0,
+      "matchedStars": 0,
+      "rank": 0,
+      "rankLabel": "0+0",
+      "gain": 0,
+      "net": -2.5
+    }
+  },
+  {
+    "generatedAt": "(backtest-weighted70-30+trend25)",
+    "forDrawAfter": "14/02/2025",
+    "balls": [
+      19,
+      24,
+      29,
+      41,
+      42
+    ],
+    "stars": [
+      8,
+      9
+    ],
+    "qualityScore": 0,
+    "strategy": "weighted-20-7a3r+trend-25",
+    "result": {
+      "drawDate": "18/02/2025",
+      "drawBalls": [
+        5,
+        14,
+        25,
+        26,
+        40
+      ],
+      "drawStars": [
+        5,
+        7
+      ],
+      "matchedBalls": 0,
+      "matchedStars": 0,
+      "rank": 0,
+      "rankLabel": "0+0",
+      "gain": 0,
+      "net": -2.5
+    }
+  },
+  {
+    "generatedAt": "(backtest-weighted70-30+trend25)",
+    "forDrawAfter": "18/02/2025",
+    "balls": [
+      19,
+      21,
+      29,
+      41,
+      42
+    ],
+    "stars": [
+      5,
+      9
+    ],
+    "qualityScore": 0,
+    "strategy": "weighted-20-7a3r+trend-25",
+    "result": {
+      "drawDate": "21/02/2025",
+      "drawBalls": [
+        1,
+        3,
+        11,
+        20,
+        43
+      ],
+      "drawStars": [
+        2,
+        11
+      ],
+      "matchedBalls": 0,
+      "matchedStars": 0,
+      "rank": 0,
+      "rankLabel": "0+0",
+      "gain": 0,
+      "net": -2.5
+    }
+  },
+  {
+    "generatedAt": "(backtest-weighted70-30+trend25)",
+    "forDrawAfter": "21/02/2025",
+    "balls": [
+      3,
+      19,
+      21,
+      29,
+      41
+    ],
+    "stars": [
+      5,
+      6
+    ],
+    "qualityScore": 0,
+    "strategy": "weighted-20-7a3r+trend-25",
+    "result": {
+      "drawDate": "25/02/2025",
+      "drawBalls": [
+        17,
+        22,
+        23,
+        24,
+        44
+      ],
+      "drawStars": [
+        6,
+        11
+      ],
+      "matchedBalls": 0,
+      "matchedStars": 1,
+      "rank": 0,
+      "rankLabel": "0+1",
+      "gain": 0,
+      "net": -2.5
+    }
+  },
+  {
+    "generatedAt": "(backtest-weighted70-30+trend25)",
+    "forDrawAfter": "25/02/2025",
+    "balls": [
+      19,
+      23,
+      24,
+      29,
+      41
+    ],
+    "stars": [
+      6,
+      8
+    ],
+    "qualityScore": 0,
+    "strategy": "weighted-20-7a3r+trend-25",
+    "result": {
+      "drawDate": "28/02/2025",
+      "drawBalls": [
+        7,
+        16,
+        31,
+        43,
+        46
+      ],
+      "drawStars": [
+        5,
+        9
+      ],
+      "matchedBalls": 0,
+      "matchedStars": 0,
+      "rank": 0,
+      "rankLabel": "0+0",
+      "gain": 0,
+      "net": -2.5
+    }
+  },
+  {
+    "generatedAt": "(backtest-weighted70-30+trend25)",
+    "forDrawAfter": "28/02/2025",
+    "balls": [
+      19,
+      23,
+      24,
+      29,
+      41
+    ],
+    "stars": [
+      5,
+      6
+    ],
+    "qualityScore": 0,
+    "strategy": "weighted-20-7a3r+trend-25",
+    "result": {
+      "drawDate": "04/03/2025",
+      "drawBalls": [
+        15,
+        20,
+        29,
+        35,
+        42
+      ],
+      "drawStars": [
+        2,
+        9
+      ],
+      "matchedBalls": 1,
+      "matchedStars": 0,
+      "rank": 0,
+      "rankLabel": "1+0",
+      "gain": 0,
+      "net": -2.5
+    }
+  },
+  {
+    "generatedAt": "(backtest-weighted70-30+trend25)",
+    "forDrawAfter": "04/03/2025",
+    "balls": [
+      20,
+      29,
+      35,
+      41,
+      42
+    ],
+    "stars": [
+      5,
+      9
+    ],
+    "qualityScore": 0,
+    "strategy": "weighted-20-7a3r+trend-25",
+    "result": {
+      "drawDate": "07/03/2025",
+      "drawBalls": [
+        6,
+        10,
+        27,
+        32,
+        48
+      ],
+      "drawStars": [
+        3,
+        8
+      ],
+      "matchedBalls": 0,
+      "matchedStars": 0,
+      "rank": 0,
+      "rankLabel": "0+0",
+      "gain": 0,
+      "net": -2.5
+    }
+  },
+  {
+    "generatedAt": "(backtest-weighted70-30+trend25)",
+    "forDrawAfter": "07/03/2025",
+    "balls": [
+      20,
+      29,
+      35,
+      41,
+      42
+    ],
+    "stars": [
+      8,
+      9
+    ],
+    "qualityScore": 0,
+    "strategy": "weighted-20-7a3r+trend-25",
+    "result": {
+      "drawDate": "11/03/2025",
+      "drawBalls": [
+        13,
+        36,
+        37,
+        42,
+        47
+      ],
+      "drawStars": [
+        7,
+        11
+      ],
+      "matchedBalls": 1,
+      "matchedStars": 0,
+      "rank": 0,
+      "rankLabel": "1+0",
+      "gain": 0,
+      "net": -2.5
+    }
+  },
+  {
+    "generatedAt": "(backtest-weighted70-30+trend25)",
+    "forDrawAfter": "11/03/2025",
+    "balls": [
+      20,
+      29,
+      37,
+      41,
+      42
+    ],
+    "stars": [
+      8,
+      9
+    ],
+    "qualityScore": 0,
+    "strategy": "weighted-20-7a3r+trend-25",
+    "result": {
+      "drawDate": "14/03/2025",
+      "drawBalls": [
+        8,
+        10,
+        33,
+        35,
+        49
+      ],
+      "drawStars": [
+        2,
+        9
+      ],
+      "matchedBalls": 0,
+      "matchedStars": 1,
+      "rank": 0,
+      "rankLabel": "0+1",
+      "gain": 0,
+      "net": -2.5
+    }
+  },
+  {
+    "generatedAt": "(backtest-weighted70-30+trend25)",
+    "forDrawAfter": "14/03/2025",
+    "balls": [
+      20,
+      29,
+      35,
+      41,
+      42
+    ],
+    "stars": [
+      8,
+      9
+    ],
+    "qualityScore": 0,
+    "strategy": "weighted-20-7a3r+trend-25",
+    "result": {
+      "drawDate": "18/03/2025",
+      "drawBalls": [
+        4,
+        9,
+        35,
+        46,
+        50
+      ],
+      "drawStars": [
+        8,
+        11
+      ],
+      "matchedBalls": 1,
+      "matchedStars": 1,
+      "rank": 0,
+      "rankLabel": "1+1",
+      "gain": 0,
+      "net": -2.5
+    }
+  },
+  {
+    "generatedAt": "(backtest-weighted70-30+trend25)",
+    "forDrawAfter": "18/03/2025",
+    "balls": [
+      10,
+      29,
+      35,
+      42,
+      49
+    ],
+    "stars": [
+      8,
+      9
+    ],
+    "qualityScore": 0,
+    "strategy": "weighted-20-7a3r+trend-25",
+    "result": {
+      "drawDate": "21/03/2025",
+      "drawBalls": [
+        9,
+        17,
+        18,
+        21,
+        50
+      ],
+      "drawStars": [
+        5,
+        12
+      ],
+      "matchedBalls": 0,
+      "matchedStars": 0,
+      "rank": 0,
+      "rankLabel": "0+0",
+      "gain": 0,
+      "net": -2.5
+    }
+  },
+  {
+    "generatedAt": "(backtest-weighted70-30+trend25)",
+    "forDrawAfter": "21/03/2025",
+    "balls": [
+      10,
+      29,
+      35,
+      42,
+      49
+    ],
+    "stars": [
+      5,
+      8
+    ],
+    "qualityScore": 0,
+    "strategy": "weighted-20-7a3r+trend-25",
+    "result": {
+      "drawDate": "25/03/2025",
+      "drawBalls": [
+        1,
+        3,
+        18,
+        33,
+        36
+      ],
+      "drawStars": [
+        2,
+        6
+      ],
+      "matchedBalls": 0,
+      "matchedStars": 0,
+      "rank": 0,
+      "rankLabel": "0+0",
+      "gain": 0,
+      "net": -2.5
+    }
+  },
+  {
+    "generatedAt": "(backtest-weighted70-30+trend25)",
+    "forDrawAfter": "25/03/2025",
+    "balls": [
+      3,
+      29,
+      35,
+      42,
+      49
+    ],
+    "stars": [
+      5,
+      8
+    ],
+    "qualityScore": 0,
+    "strategy": "weighted-20-7a3r+trend-25",
+    "result": {
+      "drawDate": "28/03/2025",
+      "drawBalls": [
+        10,
+        21,
+        30,
+        42,
+        45
+      ],
+      "drawStars": [
+        1,
+        9
+      ],
+      "matchedBalls": 1,
+      "matchedStars": 0,
+      "rank": 0,
+      "rankLabel": "1+0",
+      "gain": 0,
+      "net": -2.5
+    }
+  },
+  {
+    "generatedAt": "(backtest-weighted70-30+trend25)",
+    "forDrawAfter": "28/03/2025",
+    "balls": [
+      3,
+      10,
+      21,
+      42,
+      49
+    ],
+    "stars": [
+      5,
+      9
+    ],
+    "qualityScore": 0,
+    "strategy": "weighted-20-7a3r+trend-25",
+    "result": {
+      "drawDate": "01/04/2025",
+      "drawBalls": [
+        9,
+        24,
+        30,
+        46,
+        49
+      ],
+      "drawStars": [
+        4,
+        12
+      ],
+      "matchedBalls": 1,
+      "matchedStars": 0,
+      "rank": 0,
+      "rankLabel": "1+0",
+      "gain": 0,
+      "net": -2.5
+    }
+  },
+  {
+    "generatedAt": "(backtest-weighted70-30+trend25)",
+    "forDrawAfter": "01/04/2025",
+    "balls": [
+      10,
+      21,
+      30,
+      42,
+      49
+    ],
+    "stars": [
+      5,
+      9
+    ],
+    "qualityScore": 0,
+    "strategy": "weighted-20-7a3r+trend-25",
+    "result": {
+      "drawDate": "04/04/2025",
+      "drawBalls": [
+        27,
+        39,
+        41,
+        45,
+        50
+      ],
+      "drawStars": [
+        5,
+        7
+      ],
+      "matchedBalls": 0,
+      "matchedStars": 1,
+      "rank": 0,
+      "rankLabel": "0+1",
+      "gain": 0,
+      "net": -2.5
+    }
+  },
+  {
+    "generatedAt": "(backtest-weighted70-30+trend25)",
+    "forDrawAfter": "04/04/2025",
+    "balls": [
+      3,
+      10,
+      21,
+      42,
+      49
+    ],
+    "stars": [
+      5,
+      9
+    ],
+    "qualityScore": 0,
+    "strategy": "weighted-20-7a3r+trend-25",
+    "result": {
+      "drawDate": "08/04/2025",
+      "drawBalls": [
+        3,
+        14,
+        15,
+        48,
+        49
+      ],
+      "drawStars": [
+        1,
+        7
+      ],
+      "matchedBalls": 2,
+      "matchedStars": 0,
+      "rank": 13,
+      "rankLabel": "2+0",
+      "gain": 4.3,
+      "net": 1.7999999999999998
+    }
+  },
+  {
+    "generatedAt": "(backtest-weighted70-30+trend25)",
+    "forDrawAfter": "08/04/2025",
+    "balls": [
+      3,
+      10,
+      21,
+      42,
+      50
+    ],
+    "stars": [
+      5,
+      9
+    ],
+    "qualityScore": 0,
+    "strategy": "weighted-20-7a3r+trend-25",
+    "result": {
+      "drawDate": "11/04/2025",
+      "drawBalls": [
+        14,
+        28,
+        34,
+        46,
+        49
+      ],
+      "drawStars": [
+        3,
+        8
+      ],
+      "matchedBalls": 0,
+      "matchedStars": 0,
+      "rank": 0,
+      "rankLabel": "0+0",
+      "gain": 0,
+      "net": -2.5
+    }
+  },
+  {
+    "generatedAt": "(backtest-weighted70-30+trend25)",
+    "forDrawAfter": "11/04/2025",
+    "balls": [
+      3,
+      10,
+      14,
+      21,
+      42
+    ],
+    "stars": [
+      5,
+      8
+    ],
+    "qualityScore": 0,
+    "strategy": "weighted-20-7a3r+trend-25",
+    "result": {
+      "drawDate": "15/04/2025",
+      "drawBalls": [
+        3,
+        31,
+        33,
+        38,
+        44
+      ],
+      "drawStars": [
+        6,
+        12
+      ],
+      "matchedBalls": 1,
+      "matchedStars": 0,
+      "rank": 0,
+      "rankLabel": "1+0",
+      "gain": 0,
+      "net": -2.5
+    }
+  },
+  {
+    "generatedAt": "(backtest-weighted70-30+trend25)",
+    "forDrawAfter": "15/04/2025",
+    "balls": [
+      3,
+      10,
+      14,
+      21,
+      42
+    ],
+    "stars": [
+      2,
+      5
+    ],
+    "qualityScore": 0,
+    "strategy": "weighted-20-7a3r+trend-25",
+    "result": {
+      "drawDate": "18/04/2025",
+      "drawBalls": [
+        20,
+        27,
+        35,
+        39,
+        48
+      ],
+      "drawStars": [
+        3,
+        8
+      ],
+      "matchedBalls": 0,
+      "matchedStars": 0,
+      "rank": 0,
+      "rankLabel": "0+0",
+      "gain": 0,
+      "net": -2.5
+    }
+  },
+  {
+    "generatedAt": "(backtest-weighted70-30+trend25)",
+    "forDrawAfter": "18/04/2025",
+    "balls": [
+      3,
+      14,
+      21,
+      35,
+      42
+    ],
+    "stars": [
+      2,
+      8
+    ],
+    "qualityScore": 0,
+    "strategy": "weighted-20-7a3r+trend-25",
+    "result": {
+      "drawDate": "22/04/2025",
+      "drawBalls": [
+        7,
+        28,
+        33,
+        37,
+        47
+      ],
+      "drawStars": [
+        9,
+        12
+      ],
+      "matchedBalls": 0,
+      "matchedStars": 0,
+      "rank": 0,
+      "rankLabel": "0+0",
+      "gain": 0,
+      "net": -2.5
+    }
+  },
+  {
+    "generatedAt": "(backtest-weighted70-30+trend25)",
+    "forDrawAfter": "22/04/2025",
+    "balls": [
+      3,
+      14,
+      35,
+      42,
+      49
+    ],
+    "stars": [
+      2,
+      9
+    ],
+    "qualityScore": 0,
+    "strategy": "weighted-20-7a3r+trend-25",
+    "result": {
+      "drawDate": "25/04/2025",
+      "drawBalls": [
+        13,
+        22,
+        32,
+        39,
+        41
+      ],
+      "drawStars": [
+        1,
+        12
+      ],
+      "matchedBalls": 0,
+      "matchedStars": 0,
+      "rank": 0,
+      "rankLabel": "0+0",
+      "gain": 0,
+      "net": -2.5
+    }
+  },
+  {
+    "generatedAt": "(backtest-weighted70-30+trend25)",
+    "forDrawAfter": "25/04/2025",
+    "balls": [
+      3,
+      35,
+      42,
+      49,
+      50
+    ],
+    "stars": [
+      2,
+      5
+    ],
+    "qualityScore": 0,
+    "strategy": "weighted-20-7a3r+trend-25",
+    "result": {
+      "drawDate": "29/04/2025",
+      "drawBalls": [
+        2,
+        9,
+        24,
+        30,
+        41
+      ],
+      "drawStars": [
+        1,
+        11
+      ],
+      "matchedBalls": 0,
+      "matchedStars": 0,
+      "rank": 0,
+      "rankLabel": "0+0",
+      "gain": 0,
+      "net": -2.5
+    }
+  },
+  {
+    "generatedAt": "(backtest-weighted70-30+trend25)",
+    "forDrawAfter": "29/04/2025",
+    "balls": [
+      3,
+      35,
+      42,
+      49,
+      50
+    ],
+    "stars": [
+      1,
+      5
+    ],
+    "qualityScore": 0,
+    "strategy": "weighted-20-7a3r+trend-25",
+    "result": {
+      "drawDate": "02/05/2025",
+      "drawBalls": [
+        3,
+        5,
+        19,
+        21,
+        49
+      ],
+      "drawStars": [
+        1,
+        10
+      ],
+      "matchedBalls": 2,
+      "matchedStars": 1,
+      "rank": 12,
+      "rankLabel": "2+1",
+      "gain": 5.5,
+      "net": 3
+    }
+  },
+  {
+    "generatedAt": "(backtest-weighted70-30+trend25)",
+    "forDrawAfter": "02/05/2025",
+    "balls": [
+      21,
+      35,
+      42,
+      49,
+      50
+    ],
+    "stars": [
+      1,
+      8
+    ],
+    "qualityScore": 0,
+    "strategy": "weighted-20-7a3r+trend-25",
+    "result": {
+      "drawDate": "06/05/2025",
+      "drawBalls": [
+        8,
+        23,
+        24,
+        47,
+        48
+      ],
+      "drawStars": [
+        4,
+        9
+      ],
+      "matchedBalls": 0,
+      "matchedStars": 0,
+      "rank": 0,
+      "rankLabel": "0+0",
+      "gain": 0,
+      "net": -2.5
+    }
+  },
+  {
+    "generatedAt": "(backtest-weighted70-30+trend25)",
+    "forDrawAfter": "06/05/2025",
+    "balls": [
+      21,
+      35,
+      42,
+      49,
+      50
+    ],
+    "stars": [
+      1,
+      9
+    ],
+    "qualityScore": 0,
+    "strategy": "weighted-20-7a3r+trend-25",
+    "result": {
+      "drawDate": "09/05/2025",
+      "drawBalls": [
+        15,
+        18,
+        25,
+        29,
+        47
+      ],
+      "drawStars": [
+        5,
+        9
+      ],
+      "matchedBalls": 0,
+      "matchedStars": 1,
+      "rank": 0,
+      "rankLabel": "0+1",
+      "gain": 0,
+      "net": -2.5
+    }
+  },
+  {
+    "generatedAt": "(backtest-weighted70-30+trend25)",
+    "forDrawAfter": "09/05/2025",
+    "balls": [
+      21,
+      35,
+      42,
+      49,
+      50
+    ],
+    "stars": [
+      1,
+      9
+    ],
+    "qualityScore": 0,
+    "strategy": "weighted-20-7a3r+trend-25",
+    "result": {
+      "drawDate": "13/05/2025",
+      "drawBalls": [
+        9,
+        19,
+        44,
+        47,
+        50
+      ],
+      "drawStars": [
+        2,
+        9
+      ],
+      "matchedBalls": 1,
+      "matchedStars": 1,
+      "rank": 0,
+      "rankLabel": "1+1",
+      "gain": 0,
+      "net": -2.5
+    }
+  },
+  {
+    "generatedAt": "(backtest-weighted70-30+trend25)",
+    "forDrawAfter": "13/05/2025",
+    "balls": [
+      9,
+      21,
+      47,
+      49,
+      50
+    ],
+    "stars": [
+      1,
+      9
+    ],
+    "qualityScore": 0,
+    "strategy": "weighted-20-7a3r+trend-25",
+    "result": {
+      "drawDate": "16/05/2025",
+      "drawBalls": [
+        6,
+        9,
+        25,
+        37,
+        46
+      ],
+      "drawStars": [
+        6,
+        12
+      ],
+      "matchedBalls": 1,
+      "matchedStars": 0,
+      "rank": 0,
+      "rankLabel": "1+0",
+      "gain": 0,
+      "net": -2.5
+    }
+  },
+  {
+    "generatedAt": "(backtest-weighted70-30+trend25)",
+    "forDrawAfter": "16/05/2025",
+    "balls": [
+      9,
+      21,
+      47,
+      49,
+      50
+    ],
+    "stars": [
+      9,
+      12
+    ],
+    "qualityScore": 0,
+    "strategy": "weighted-20-7a3r+trend-25",
+    "result": {
+      "drawDate": "20/05/2025",
+      "drawBalls": [
+        1,
+        8,
+        13,
+        29,
+        47
+      ],
+      "drawStars": [
+        5,
+        6
+      ],
+      "matchedBalls": 1,
+      "matchedStars": 0,
+      "rank": 0,
+      "rankLabel": "1+0",
+      "gain": 0,
+      "net": -2.5
+    }
+  },
+  {
+    "generatedAt": "(backtest-weighted70-30+trend25)",
+    "forDrawAfter": "20/05/2025",
+    "balls": [
+      9,
+      21,
+      47,
+      49,
+      50
+    ],
+    "stars": [
+      9,
+      12
+    ],
+    "qualityScore": 0,
+    "strategy": "weighted-20-7a3r+trend-25",
+    "result": {
+      "drawDate": "23/05/2025",
+      "drawBalls": [
+        10,
+        29,
+        43,
+        46,
+        49
+      ],
+      "drawStars": [
+        7,
+        12
+      ],
+      "matchedBalls": 1,
+      "matchedStars": 1,
+      "rank": 0,
+      "rankLabel": "1+1",
+      "gain": 0,
+      "net": -2.5
+    }
+  },
+  {
+    "generatedAt": "(backtest-weighted70-30+trend25)",
+    "forDrawAfter": "23/05/2025",
+    "balls": [
+      9,
+      21,
+      29,
+      49,
+      50
+    ],
+    "stars": [
+      9,
+      12
+    ],
+    "qualityScore": 0,
+    "strategy": "weighted-20-7a3r+trend-25",
+    "result": {
+      "drawDate": "27/05/2025",
+      "drawBalls": [
+        12,
+        30,
+        38,
+        40,
+        41
+      ],
+      "drawStars": [
+        4,
+        12
+      ],
+      "matchedBalls": 0,
+      "matchedStars": 1,
+      "rank": 0,
+      "rankLabel": "0+1",
+      "gain": 0,
+      "net": -2.5
+    }
+  },
+  {
+    "generatedAt": "(backtest-weighted70-30+trend25)",
+    "forDrawAfter": "27/05/2025",
+    "balls": [
+      9,
+      21,
+      30,
+      47,
+      49
+    ],
+    "stars": [
+      9,
+      12
+    ],
+    "qualityScore": 0,
+    "strategy": "weighted-20-7a3r+trend-25",
+    "result": {
+      "drawDate": "30/05/2025",
+      "drawBalls": [
+        4,
+        7,
+        14,
+        33,
+        36
+      ],
+      "drawStars": [
+        1,
+        5
+      ],
+      "matchedBalls": 0,
+      "matchedStars": 0,
+      "rank": 0,
+      "rankLabel": "0+0",
+      "gain": 0,
+      "net": -2.5
+    }
+  },
+  {
+    "generatedAt": "(backtest-weighted70-30+trend25)",
+    "forDrawAfter": "30/05/2025",
+    "balls": [
+      3,
+      29,
+      30,
+      47,
+      49
+    ],
+    "stars": [
+      1,
+      12
+    ],
+    "qualityScore": 0,
+    "strategy": "weighted-20-7a3r+trend-25",
+    "result": {
+      "drawDate": "03/06/2025",
+      "drawBalls": [
+        12,
+        15,
+        38,
+        47,
+        48
+      ],
+      "drawStars": [
+        5,
+        7
+      ],
+      "matchedBalls": 1,
+      "matchedStars": 0,
+      "rank": 0,
+      "rankLabel": "1+0",
+      "gain": 0,
+      "net": -2.5
+    }
+  },
+  {
+    "generatedAt": "(backtest-weighted70-30+trend25)",
+    "forDrawAfter": "03/06/2025",
+    "balls": [
+      29,
+      30,
+      47,
+      48,
+      49
+    ],
+    "stars": [
+      1,
+      12
+    ],
+    "qualityScore": 0,
+    "strategy": "weighted-20-7a3r+trend-25",
+    "result": {
+      "drawDate": "06/06/2025",
+      "drawBalls": [
+        20,
+        21,
+        29,
+        30,
+        35
+      ],
+      "drawStars": [
+        2,
+        12
+      ],
+      "matchedBalls": 2,
+      "matchedStars": 1,
+      "rank": 12,
+      "rankLabel": "2+1",
+      "gain": 5.8,
+      "net": 3.3
+    }
+  },
+  {
+    "generatedAt": "(backtest-weighted70-30+trend25)",
+    "forDrawAfter": "06/06/2025",
+    "balls": [
+      29,
+      30,
+      47,
+      48,
+      49
+    ],
+    "stars": [
+      1,
+      12
+    ],
+    "qualityScore": 0,
+    "strategy": "weighted-20-7a3r+trend-25",
+    "result": {
+      "drawDate": "10/06/2025",
+      "drawBalls": [
+        19,
+        36,
+        39,
+        40,
+        45
+      ],
+      "drawStars": [
+        5,
+        6
+      ],
+      "matchedBalls": 0,
+      "matchedStars": 0,
+      "rank": 0,
+      "rankLabel": "0+0",
+      "gain": 0,
+      "net": -2.5
+    }
+  },
+  {
+    "generatedAt": "(backtest-weighted70-30+trend25)",
+    "forDrawAfter": "10/06/2025",
+    "balls": [
+      19,
+      29,
+      39,
+      47,
+      49
+    ],
+    "stars": [
+      5,
+      12
+    ],
+    "qualityScore": 0,
+    "strategy": "weighted-20-7a3r+trend-25",
+    "result": {
+      "drawDate": "13/06/2025",
+      "drawBalls": [
+        2,
+        28,
+        40,
+        43,
+        45
+      ],
+      "drawStars": [
+        3,
+        7
+      ],
+      "matchedBalls": 0,
+      "matchedStars": 0,
+      "rank": 0,
+      "rankLabel": "0+0",
+      "gain": 0,
+      "net": -2.5
+    }
+  },
+  {
+    "generatedAt": "(backtest-weighted70-30+trend25)",
+    "forDrawAfter": "13/06/2025",
+    "balls": [
+      19,
+      29,
+      47,
+      48,
+      49
+    ],
+    "stars": [
+      5,
+      12
+    ],
+    "qualityScore": 0,
+    "strategy": "weighted-20-7a3r+trend-25",
+    "result": {
+      "drawDate": "17/06/2025",
+      "drawBalls": [
+        13,
+        22,
+        23,
+        44,
+        49
+      ],
+      "drawStars": [
+        3,
+        5
+      ],
+      "matchedBalls": 1,
+      "matchedStars": 1,
+      "rank": 0,
+      "rankLabel": "1+1",
+      "gain": 0,
+      "net": -2.5
+    }
+  },
+  {
+    "generatedAt": "(backtest-weighted70-30+trend25)",
+    "forDrawAfter": "17/06/2025",
+    "balls": [
+      19,
+      29,
+      44,
+      47,
+      49
+    ],
+    "stars": [
+      5,
+      12
+    ],
+    "qualityScore": 0,
+    "strategy": "weighted-20-7a3r+trend-25",
+    "result": {
+      "drawDate": "20/06/2025",
+      "drawBalls": [
+        5,
+        8,
+        24,
+        37,
+        47
+      ],
+      "drawStars": [
+        3,
+        9
+      ],
+      "matchedBalls": 1,
+      "matchedStars": 0,
+      "rank": 0,
+      "rankLabel": "1+0",
+      "gain": 0,
+      "net": -2.5
+    }
+  },
+  {
+    "generatedAt": "(backtest-weighted70-30+trend25)",
+    "forDrawAfter": "20/06/2025",
+    "balls": [
+      19,
+      23,
+      29,
+      44,
+      47
+    ],
+    "stars": [
+      5,
+      12
+    ],
+    "qualityScore": 0,
+    "strategy": "weighted-20-7a3r+trend-25",
+    "result": {
+      "drawDate": "24/06/2025",
+      "drawBalls": [
+        7,
+        16,
+        21,
+        23,
+        39
+      ],
+      "drawStars": [
+        7,
+        11
+      ],
+      "matchedBalls": 1,
+      "matchedStars": 0,
+      "rank": 0,
+      "rankLabel": "1+0",
+      "gain": 0,
+      "net": -2.5
+    }
+  },
+  {
+    "generatedAt": "(backtest-weighted70-30+trend25)",
+    "forDrawAfter": "24/06/2025",
+    "balls": [
+      19,
+      21,
+      23,
+      29,
+      47
+    ],
+    "stars": [
+      5,
+      12
+    ],
+    "qualityScore": 0,
+    "strategy": "weighted-20-7a3r+trend-25",
+    "result": {
+      "drawDate": "27/06/2025",
+      "drawBalls": [
+        19,
+        27,
+        36,
+        45,
+        49
+      ],
+      "drawStars": [
+        7,
+        10
+      ],
+      "matchedBalls": 1,
+      "matchedStars": 0,
+      "rank": 0,
+      "rankLabel": "1+0",
+      "gain": 0,
+      "net": -2.5
+    }
+  },
+  {
+    "generatedAt": "(backtest-weighted70-30+trend25)",
+    "forDrawAfter": "27/06/2025",
+    "balls": [
+      19,
+      21,
+      23,
+      29,
+      47
+    ],
+    "stars": [
+      5,
+      7
+    ],
+    "qualityScore": 0,
+    "strategy": "weighted-20-7a3r+trend-25",
+    "result": {
+      "drawDate": "01/07/2025",
+      "drawBalls": [
+        1,
+        17,
+        28,
+        32,
+        34
+      ],
+      "drawStars": [
+        7,
+        8
+      ],
+      "matchedBalls": 0,
+      "matchedStars": 1,
+      "rank": 0,
+      "rankLabel": "0+1",
+      "gain": 0,
+      "net": -2.5
+    }
+  },
+  {
+    "generatedAt": "(backtest-weighted70-30+trend25)",
+    "forDrawAfter": "01/07/2025",
+    "balls": [
+      19,
+      21,
+      23,
+      29,
+      47
+    ],
+    "stars": [
+      7,
+      12
+    ],
+    "qualityScore": 0,
+    "strategy": "weighted-20-7a3r+trend-25",
+    "result": {
+      "drawDate": "04/07/2025",
+      "drawBalls": [
+        19,
+        29,
+        42,
+        45,
+        48
+      ],
+      "drawStars": [
+        5,
+        7
+      ],
+      "matchedBalls": 2,
+      "matchedStars": 1,
+      "rank": 12,
+      "rankLabel": "2+1",
+      "gain": 5.6,
+      "net": 3.0999999999999996
+    }
+  },
+  {
+    "generatedAt": "(backtest-weighted70-30+trend25)",
+    "forDrawAfter": "04/07/2025",
+    "balls": [
+      19,
+      23,
+      29,
+      45,
+      47
+    ],
+    "stars": [
+      5,
+      7
+    ],
+    "qualityScore": 0,
+    "strategy": "weighted-20-7a3r+trend-25",
+    "result": {
+      "drawDate": "08/07/2025",
+      "drawBalls": [
+        1,
+        8,
+        9,
+        18,
+        50
+      ],
+      "drawStars": [
+        1,
+        5
+      ],
+      "matchedBalls": 0,
+      "matchedStars": 1,
+      "rank": 0,
+      "rankLabel": "0+1",
+      "gain": 0,
+      "net": -2.5
+    }
+  },
+  {
+    "generatedAt": "(backtest-weighted70-30+trend25)",
+    "forDrawAfter": "08/07/2025",
+    "balls": [
+      19,
+      23,
+      29,
+      45,
+      47
+    ],
+    "stars": [
+      5,
+      7
+    ],
+    "qualityScore": 0,
+    "strategy": "weighted-20-7a3r+trend-25",
+    "result": {
+      "drawDate": "11/07/2025",
+      "drawBalls": [
+        8,
+        23,
+        24,
+        45,
+        49
+      ],
+      "drawStars": [
+        2,
+        10
+      ],
+      "matchedBalls": 2,
+      "matchedStars": 0,
+      "rank": 13,
+      "rankLabel": "2+0",
+      "gain": 3.9,
+      "net": 1.4
+    }
+  },
+  {
+    "generatedAt": "(backtest-weighted70-30+trend25)",
+    "forDrawAfter": "11/07/2025",
+    "balls": [
+      19,
+      23,
+      29,
+      45,
+      47
+    ],
+    "stars": [
+      5,
+      7
+    ],
+    "qualityScore": 0,
+    "strategy": "weighted-20-7a3r+trend-25",
+    "result": {
+      "drawDate": "15/07/2025",
+      "drawBalls": [
+        24,
+        38,
+        41,
+        45,
+        49
+      ],
+      "drawStars": [
+        1,
+        6
+      ],
+      "matchedBalls": 1,
+      "matchedStars": 0,
+      "rank": 0,
+      "rankLabel": "1+0",
+      "gain": 0,
+      "net": -2.5
+    }
+  },
+  {
+    "generatedAt": "(backtest-weighted70-30+trend25)",
+    "forDrawAfter": "15/07/2025",
+    "balls": [
+      19,
+      23,
+      29,
+      45,
+      49
+    ],
+    "stars": [
+      5,
+      7
+    ],
+    "qualityScore": 0,
+    "strategy": "weighted-20-7a3r+trend-25",
+    "result": {
+      "drawDate": "18/07/2025",
+      "drawBalls": [
+        13,
+        19,
+        25,
+        42,
+        45
+      ],
+      "drawStars": [
+        2,
+        9
+      ],
+      "matchedBalls": 2,
+      "matchedStars": 0,
+      "rank": 13,
+      "rankLabel": "2+0",
+      "gain": 3.8,
+      "net": 1.2999999999999998
+    }
+  },
+  {
+    "generatedAt": "(backtest-weighted70-30+trend25)",
+    "forDrawAfter": "18/07/2025",
+    "balls": [
+      19,
+      23,
+      29,
+      45,
+      49
+    ],
+    "stars": [
+      5,
+      7
+    ],
+    "qualityScore": 0,
+    "strategy": "weighted-20-7a3r+trend-25",
+    "result": {
+      "drawDate": "22/07/2025",
+      "drawBalls": [
+        8,
+        15,
+        26,
+        33,
+        41
+      ],
+      "drawStars": [
+        9,
+        10
+      ],
+      "matchedBalls": 0,
+      "matchedStars": 0,
+      "rank": 0,
+      "rankLabel": "0+0",
+      "gain": 0,
+      "net": -2.5
+    }
+  },
+  {
+    "generatedAt": "(backtest-weighted70-30+trend25)",
+    "forDrawAfter": "22/07/2025",
+    "balls": [
+      19,
+      23,
+      29,
+      45,
+      49
+    ],
+    "stars": [
+      5,
+      7
+    ],
+    "qualityScore": 0,
+    "strategy": "weighted-20-7a3r+trend-25",
+    "result": {
+      "drawDate": "25/07/2025",
+      "drawBalls": [
+        6,
+        7,
+        23,
+        32,
+        36
+      ],
+      "drawStars": [
+        11,
+        12
+      ],
+      "matchedBalls": 1,
+      "matchedStars": 0,
+      "rank": 0,
+      "rankLabel": "1+0",
+      "gain": 0,
+      "net": -2.5
+    }
+  },
+  {
+    "generatedAt": "(backtest-weighted70-30+trend25)",
+    "forDrawAfter": "25/07/2025",
+    "balls": [
+      19,
+      23,
+      29,
+      45,
+      49
+    ],
+    "stars": [
+      5,
+      7
+    ],
+    "qualityScore": 0,
+    "strategy": "weighted-20-7a3r+trend-25",
+    "result": {
+      "drawDate": "29/07/2025",
+      "drawBalls": [
+        5,
+        6,
+        42,
+        44,
+        46
+      ],
+      "drawStars": [
+        4,
+        8
+      ],
+      "matchedBalls": 0,
+      "matchedStars": 0,
+      "rank": 0,
+      "rankLabel": "0+0",
+      "gain": 0,
+      "net": -2.5
+    }
+  },
+  {
+    "generatedAt": "(backtest-weighted70-30+trend25)",
+    "forDrawAfter": "29/07/2025",
+    "balls": [
+      19,
+      23,
+      42,
+      45,
+      49
+    ],
+    "stars": [
+      5,
+      7
+    ],
+    "qualityScore": 0,
+    "strategy": "weighted-20-7a3r+trend-25",
+    "result": {
+      "drawDate": "01/08/2025",
+      "drawBalls": [
+        4,
+        16,
+        25,
+        29,
+        30
+      ],
+      "drawStars": [
+        2,
+        10
+      ],
+      "matchedBalls": 0,
+      "matchedStars": 0,
+      "rank": 0,
+      "rankLabel": "0+0",
+      "gain": 0,
+      "net": -2.5
+    }
+  },
+  {
+    "generatedAt": "(backtest-weighted70-30+trend25)",
+    "forDrawAfter": "01/08/2025",
+    "balls": [
+      19,
+      23,
+      29,
+      42,
+      45
+    ],
+    "stars": [
+      5,
+      7
+    ],
+    "qualityScore": 0,
+    "strategy": "weighted-20-7a3r+trend-25",
+    "result": {
+      "drawDate": "05/08/2025",
+      "drawBalls": [
+        1,
+        3,
+        5,
+        42,
+        47
+      ],
+      "drawStars": [
+        5,
+        10
+      ],
+      "matchedBalls": 1,
+      "matchedStars": 1,
+      "rank": 0,
+      "rankLabel": "1+1",
+      "gain": 0,
+      "net": -2.5
+    }
+  },
+  {
+    "generatedAt": "(backtest-weighted70-30+trend25)",
+    "forDrawAfter": "05/08/2025",
+    "balls": [
+      19,
+      23,
+      29,
+      42,
+      45
+    ],
+    "stars": [
+      5,
+      7
+    ],
+    "qualityScore": 0,
+    "strategy": "weighted-20-7a3r+trend-25",
+    "result": {
+      "drawDate": "08/08/2025",
+      "drawBalls": [
+        2,
+        12,
+        19,
+        34,
+        44
+      ],
+      "drawStars": [
+        6,
+        10
+      ],
+      "matchedBalls": 1,
+      "matchedStars": 0,
+      "rank": 0,
+      "rankLabel": "1+0",
+      "gain": 0,
+      "net": -2.5
+    }
+  },
+  {
+    "generatedAt": "(backtest-weighted70-30+trend25)",
+    "forDrawAfter": "08/08/2025",
+    "balls": [
+      19,
+      23,
+      42,
+      44,
+      45
+    ],
+    "stars": [
+      5,
+      7
+    ],
+    "qualityScore": 0,
+    "strategy": "weighted-20-7a3r+trend-25",
+    "result": {
+      "drawDate": "12/08/2025",
+      "drawBalls": [
+        18,
+        28,
+        42,
+        46,
+        48
+      ],
+      "drawStars": [
+        3,
+        9
+      ],
+      "matchedBalls": 1,
+      "matchedStars": 0,
+      "rank": 0,
+      "rankLabel": "1+0",
+      "gain": 0,
+      "net": -2.5
+    }
+  },
+  {
+    "generatedAt": "(backtest-weighted70-30+trend25)",
+    "forDrawAfter": "12/08/2025",
+    "balls": [
+      19,
+      23,
+      42,
+      44,
+      45
+    ],
+    "stars": [
+      5,
+      7
+    ],
+    "qualityScore": 0,
+    "strategy": "weighted-20-7a3r+trend-25",
+    "result": {
+      "drawDate": "15/08/2025",
+      "drawBalls": [
+        13,
+        30,
+        35,
+        36,
+        40
+      ],
+      "drawStars": [
+        2,
+        6
+      ],
+      "matchedBalls": 0,
+      "matchedStars": 0,
+      "rank": 0,
+      "rankLabel": "0+0",
+      "gain": 0,
+      "net": -2.5
+    }
+  },
+  {
+    "generatedAt": "(backtest-weighted70-30+trend25)",
+    "forDrawAfter": "15/08/2025",
+    "balls": [
+      19,
+      23,
+      42,
+      44,
+      45
+    ],
+    "stars": [
+      5,
+      7
+    ],
+    "qualityScore": 0,
+    "strategy": "weighted-20-7a3r+trend-25",
+    "result": {
+      "drawDate": "19/08/2025",
+      "drawBalls": [
+        24,
+        31,
+        34,
+        41,
+        43
+      ],
+      "drawStars": [
+        6,
+        8
+      ],
+      "matchedBalls": 0,
+      "matchedStars": 0,
+      "rank": 0,
+      "rankLabel": "0+0",
+      "gain": 0,
+      "net": -2.5
+    }
+  },
+  {
+    "generatedAt": "(backtest-weighted70-30+trend25)",
+    "forDrawAfter": "19/08/2025",
+    "balls": [
+      19,
+      23,
+      42,
+      44,
+      45
+    ],
+    "stars": [
+      5,
+      7
+    ],
+    "qualityScore": 0,
+    "strategy": "weighted-20-7a3r+trend-25",
+    "result": {
+      "drawDate": "22/08/2025",
+      "drawBalls": [
+        6,
+        9,
+        12,
+        30,
+        39
+      ],
+      "drawStars": [
+        4,
+        10
+      ],
+      "matchedBalls": 0,
+      "matchedStars": 0,
+      "rank": 0,
+      "rankLabel": "0+0",
+      "gain": 0,
+      "net": -2.5
+    }
+  },
+  {
+    "generatedAt": "(backtest-weighted70-30+trend25)",
+    "forDrawAfter": "22/08/2025",
+    "balls": [
+      19,
+      23,
+      42,
+      44,
+      45
+    ],
+    "stars": [
+      5,
+      10
+    ],
+    "qualityScore": 0,
+    "strategy": "weighted-20-7a3r+trend-25",
+    "result": {
+      "drawDate": "26/08/2025",
+      "drawBalls": [
+        2,
+        14,
+        38,
+        42,
+        45
+      ],
+      "drawStars": [
+        10,
+        11
+      ],
+      "matchedBalls": 2,
+      "matchedStars": 1,
+      "rank": 12,
+      "rankLabel": "2+1",
+      "gain": 6.8,
+      "net": 4.3
+    }
+  },
+  {
+    "generatedAt": "(backtest-weighted70-30+trend25)",
+    "forDrawAfter": "26/08/2025",
+    "balls": [
+      19,
+      23,
+      24,
+      42,
+      45
+    ],
+    "stars": [
+      5,
+      10
+    ],
+    "qualityScore": 0,
+    "strategy": "weighted-20-7a3r+trend-25",
+    "result": {
+      "drawDate": "29/08/2025",
+      "drawBalls": [
+        6,
+        9,
+        10,
+        13,
+        37
+      ],
+      "drawStars": [
+        1,
+        7
+      ],
+      "matchedBalls": 0,
+      "matchedStars": 0,
+      "rank": 0,
+      "rankLabel": "0+0",
+      "gain": 0,
+      "net": -2.5
+    }
+  },
+  {
+    "generatedAt": "(backtest-weighted70-30+trend25)",
+    "forDrawAfter": "29/08/2025",
+    "balls": [
+      6,
+      19,
+      23,
+      42,
+      45
+    ],
+    "stars": [
+      7,
+      10
+    ],
+    "qualityScore": 0,
+    "strategy": "weighted-20-7a3r+trend-25",
+    "result": {
+      "drawDate": "02/09/2025",
+      "drawBalls": [
+        13,
+        30,
+        31,
+        32,
+        36
+      ],
+      "drawStars": [
+        1,
+        12
+      ],
+      "matchedBalls": 0,
+      "matchedStars": 0,
+      "rank": 0,
+      "rankLabel": "0+0",
+      "gain": 0,
+      "net": -2.5
+    }
+  },
+  {
+    "generatedAt": "(backtest-weighted70-30+trend25)",
+    "forDrawAfter": "02/09/2025",
+    "balls": [
+      13,
+      19,
+      30,
+      42,
+      45
+    ],
+    "stars": [
+      7,
+      10
+    ],
+    "qualityScore": 0,
+    "strategy": "weighted-20-7a3r+trend-25",
+    "result": {
+      "drawDate": "05/09/2025",
+      "drawBalls": [
+        27,
+        30,
+        31,
+        41,
+        43
+      ],
+      "drawStars": [
+        5,
+        8
+      ],
+      "matchedBalls": 1,
+      "matchedStars": 0,
+      "rank": 0,
+      "rankLabel": "1+0",
+      "gain": 0,
+      "net": -2.5
+    }
+  },
+  {
+    "generatedAt": "(backtest-weighted70-30+trend25)",
+    "forDrawAfter": "05/09/2025",
+    "balls": [
+      13,
+      19,
+      30,
+      42,
+      45
+    ],
+    "stars": [
+      7,
+      10
+    ],
+    "qualityScore": 0,
+    "strategy": "weighted-20-7a3r+trend-25",
+    "result": {
+      "drawDate": "09/09/2025",
+      "drawBalls": [
+        3,
+        13,
+        24,
+        39,
+        40
+      ],
+      "drawStars": [
+        2,
+        8
+      ],
+      "matchedBalls": 1,
+      "matchedStars": 0,
+      "rank": 0,
+      "rankLabel": "1+0",
+      "gain": 0,
+      "net": -2.5
+    }
+  },
+  {
+    "generatedAt": "(backtest-weighted70-30+trend25)",
+    "forDrawAfter": "09/09/2025",
+    "balls": [
+      13,
+      19,
+      30,
+      42,
+      45
+    ],
+    "stars": [
+      2,
+      10
+    ],
+    "qualityScore": 0,
+    "strategy": "weighted-20-7a3r+trend-25",
+    "result": {
+      "drawDate": "12/09/2025",
+      "drawBalls": [
+        5,
+        10,
+        23,
+        31,
+        37
+      ],
+      "drawStars": [
+        3,
+        11
+      ],
+      "matchedBalls": 0,
+      "matchedStars": 0,
+      "rank": 0,
+      "rankLabel": "0+0",
+      "gain": 0,
+      "net": -2.5
+    }
+  },
+  {
+    "generatedAt": "(backtest-weighted70-30+trend25)",
+    "forDrawAfter": "12/09/2025",
+    "balls": [
+      13,
+      23,
+      30,
+      42,
+      45
+    ],
+    "stars": [
+      2,
+      10
+    ],
+    "qualityScore": 0,
+    "strategy": "weighted-20-7a3r+trend-25",
+    "result": {
+      "drawDate": "16/09/2025",
+      "drawBalls": [
+        1,
+        9,
+        13,
+        35,
+        40
+      ],
+      "drawStars": [
+        5,
+        6
+      ],
+      "matchedBalls": 1,
+      "matchedStars": 0,
+      "rank": 0,
+      "rankLabel": "1+0",
+      "gain": 0,
+      "net": -2.5
+    }
+  },
+  {
+    "generatedAt": "(backtest-weighted70-30+trend25)",
+    "forDrawAfter": "16/09/2025",
+    "balls": [
+      13,
+      23,
+      30,
+      42,
+      45
+    ],
+    "stars": [
+      2,
+      10
+    ],
+    "qualityScore": 0,
+    "strategy": "weighted-20-7a3r+trend-25",
+    "result": {
+      "drawDate": "19/09/2025",
+      "drawBalls": [
+        8,
+        10,
+        26,
+        32,
+        42
+      ],
+      "drawStars": [
+        9,
+        12
+      ],
+      "matchedBalls": 1,
+      "matchedStars": 0,
+      "rank": 0,
+      "rankLabel": "1+0",
+      "gain": 0,
+      "net": -2.5
+    }
+  },
+  {
+    "generatedAt": "(backtest-weighted70-30+trend25)",
+    "forDrawAfter": "19/09/2025",
+    "balls": [
+      10,
+      13,
+      23,
+      30,
+      42
+    ],
+    "stars": [
+      2,
+      10
+    ],
+    "qualityScore": 0,
+    "strategy": "weighted-20-7a3r+trend-25",
+    "result": {
+      "drawDate": "23/09/2025",
+      "drawBalls": [
+        11,
+        13,
+        24,
+        29,
+        33
+      ],
+      "drawStars": [
+        2,
+        5
+      ],
+      "matchedBalls": 1,
+      "matchedStars": 1,
+      "rank": 0,
+      "rankLabel": "1+1",
+      "gain": 0,
+      "net": -2.5
+    }
+  },
+  {
+    "generatedAt": "(backtest-weighted70-30+trend25)",
+    "forDrawAfter": "23/09/2025",
+    "balls": [
+      10,
+      13,
+      23,
+      30,
+      42
+    ],
+    "stars": [
+      2,
+      10
+    ],
+    "qualityScore": 0,
+    "strategy": "weighted-20-7a3r+trend-25",
+    "result": {
+      "drawDate": "26/09/2025",
+      "drawBalls": [
+        4,
+        17,
+        25,
+        28,
+        44
+      ],
+      "drawStars": [
+        5,
+        11
+      ],
+      "matchedBalls": 0,
+      "matchedStars": 0,
+      "rank": 0,
+      "rankLabel": "0+0",
+      "gain": 0,
+      "net": -2.5
+    }
+  },
+  {
+    "generatedAt": "(backtest-weighted70-30+trend25)",
+    "forDrawAfter": "26/09/2025",
+    "balls": [
+      10,
+      13,
+      30,
+      42,
+      44
+    ],
+    "stars": [
+      5,
+      10
+    ],
+    "qualityScore": 0,
+    "strategy": "weighted-20-7a3r+trend-25",
+    "result": {
+      "drawDate": "30/09/2025",
+      "drawBalls": [
+        3,
+        8,
+        15,
+        17,
+        48
+      ],
+      "drawStars": [
+        2,
+        8
+      ],
+      "matchedBalls": 0,
+      "matchedStars": 0,
+      "rank": 0,
+      "rankLabel": "0+0",
+      "gain": 0,
+      "net": -2.5
+    }
+  },
+  {
+    "generatedAt": "(backtest-weighted70-30+trend25)",
+    "forDrawAfter": "30/09/2025",
+    "balls": [
+      10,
+      13,
+      30,
+      42,
+      44
+    ],
+    "stars": [
+      2,
+      10
+    ],
+    "qualityScore": 0,
+    "strategy": "weighted-20-7a3r+trend-25",
+    "result": {
+      "drawDate": "03/10/2025",
+      "drawBalls": [
+        6,
+        12,
+        18,
+        25,
+        41
+      ],
+      "drawStars": [
+        2,
+        6
+      ],
+      "matchedBalls": 0,
+      "matchedStars": 1,
+      "rank": 0,
+      "rankLabel": "0+1",
+      "gain": 0,
+      "net": -2.5
+    }
+  },
+  {
+    "generatedAt": "(backtest-weighted70-30+trend25)",
+    "forDrawAfter": "03/10/2025",
+    "balls": [
+      10,
+      13,
+      30,
+      42,
+      44
+    ],
+    "stars": [
+      2,
+      10
+    ],
+    "qualityScore": 0,
+    "strategy": "weighted-20-7a3r+trend-25",
+    "result": {
+      "drawDate": "07/10/2025",
+      "drawBalls": [
+        24,
+        39,
+        42,
+        43,
+        48
+      ],
+      "drawStars": [
+        5,
+        8
+      ],
+      "matchedBalls": 1,
+      "matchedStars": 0,
+      "rank": 0,
+      "rankLabel": "1+0",
+      "gain": 0,
+      "net": -2.5
+    }
+  },
+  {
+    "generatedAt": "(backtest-weighted70-30+trend25)",
+    "forDrawAfter": "07/10/2025",
+    "balls": [
+      10,
+      13,
+      24,
+      30,
+      42
+    ],
+    "stars": [
+      2,
+      5
+    ],
+    "qualityScore": 0,
+    "strategy": "weighted-20-7a3r+trend-25",
+    "result": {
+      "drawDate": "10/10/2025",
+      "drawBalls": [
+        6,
+        7,
+        17,
+        20,
+        21
+      ],
+      "drawStars": [
+        1,
+        10
+      ],
+      "matchedBalls": 0,
+      "matchedStars": 0,
+      "rank": 0,
+      "rankLabel": "0+0",
+      "gain": 0,
+      "net": -2.5
+    }
+  },
+  {
+    "generatedAt": "(backtest-weighted70-30+trend25)",
+    "forDrawAfter": "10/10/2025",
+    "balls": [
+      10,
+      13,
+      24,
+      30,
+      42
+    ],
+    "stars": [
+      2,
+      10
+    ],
+    "qualityScore": 0,
+    "strategy": "weighted-20-7a3r+trend-25",
+    "result": {
+      "drawDate": "14/10/2025",
+      "drawBalls": [
+        5,
+        8,
+        14,
+        16,
+        18
+      ],
+      "drawStars": [
+        3,
+        10
+      ],
+      "matchedBalls": 0,
+      "matchedStars": 1,
+      "rank": 0,
+      "rankLabel": "0+1",
+      "gain": 0,
+      "net": -2.5
+    }
+  },
+  {
+    "generatedAt": "(backtest-weighted70-30+trend25)",
+    "forDrawAfter": "14/10/2025",
+    "balls": [
+      10,
+      13,
+      24,
+      30,
+      42
+    ],
+    "stars": [
+      2,
+      10
+    ],
+    "qualityScore": 0,
+    "strategy": "weighted-20-7a3r+trend-25",
+    "result": {
+      "drawDate": "17/10/2025",
+      "drawBalls": [
+        13,
+        35,
+        39,
+        44,
+        47
+      ],
+      "drawStars": [
+        3,
+        5
+      ],
+      "matchedBalls": 1,
+      "matchedStars": 0,
+      "rank": 0,
+      "rankLabel": "1+0",
+      "gain": 0,
+      "net": -2.5
+    }
+  },
+  {
+    "generatedAt": "(backtest-weighted70-30+trend25)",
+    "forDrawAfter": "17/10/2025",
+    "balls": [
+      10,
+      13,
+      24,
+      30,
+      42
+    ],
+    "stars": [
+      5,
+      10
+    ],
+    "qualityScore": 0,
+    "strategy": "weighted-20-7a3r+trend-25",
+    "result": {
+      "drawDate": "21/10/2025",
+      "drawBalls": [
+        5,
+        24,
+        29,
+        40,
+        42
+      ],
+      "drawStars": [
+        6,
+        12
+      ],
+      "matchedBalls": 2,
+      "matchedStars": 0,
+      "rank": 13,
+      "rankLabel": "2+0",
+      "gain": 3.9,
+      "net": 1.4
+    }
+  },
+  {
+    "generatedAt": "(backtest-weighted70-30+trend25)",
+    "forDrawAfter": "21/10/2025",
+    "balls": [
+      10,
+      13,
+      24,
+      30,
+      42
+    ],
+    "stars": [
+      5,
+      10
+    ],
+    "qualityScore": 0,
+    "strategy": "weighted-20-7a3r+trend-25",
+    "result": {
+      "drawDate": "24/10/2025",
+      "drawBalls": [
+        7,
+        8,
+        25,
+        31,
+        45
+      ],
+      "drawStars": [
+        7,
+        12
+      ],
+      "matchedBalls": 0,
+      "matchedStars": 0,
+      "rank": 0,
+      "rankLabel": "0+0",
+      "gain": 0,
+      "net": -2.5
+    }
+  },
+  {
+    "generatedAt": "(backtest-weighted70-30+trend25)",
+    "forDrawAfter": "24/10/2025",
+    "balls": [
+      10,
+      13,
+      24,
+      31,
+      42
+    ],
+    "stars": [
+      5,
+      10
+    ],
+    "qualityScore": 0,
+    "strategy": "weighted-20-7a3r+trend-25",
+    "result": {
+      "drawDate": "28/10/2025",
+      "drawBalls": [
+        7,
+        8,
+        24,
+        35,
+        49
+      ],
+      "drawStars": [
+        2,
+        12
+      ],
+      "matchedBalls": 1,
+      "matchedStars": 0,
+      "rank": 0,
+      "rankLabel": "1+0",
+      "gain": 0,
+      "net": -2.5
+    }
+  },
+  {
+    "generatedAt": "(backtest-weighted70-30+trend25)",
+    "forDrawAfter": "28/10/2025",
+    "balls": [
+      8,
+      10,
+      13,
+      24,
+      42
+    ],
+    "stars": [
+      2,
+      5
+    ],
+    "qualityScore": 0,
+    "strategy": "weighted-20-7a3r+trend-25",
+    "result": {
+      "drawDate": "31/10/2025",
+      "drawBalls": [
+        5,
+        14,
+        38,
+        43,
+        45
+      ],
+      "drawStars": [
+        7,
+        11
+      ],
+      "matchedBalls": 0,
+      "matchedStars": 0,
+      "rank": 0,
+      "rankLabel": "0+0",
+      "gain": 0,
+      "net": -2.5
+    }
+  },
+  {
+    "generatedAt": "(backtest-weighted70-30+trend25)",
+    "forDrawAfter": "31/10/2025",
+    "balls": [
+      5,
+      8,
+      13,
+      24,
+      42
+    ],
+    "stars": [
+      2,
+      5
+    ],
+    "qualityScore": 0,
+    "strategy": "weighted-20-7a3r+trend-25",
+    "result": {
+      "drawDate": "04/11/2025",
+      "drawBalls": [
+        6,
+        9,
+        25,
+        28,
+        45
+      ],
+      "drawStars": [
+        1,
+        4
+      ],
+      "matchedBalls": 0,
+      "matchedStars": 0,
+      "rank": 0,
+      "rankLabel": "0+0",
+      "gain": 0,
+      "net": -2.5
+    }
+  },
+  {
+    "generatedAt": "(backtest-weighted70-30+trend25)",
+    "forDrawAfter": "04/11/2025",
+    "balls": [
+      8,
+      13,
+      24,
+      25,
+      42
+    ],
+    "stars": [
+      2,
+      5
+    ],
+    "qualityScore": 0,
+    "strategy": "weighted-20-7a3r+trend-25",
+    "result": {
+      "drawDate": "07/11/2025",
+      "drawBalls": [
+        11,
+        21,
+        39,
+        40,
+        43
+      ],
+      "drawStars": [
+        2,
+        8
+      ],
+      "matchedBalls": 0,
+      "matchedStars": 1,
+      "rank": 0,
+      "rankLabel": "0+1",
+      "gain": 0,
+      "net": -2.5
+    }
+  },
+  {
+    "generatedAt": "(backtest-weighted70-30+trend25)",
+    "forDrawAfter": "07/11/2025",
+    "balls": [
+      8,
+      13,
+      24,
+      25,
+      42
+    ],
+    "stars": [
+      2,
+      5
+    ],
+    "qualityScore": 0,
+    "strategy": "weighted-20-7a3r+trend-25",
+    "result": {
+      "drawDate": "11/11/2025",
+      "drawBalls": [
+        4,
+        22,
+        32,
+        36,
+        47
+      ],
+      "drawStars": [
+        2,
+        10
+      ],
+      "matchedBalls": 0,
+      "matchedStars": 1,
+      "rank": 0,
+      "rankLabel": "0+1",
+      "gain": 0,
+      "net": -2.5
+    }
+  },
+  {
+    "generatedAt": "(backtest-weighted70-30+trend25)",
+    "forDrawAfter": "11/11/2025",
+    "balls": [
+      8,
+      13,
+      24,
+      25,
+      42
+    ],
+    "stars": [
+      2,
+      5
+    ],
+    "qualityScore": 0,
+    "strategy": "weighted-20-7a3r+trend-25",
+    "result": {
+      "drawDate": "14/11/2025",
+      "drawBalls": [
+        9,
+        26,
+        27,
+        45,
+        48
+      ],
+      "drawStars": [
+        8,
+        9
+      ],
+      "matchedBalls": 0,
+      "matchedStars": 0,
+      "rank": 0,
+      "rankLabel": "0+0",
+      "gain": 0,
+      "net": -2.5
+    }
+  },
+  {
+    "generatedAt": "(backtest-weighted70-30+trend25)",
+    "forDrawAfter": "14/11/2025",
+    "balls": [
+      8,
+      24,
+      25,
+      42,
+      45
+    ],
+    "stars": [
+      2,
+      5
+    ],
+    "qualityScore": 0,
+    "strategy": "weighted-20-7a3r+trend-25",
+    "result": {
+      "drawDate": "18/11/2025",
+      "drawBalls": [
+        2,
+        4,
+        15,
+        21,
+        48
+      ],
+      "drawStars": [
+        6,
+        12
+      ],
+      "matchedBalls": 0,
+      "matchedStars": 0,
+      "rank": 0,
+      "rankLabel": "0+0",
+      "gain": 0,
+      "net": -2.5
+    }
+  },
+  {
+    "generatedAt": "(backtest-weighted70-30+trend25)",
+    "forDrawAfter": "18/11/2025",
+    "balls": [
+      8,
+      24,
+      25,
+      42,
+      45
+    ],
+    "stars": [
+      2,
+      5
+    ],
+    "qualityScore": 0,
+    "strategy": "weighted-20-7a3r+trend-25",
+    "result": {
+      "drawDate": "21/11/2025",
+      "drawBalls": [
+        17,
+        19,
+        29,
+        35,
+        48
+      ],
+      "drawStars": [
+        5,
+        9
+      ],
+      "matchedBalls": 0,
+      "matchedStars": 1,
+      "rank": 0,
+      "rankLabel": "0+1",
+      "gain": 0,
+      "net": -2.5
+    }
+  },
+  {
+    "generatedAt": "(backtest-weighted70-30+trend25)",
+    "forDrawAfter": "21/11/2025",
+    "balls": [
+      17,
+      25,
+      35,
+      45,
+      48
+    ],
+    "stars": [
+      2,
+      5
+    ],
+    "qualityScore": 0,
+    "strategy": "weighted-20-7a3r+trend-25",
+    "result": {
+      "drawDate": "25/11/2025",
+      "drawBalls": [
+        6,
+        11,
+        17,
+        35,
+        44
+      ],
+      "drawStars": [
+        3,
+        7
+      ],
+      "matchedBalls": 2,
+      "matchedStars": 0,
+      "rank": 13,
+      "rankLabel": "2+0",
+      "gain": 4,
+      "net": 1.5
+    }
+  },
+  {
+    "generatedAt": "(backtest-weighted70-30+trend25)",
+    "forDrawAfter": "25/11/2025",
+    "balls": [
+      17,
+      25,
+      35,
+      45,
+      48
+    ],
+    "stars": [
+      2,
+      5
+    ],
+    "qualityScore": 0,
+    "strategy": "weighted-20-7a3r+trend-25",
+    "result": {
+      "drawDate": "28/11/2025",
+      "drawBalls": [
+        5,
+        29,
+        33,
+        39,
+        42
+      ],
+      "drawStars": [
+        3,
+        9
+      ],
+      "matchedBalls": 0,
+      "matchedStars": 0,
+      "rank": 0,
+      "rankLabel": "0+0",
+      "gain": 0,
+      "net": -2.5
+    }
+  },
+  {
+    "generatedAt": "(backtest-weighted70-30+trend25)",
+    "forDrawAfter": "28/11/2025",
+    "balls": [
+      17,
+      25,
+      29,
+      45,
+      48
+    ],
+    "stars": [
+      2,
+      5
+    ],
+    "qualityScore": 0,
+    "strategy": "weighted-20-7a3r+trend-25",
+    "result": {
+      "drawDate": "02/12/2025",
+      "drawBalls": [
+        4,
+        13,
+        14,
+        20,
+        41
+      ],
+      "drawStars": [
+        6,
+        12
+      ],
+      "matchedBalls": 0,
+      "matchedStars": 0,
+      "rank": 0,
+      "rankLabel": "0+0",
+      "gain": 0,
+      "net": -2.5
+    }
+  },
+  {
+    "generatedAt": "(backtest-weighted70-30+trend25)",
+    "forDrawAfter": "02/12/2025",
+    "balls": [
+      17,
+      25,
+      35,
+      45,
+      48
+    ],
+    "stars": [
+      2,
+      5
+    ],
+    "qualityScore": 0,
+    "strategy": "weighted-20-7a3r+trend-25",
+    "result": {
+      "drawDate": "05/12/2025",
+      "drawBalls": [
+        9,
+        15,
+        25,
+        34,
+        46
+      ],
+      "drawStars": [
+        8,
+        12
+      ],
+      "matchedBalls": 1,
+      "matchedStars": 0,
+      "rank": 0,
+      "rankLabel": "1+0",
+      "gain": 0,
+      "net": -2.5
+    }
+  },
+  {
+    "generatedAt": "(backtest-weighted70-30+trend25)",
+    "forDrawAfter": "05/12/2025",
+    "balls": [
+      17,
+      25,
+      35,
+      45,
+      48
+    ],
+    "stars": [
+      2,
+      12
+    ],
+    "qualityScore": 0,
+    "strategy": "weighted-20-7a3r+trend-25",
+    "result": {
+      "drawDate": "09/12/2025",
+      "drawBalls": [
+        2,
+        8,
+        13,
+        29,
+        49
+      ],
+      "drawStars": [
+        2,
+        11
+      ],
+      "matchedBalls": 0,
+      "matchedStars": 1,
+      "rank": 0,
+      "rankLabel": "0+1",
+      "gain": 0,
+      "net": -2.5
+    }
+  },
+  {
+    "generatedAt": "(backtest-weighted70-30+trend25)",
+    "forDrawAfter": "09/12/2025",
+    "balls": [
+      5,
+      25,
+      29,
+      35,
+      45
+    ],
+    "stars": [
+      2,
+      12
+    ],
+    "qualityScore": 0,
+    "strategy": "weighted-20-7a3r+trend-25",
+    "result": {
+      "drawDate": "12/12/2025",
+      "drawBalls": [
+        7,
+        25,
+        30,
+        37,
+        41
+      ],
+      "drawStars": [
+        5,
+        11
+      ],
+      "matchedBalls": 1,
+      "matchedStars": 0,
+      "rank": 0,
+      "rankLabel": "1+0",
+      "gain": 0,
+      "net": -2.5
+    }
+  },
+  {
+    "generatedAt": "(backtest-weighted70-30+trend25)",
+    "forDrawAfter": "12/12/2025",
+    "balls": [
+      7,
+      25,
+      29,
+      35,
+      45
+    ],
+    "stars": [
+      2,
+      12
+    ],
+    "qualityScore": 0,
+    "strategy": "weighted-20-7a3r+trend-25",
+    "result": {
+      "drawDate": "16/12/2025",
+      "drawBalls": [
+        14,
+        16,
+        40,
+        41,
+        44
+      ],
+      "drawStars": [
+        2,
+        10
+      ],
+      "matchedBalls": 0,
+      "matchedStars": 1,
+      "rank": 0,
+      "rankLabel": "0+1",
+      "gain": 0,
+      "net": -2.5
+    }
+  },
+  {
+    "generatedAt": "(backtest-weighted70-30+trend25)",
+    "forDrawAfter": "16/12/2025",
+    "balls": [
+      7,
+      25,
+      29,
+      35,
+      45
+    ],
+    "stars": [
+      2,
+      5
+    ],
+    "qualityScore": 0,
+    "strategy": "weighted-20-7a3r+trend-25",
+    "result": {
+      "drawDate": "19/12/2025",
+      "drawBalls": [
+        17,
+        21,
+        39,
+        43,
+        44
+      ],
+      "drawStars": [
+        1,
+        11
+      ],
+      "matchedBalls": 0,
+      "matchedStars": 0,
+      "rank": 0,
+      "rankLabel": "0+0",
+      "gain": 0,
+      "net": -2.5
+    }
+  },
+  {
+    "generatedAt": "(backtest-weighted70-30+trend25)",
+    "forDrawAfter": "19/12/2025",
+    "balls": [
+      25,
+      29,
+      35,
+      44,
+      45
+    ],
+    "stars": [
+      2,
+      12
+    ],
+    "qualityScore": 0,
+    "strategy": "weighted-20-7a3r+trend-25",
+    "result": {
+      "drawDate": "23/12/2025",
+      "drawBalls": [
+        8,
+        26,
+        27,
+        29,
+        44
+      ],
+      "drawStars": [
+        11,
+        12
+      ],
+      "matchedBalls": 2,
+      "matchedStars": 1,
+      "rank": 12,
+      "rankLabel": "2+1",
+      "gain": 6.1,
+      "net": 3.5999999999999996
+    }
+  },
+  {
+    "generatedAt": "(backtest-weighted70-30+trend25)",
+    "forDrawAfter": "23/12/2025",
+    "balls": [
+      25,
+      29,
+      35,
+      44,
+      45
+    ],
+    "stars": [
+      2,
+      12
+    ],
+    "qualityScore": 0,
+    "strategy": "weighted-20-7a3r+trend-25",
+    "result": {
+      "drawDate": "26/12/2025",
+      "drawBalls": [
+        12,
+        22,
+        32,
+        36,
+        48
+      ],
+      "drawStars": [
+        3,
+        4
+      ],
+      "matchedBalls": 0,
+      "matchedStars": 0,
+      "rank": 0,
+      "rankLabel": "0+0",
+      "gain": 0,
+      "net": -2.5
+    }
+  },
+  {
+    "generatedAt": "(backtest-weighted70-30+trend25)",
+    "forDrawAfter": "26/12/2025",
+    "balls": [
+      21,
+      25,
+      29,
+      44,
+      45
+    ],
+    "stars": [
+      2,
+      12
+    ],
+    "qualityScore": 0,
+    "strategy": "weighted-20-7a3r+trend-25",
+    "result": {
+      "drawDate": "30/12/2025",
+      "drawBalls": [
+        11,
+        26,
+        29,
+        34,
+        44
+      ],
+      "drawStars": [
+        1,
+        10
+      ],
+      "matchedBalls": 2,
+      "matchedStars": 0,
+      "rank": 13,
+      "rankLabel": "2+0",
+      "gain": 3.7,
+      "net": 1.2000000000000002
+    }
+  },
+  {
+    "generatedAt": "(backtest-weighted70-30+trend25)",
+    "forDrawAfter": "30/12/2025",
+    "balls": [
+      21,
+      25,
+      29,
+      44,
+      45
+    ],
+    "stars": [
+      2,
+      12
+    ],
+    "qualityScore": 0,
+    "strategy": "weighted-20-7a3r+trend-25",
+    "result": {
+      "drawDate": "02/01/2026",
+      "drawBalls": [
+        8,
+        27,
+        42,
+        44,
+        46
+      ],
+      "drawStars": [
+        1,
+        10
+      ],
+      "matchedBalls": 1,
+      "matchedStars": 0,
+      "rank": 0,
+      "rankLabel": "1+0",
+      "gain": 0,
+      "net": -2.5
+    }
+  },
+  {
+    "generatedAt": "(backtest-weighted70-30+trend25)",
+    "forDrawAfter": "02/01/2026",
+    "balls": [
+      17,
+      21,
+      29,
+      44,
+      48
+    ],
+    "stars": [
+      10,
+      12
+    ],
+    "qualityScore": 0,
+    "strategy": "weighted-20-7a3r+trend-25",
+    "result": {
+      "drawDate": "06/01/2026",
+      "drawBalls": [
+        5,
+        14,
+        17,
+        18,
+        31
+      ],
+      "drawStars": [
+        10,
+        12
+      ],
+      "matchedBalls": 1,
+      "matchedStars": 2,
+      "rank": 11,
+      "rankLabel": "1+2",
+      "gain": 9.1,
+      "net": 6.6
+    }
+  },
+  {
+    "generatedAt": "(backtest-weighted70-30+trend25)",
+    "forDrawAfter": "06/01/2026",
+    "balls": [
+      14,
+      17,
+      21,
+      29,
+      44
+    ],
+    "stars": [
+      10,
+      12
+    ],
+    "qualityScore": 0,
+    "strategy": "weighted-20-7a3r+trend-25",
+    "result": {
+      "drawDate": "09/01/2026",
+      "drawBalls": [
+        1,
+        7,
+        10,
+        26,
+        34
+      ],
+      "drawStars": [
+        2,
+        4
+      ],
+      "matchedBalls": 0,
+      "matchedStars": 0,
+      "rank": 0,
+      "rankLabel": "0+0",
+      "gain": 0,
+      "net": -2.5
+    }
+  },
+  {
+    "generatedAt": "(backtest-weighted70-30+trend25)",
+    "forDrawAfter": "09/01/2026",
+    "balls": [
+      17,
+      21,
+      26,
+      29,
+      44
+    ],
+    "stars": [
+      2,
+      12
+    ],
+    "qualityScore": 0,
+    "strategy": "weighted-20-7a3r+trend-25",
+    "result": {
+      "drawDate": "13/01/2026",
+      "drawBalls": [
+        6,
+        10,
+        18,
+        44,
+        47
+      ],
+      "drawStars": [
+        2,
+        10
+      ],
+      "matchedBalls": 1,
+      "matchedStars": 1,
+      "rank": 0,
+      "rankLabel": "1+1",
+      "gain": 0,
+      "net": -2.5
+    }
+  },
+  {
+    "generatedAt": "(backtest-weighted70-30+trend25)",
+    "forDrawAfter": "13/01/2026",
+    "balls": [
+      17,
+      21,
+      26,
+      29,
+      44
+    ],
+    "stars": [
+      2,
+      12
+    ],
+    "qualityScore": 0,
+    "strategy": "weighted-20-7a3r+trend-25",
+    "result": {
+      "drawDate": "16/01/2026",
+      "drawBalls": [
+        5,
+        17,
+        24,
+        29,
+        50
+      ],
+      "drawStars": [
+        5,
+        10
+      ],
+      "matchedBalls": 2,
+      "matchedStars": 0,
+      "rank": 13,
+      "rankLabel": "2+0",
+      "gain": 3.7,
+      "net": 1.2000000000000002
+    }
+  },
+  {
+    "generatedAt": "(backtest-weighted70-30+trend25)",
+    "forDrawAfter": "16/01/2026",
+    "balls": [
+      17,
+      26,
+      29,
+      44,
+      48
+    ],
+    "stars": [
+      2,
+      10
+    ],
+    "qualityScore": 0,
+    "strategy": "weighted-20-7a3r+trend-25",
+    "result": {
+      "drawDate": "20/01/2026",
+      "drawBalls": [
+        11,
+        18,
+        19,
+        22,
+        50
+      ],
+      "drawStars": [
+        1,
+        11
+      ],
+      "matchedBalls": 0,
+      "matchedStars": 0,
+      "rank": 0,
+      "rankLabel": "0+0",
+      "gain": 0,
+      "net": -2.5
+    }
+  },
+  {
+    "generatedAt": "(backtest-weighted70-30+trend25)",
+    "forDrawAfter": "20/01/2026",
+    "balls": [
+      17,
+      26,
+      29,
+      44,
+      48
+    ],
+    "stars": [
+      2,
+      10
+    ],
+    "qualityScore": 0,
+    "strategy": "weighted-20-7a3r+trend-25",
+    "result": {
+      "drawDate": "23/01/2026",
+      "drawBalls": [
+        4,
+        5,
+        13,
+        21,
+        42
+      ],
+      "drawStars": [
+        3,
+        10
+      ],
+      "matchedBalls": 0,
+      "matchedStars": 1,
+      "rank": 0,
+      "rankLabel": "0+1",
+      "gain": 0,
+      "net": -2.5
+    }
+  },
+  {
+    "generatedAt": "(backtest-weighted70-30+trend25)",
+    "forDrawAfter": "23/01/2026",
+    "balls": [
+      17,
+      21,
+      29,
+      42,
+      44
+    ],
+    "stars": [
+      2,
+      10
+    ],
+    "qualityScore": 0,
+    "strategy": "weighted-20-7a3r+trend-25",
+    "result": {
+      "drawDate": "27/01/2026",
+      "drawBalls": [
+        4,
+        23,
+        42,
+        43,
+        47
+      ],
+      "drawStars": [
+        3,
+        9
+      ],
+      "matchedBalls": 1,
+      "matchedStars": 0,
+      "rank": 0,
+      "rankLabel": "1+0",
+      "gain": 0,
+      "net": -2.5
+    }
+  },
+  {
+    "generatedAt": "(backtest-weighted70-30+trend25)",
+    "forDrawAfter": "27/01/2026",
+    "balls": [
+      5,
+      17,
+      29,
+      42,
+      44
+    ],
+    "stars": [
+      2,
+      10
+    ],
+    "qualityScore": 0,
+    "strategy": "weighted-20-7a3r+trend-25",
+    "result": {
+      "drawDate": "30/01/2026",
+      "drawBalls": [
+        14,
+        18,
+        31,
+        35,
+        46
+      ],
+      "drawStars": [
+        7,
+        11
+      ],
+      "matchedBalls": 0,
+      "matchedStars": 0,
+      "rank": 0,
+      "rankLabel": "0+0",
+      "gain": 0,
+      "net": -2.5
+    }
+  },
+  {
+    "generatedAt": "(backtest-weighted70-30+trend25)",
+    "forDrawAfter": "30/01/2026",
+    "balls": [
+      14,
+      17,
+      29,
+      42,
+      44
+    ],
+    "stars": [
+      2,
+      10
+    ],
+    "qualityScore": 0,
+    "strategy": "weighted-20-7a3r+trend-25",
+    "result": {
+      "drawDate": "03/02/2026",
+      "drawBalls": [
+        26,
+        27,
+        28,
+        34,
+        37
+      ],
+      "drawStars": [
+        4,
+        9
+      ],
+      "matchedBalls": 0,
+      "matchedStars": 0,
+      "rank": 0,
+      "rankLabel": "0+0",
+      "gain": 0,
+      "net": -2.5
+    }
+  },
+  {
+    "generatedAt": "(backtest-weighted70-30+trend25)",
+    "forDrawAfter": "03/02/2026",
+    "balls": [
+      14,
+      26,
+      29,
+      42,
+      44
+    ],
+    "stars": [
+      10,
+      11
+    ],
+    "qualityScore": 0,
+    "strategy": "weighted-20-7a3r+trend-25",
+    "result": {
+      "drawDate": "06/02/2026",
+      "drawBalls": [
+        10,
+        13,
+        20,
+        23,
+        24
+      ],
+      "drawStars": [
+        6,
+        11
+      ],
+      "matchedBalls": 0,
+      "matchedStars": 1,
+      "rank": 0,
+      "rankLabel": "0+1",
+      "gain": 0,
+      "net": -2.5
+    }
+  },
+  {
+    "generatedAt": "(backtest-weighted70-30+trend25)",
+    "forDrawAfter": "06/02/2026",
+    "balls": [
+      13,
+      26,
+      29,
+      42,
+      44
+    ],
+    "stars": [
+      10,
+      11
+    ],
+    "qualityScore": 0,
+    "strategy": "weighted-20-7a3r+trend-25",
+    "result": {
+      "drawDate": "10/02/2026",
+      "drawBalls": [
+        1,
+        17,
+        19,
+        34,
+        42
+      ],
+      "drawStars": [
+        5,
+        8
+      ],
+      "matchedBalls": 1,
+      "matchedStars": 0,
+      "rank": 0,
+      "rankLabel": "1+0",
+      "gain": 0,
+      "net": -2.5
+    }
+  },
+  {
+    "generatedAt": "(backtest-weighted70-30+trend25)",
+    "forDrawAfter": "10/02/2026",
+    "balls": [
+      17,
+      29,
+      34,
+      42,
+      44
+    ],
+    "stars": [
+      10,
+      11
+    ],
+    "qualityScore": 0,
+    "strategy": "weighted-20-7a3r+trend-25",
+    "result": {
+      "drawDate": "13/02/2026",
+      "drawBalls": [
+        9,
+        13,
+        31,
+        37,
+        40
+      ],
+      "drawStars": [
+        6,
+        9
+      ],
+      "matchedBalls": 0,
+      "matchedStars": 0,
+      "rank": 0,
+      "rankLabel": "0+0",
+      "gain": 0,
+      "net": -2.5
+    }
+  },
+  {
+    "generatedAt": "(backtest-weighted70-30+trend25)",
+    "forDrawAfter": "13/02/2026",
+    "balls": [
+      17,
+      26,
+      29,
+      42,
+      44
+    ],
+    "stars": [
+      10,
+      11
+    ],
+    "qualityScore": 0,
+    "strategy": "weighted-20-7a3r+trend-25",
+    "result": {
+      "drawDate": "17/02/2026",
+      "drawBalls": [
+        1,
+        4,
+        6,
+        10,
+        41
+      ],
+      "drawStars": [
+        5,
+        12
+      ],
+      "matchedBalls": 0,
+      "matchedStars": 0,
+      "rank": 0,
+      "rankLabel": "0+0",
+      "gain": 0,
+      "net": -2.5
+    }
+  },
+  {
+    "generatedAt": "(backtest-weighted70-30+trend25)",
+    "forDrawAfter": "17/02/2026",
+    "balls": [
+      10,
+      17,
+      26,
+      42,
+      44
+    ],
+    "stars": [
+      10,
+      11
+    ],
+    "qualityScore": 0,
+    "strategy": "weighted-20-7a3r+trend-25",
+    "result": {
+      "drawDate": "20/02/2026",
+      "drawBalls": [
+        13,
+        24,
+        28,
+        33,
+        35
+      ],
+      "drawStars": [
+        5,
+        9
+      ],
+      "matchedBalls": 0,
+      "matchedStars": 0,
+      "rank": 0,
+      "rankLabel": "0+0",
+      "gain": 0,
+      "net": -2.5
+    }
+  },
+  {
+    "generatedAt": "(backtest-weighted70-30+trend25)",
+    "forDrawAfter": "20/02/2026",
+    "balls": [
+      10,
+      13,
+      17,
+      42,
+      44
+    ],
+    "stars": [
+      10,
+      11
+    ],
+    "qualityScore": 0,
+    "strategy": "weighted-20-7a3r+trend-25",
+    "result": {
+      "drawDate": "24/02/2026",
+      "drawBalls": [
+        10,
+        27,
+        40,
+        43,
+        47
+      ],
+      "drawStars": [
+        6,
+        10
+      ],
+      "matchedBalls": 1,
+      "matchedStars": 1,
+      "rank": 0,
+      "rankLabel": "1+1",
+      "gain": 0,
+      "net": -2.5
+    }
+  },
+  {
+    "generatedAt": "(backtest-weighted70-30+trend25)",
+    "forDrawAfter": "24/02/2026",
+    "balls": [
+      10,
+      17,
+      27,
+      42,
+      44
+    ],
+    "stars": [
+      10,
+      11
+    ],
+    "qualityScore": 0,
+    "strategy": "weighted-20-7a3r+trend-25",
+    "result": {
+      "drawDate": "27/02/2026",
+      "drawBalls": [
+        14,
+        24,
+        27,
+        39,
+        42
+      ],
+      "drawStars": [
+        6,
+        10
+      ],
+      "matchedBalls": 2,
+      "matchedStars": 1,
+      "rank": 12,
+      "rankLabel": "2+1",
+      "gain": 5.6,
+      "net": 3.0999999999999996
+    }
+  },
+  {
+    "generatedAt": "(backtest-weighted70-30+trend25)",
+    "forDrawAfter": "27/02/2026",
+    "balls": [
+      10,
+      13,
+      27,
+      42,
+      44
+    ],
+    "stars": [
+      10,
+      11
+    ],
+    "qualityScore": 0,
+    "strategy": "weighted-20-7a3r+trend-25",
+    "result": {
+      "drawDate": "03/03/2026",
+      "drawBalls": [
+        6,
+        7,
+        24,
+        34,
+        50
+      ],
+      "drawStars": [
+        5,
+        7
+      ],
+      "matchedBalls": 0,
+      "matchedStars": 0,
+      "rank": 0,
+      "rankLabel": "0+0",
+      "gain": 0,
+      "net": -2.5
+    }
+  },
+  {
+    "generatedAt": "2026-03-05T09:30:57.490Z",
+    "forDrawAfter": "03/03/2026",
+    "balls": [
+      10,
+      24,
+      27,
+      34,
+      42
+    ],
+    "stars": [
+      10,
+      11
+    ],
+    "qualityScore": 80,
+    "strategy": "weighted-20-7a3r+trend-25",
+    "result": null
+  }
+]
