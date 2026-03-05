@@ -1,3 +1,9 @@
 node_modules/
 data/csv/
 *.zip
+.env
+.env.*
+*.key
+*.pem
+*.log
+.DS_Store

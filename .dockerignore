@@ -1,0 +1,9 @@
+node_modules/
+data/csv/
+scripts/
+.git/
+.gitignore
+.dockerignore
+CLAUDE.md
+*.zip
+*.md

@@ -14,9 +14,14 @@ echo "[$(date)] Updating EuroMillions data..."
 curl -sL -o "/tmp/em_latest.zip" \
   "https://www.sto.api.fdj.fr/anonymous/service-draw-info/v3/documentations/1a2b3c4d-9876-4562-b3fc-2c963f66afe6"
 
-# Verify it's a valid ZIP
+# Verify it's a valid ZIP, extract safely (no path traversal)
 if file "/tmp/em_latest.zip" | grep -q "Zip archive"; then
-  unzip -o "/tmp/em_latest.zip" -d "$CSV_DIR/"
+  # Check for path traversal attempts (zip slip)
+  if unzip -l "/tmp/em_latest.zip" | grep -qE '(\.\./)'; then
+    echo "ERROR: ZIP contains path traversal - aborting"
+    exit 1
+  fi
+  unzip -o -j "/tmp/em_latest.zip" -d "$CSV_DIR/" '*.csv'
   echo "CSV updated"
 else
   echo "ERROR: Downloaded file is not a valid ZIP"
