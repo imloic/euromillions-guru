@@ -31,6 +31,23 @@ fi
 # Re-parse all CSVs into data.json
 node "$DIR/scripts/parse-csv.js"
 
+# Fetch next jackpot from FDJ website
+echo "Fetching next jackpot..."
+JACKPOT=$(curl -sL "https://www.fdj.fr/jeux-de-tirage/euromillions-my-million" | \
+  grep -oP 'Près de \K[0-9]+(?= millions)' | head -1)
+if [ -n "$JACKPOT" ]; then
+  echo "Next jackpot: ~${JACKPOT} M"
+  node -e "
+    const fs = require('fs');
+    const f = '$PUBLIC_DIR/data.json';
+    const d = JSON.parse(fs.readFileSync(f, 'utf-8'));
+    d.nextJackpot = 'Jackpot : ~${JACKPOT} millions';
+    fs.writeFileSync(f, JSON.stringify(d));
+  "
+else
+  echo "Could not fetch jackpot (will show without)"
+fi
+
 # Evaluate pending prediction + generate next one
 node "$DIR/scripts/predictions.js" auto
 

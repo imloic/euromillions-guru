@@ -451,6 +451,80 @@ section.active { display: block; animation: fadeUp 0.3s ease; }
   line-height: 1.6;
   opacity: 0.8;
 }
+/* ===== NEXT DRAW BANNER ===== */
+.next-draw-banner {
+  background: linear-gradient(135deg, rgba(232,98,28,0.07), rgba(197,156,51,0.07));
+  border: 2px solid rgba(232,98,28,0.15);
+  border-radius: 18px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.next-draw-banner::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--orange), var(--mustard), var(--orange));
+}
+.next-draw-label {
+  font-size: 0.82rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--orange);
+  margin-bottom: 0.3rem;
+}
+.next-draw-date {
+  font-family: 'Righteous', cursive;
+  font-size: 1.3rem;
+  color: var(--brown);
+  margin-bottom: 0.2rem;
+}
+.next-draw-jackpot {
+  font-family: 'Righteous', cursive;
+  font-size: 2rem;
+  color: var(--orange);
+  margin-bottom: 0.8rem;
+  line-height: 1.1;
+}
+.next-draw-prediction {
+  margin-top: 0.8rem;
+  padding-top: 0.8rem;
+  border-top: 1.5px solid rgba(92,51,23,0.08);
+}
+.next-draw-prediction .nd-label {
+  font-size: 0.82rem;
+  color: var(--brown);
+  opacity: 0.6;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+.next-draw-prediction .balls-row {
+  justify-content: center;
+  margin-bottom: 0.6rem;
+}
+.next-draw-cta {
+  display: inline-block;
+  font-family: 'Righteous', cursive;
+  font-size: 0.88rem;
+  color: white;
+  background: linear-gradient(135deg, var(--orange), var(--burnt));
+  padding: 0.6rem 1.8rem;
+  border-radius: 99px;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  box-shadow: 0 3px 12px rgba(232,98,28,0.25);
+  transition: all 0.15s;
+}
+.next-draw-cta:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 20px rgba(232,98,28,0.35);
+}
+
 .algo-disclaimer strong {
   color: var(--orange);
 }
@@ -948,6 +1022,14 @@ footer p {
     <button data-tab="bilan">Bilan</button>
   </nav>
 
+  <!-- NEXT DRAW BANNER -->
+  <div class="next-draw-banner" id="nextDrawBanner" style="display:none">
+    <div class="next-draw-label">Prochain tirage</div>
+    <div class="next-draw-date" id="nextDrawDate"></div>
+    <div class="next-draw-jackpot" id="nextDrawJackpot"></div>
+    <div class="next-draw-prediction" id="nextDrawPred"></div>
+  </div>
+
   <!-- LAST DRAW -->
   <section id="tirage" class="active">
     <div class="card">
@@ -1180,6 +1262,65 @@ async function init() {
   document.getElementById('totalDraws').textContent = DATA.stats.totalDraws;
   document.getElementById('lastUpdate').textContent = DATA.lastDraw.date;
   loadBilan();
+}
+
+function renderNextDraw() {
+  // Compute next draw date (Tuesday or Friday after last draw)
+  const lastParts = DATA.lastDraw.date.split('/');
+  const lastDate = new Date(lastParts[2] + '-' + lastParts[1] + '-' + lastParts[0]);
+  const now = new Date();
+  // Find next Tuesday (2) or Friday (5) from today
+  let next = new Date(now);
+  next.setHours(21, 0, 0, 0);
+  if (next <= now) next.setDate(next.getDate() + 1);
+  while (next.getDay() !== 2 && next.getDay() !== 5) {
+    next.setDate(next.getDate() + 1);
+  }
+
+  const joursFR = ['Dimanche', 'Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredi', 'Samedi'];
+  const moisFR = ['janvier', 'fevrier', 'mars', 'avril', 'mai', 'juin', 'juillet', 'aout', 'septembre', 'octobre', 'novembre', 'decembre'];
+  const dateStr = joursFR[next.getDay()] + ' ' + next.getDate() + ' ' + moisFR[next.getMonth()] + ' ' + next.getFullYear();
+
+  document.getElementById('nextDrawDate').textContent = dateStr;
+  document.getElementById('nextDrawJackpot').textContent = DATA.nextJackpot || '';
+
+  // Show banner
+  document.getElementById('nextDrawBanner').style.display = '';
+
+  // Show pending prediction if available
+  var predHtml = '';
+  if (PREDICTIONS && PREDICTIONS.length > 0) {
+    var pending = PREDICTIONS.filter(function(p) { return !p.result; });
+    if (pending.length > 0) {
+      var p = pending[pending.length - 1];
+      var ballsHtml = p.balls.map(function(b) { return '<div class="ball number" style="width:42px;height:42px;font-size:1rem">' + b + '</div>'; }).join('');
+      var starsHtml = p.stars.map(function(s) { return '<div class="ball star" style="width:42px;height:42px;font-size:1rem">' + s + '</div>'; }).join('');
+      predHtml = '<div class="nd-label">Notre prediction (strategie Ponderee 9.2%)</div>' +
+        '<div class="balls-row">' + ballsHtml + '<div class="plus-sign">+</div>' + starsHtml + '</div>';
+    }
+  }
+
+  // If no pending prediction, generate one on the fly
+  if (!predHtml && DATA) {
+    var balls = weightedBalls(DATA.stats.ballFrequency, DATA.draws, 20, 0.7, 0.3);
+    var stars = topN(getRecentFreq(DATA.draws, 25, 12), 2);
+    var ballsHtml = balls.map(function(b) { return '<div class="ball number" style="width:42px;height:42px;font-size:1rem">' + b + '</div>'; }).join('');
+    var starsHtml = stars.map(function(s) { return '<div class="ball star" style="width:42px;height:42px;font-size:1rem">' + s + '</div>'; }).join('');
+    predHtml = '<div class="nd-label">Notre prediction (strategie Ponderee 9.2%)</div>' +
+      '<div class="balls-row">' + ballsHtml + '<div class="plus-sign">+</div>' + starsHtml + '</div>';
+  }
+
+  predHtml += '<button class="next-draw-cta" onclick="goToPrediction()">Voir les 3 strategies</button>';
+  document.getElementById('nextDrawPred').innerHTML = predHtml;
+}
+
+function goToPrediction() {
+  document.querySelectorAll('nav button').forEach(function(b) { b.classList.remove('active'); });
+  document.querySelectorAll('section').forEach(function(s) { s.classList.remove('active'); });
+  var predBtn = document.querySelector('nav button[data-tab="prediction"]');
+  predBtn.classList.add('active');
+  document.getElementById('prediction').classList.add('active');
+  window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
 // === TABS ===
@@ -1510,6 +1651,7 @@ async function loadBilan() {
     PREDICTIONS = [];
   }
   renderBilan();
+  renderNextDraw();
 }
 
 function renderBilan() {
