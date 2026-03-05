@@ -525,6 +525,76 @@ section.active { display: block; animation: fadeUp 0.3s ease; }
   box-shadow: 0 5px 20px rgba(232,98,28,0.35);
 }
 
+/* ===== PREDICTION CARDS ===== */
+.pred-card {
+  border: 2px solid rgba(92,51,23,0.08);
+  border-radius: 14px;
+  padding: 1.2rem;
+  margin-bottom: 1rem;
+  position: relative;
+}
+.pred-card.best {
+  border-color: rgba(232,98,28,0.25);
+  background: rgba(232,98,28,0.03);
+}
+.pred-card.best::after {
+  content: 'Meilleure';
+  position: absolute;
+  top: -10px; right: 16px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: white;
+  background: var(--orange);
+  padding: 0.15rem 0.6rem;
+  border-radius: 99px;
+}
+.pred-card-header {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-bottom: 0.8rem;
+}
+.pred-card-icon {
+  font-size: 1.3rem;
+}
+.pred-card-title {
+  font-family: 'Righteous', cursive;
+  font-size: 1rem;
+  color: var(--brown);
+}
+.pred-card-rate {
+  margin-left: auto;
+  font-family: 'Righteous', cursive;
+  font-size: 1rem;
+  color: var(--avocado);
+}
+.pred-card .balls-row {
+  margin-bottom: 0.5rem;
+}
+.pred-card-desc {
+  font-size: 0.85rem;
+  color: var(--brown);
+  opacity: 0.6;
+  line-height: 1.5;
+}
+.pred-card-metrics {
+  display: flex;
+  gap: 1rem;
+  margin-top: 0.6rem;
+  flex-wrap: wrap;
+}
+.pred-card-metrics .pm {
+  font-size: 0.8rem;
+  color: var(--brown);
+  opacity: 0.55;
+}
+.pred-card-metrics .pm strong {
+  color: var(--brown);
+  opacity: 1;
+}
+
 .algo-disclaimer strong {
   color: var(--orange);
 }
@@ -1114,41 +1184,13 @@ footer p {
   <!-- PREDICTION -->
   <section id="prediction">
     <div class="card">
-      <h2 class="card-title"><span class="icon" style="background:var(--orange);color:white">&#127183;</span> Generateur intelligent</h2>
-      <p style="font-size:0.92rem;color:var(--brown);opacity:0.65;margin-bottom:0.75rem;line-height:1.5">
-        Strategie optimisee pour <strong>maximiser vos chances de victoire</strong>.
-        53 strategies testees sur 1825 tirages depuis 2004. La meilleure atteint <strong>9.2% de victoires</strong> contre 7.9% au hasard.
+      <h2 class="card-title"><span class="icon" style="background:var(--orange);color:white">&#127183;</span> Predictions pour le prochain tirage</h2>
+      <div id="predNextDate" style="font-family:'Righteous',cursive;font-size:1.1rem;color:var(--orange);margin-bottom:0.5rem;text-align:center"></div>
+      <p style="font-size:0.92rem;color:var(--brown);opacity:0.65;margin-bottom:1.2rem;line-height:1.5;text-align:center">
+        3 strategies backtestees sur 1825 tirages. Les numeros sont calcules automatiquement a partir des donnees FDJ.
+        Ils restent identiques tant que le prochain tirage n'a pas eu lieu.
       </p>
-      <div style="margin-bottom:1rem">
-        <label style="font-size:0.85rem;font-weight:700;color:var(--brown);text-transform:uppercase;letter-spacing:0.05em;display:block;margin-bottom:0.4rem">Choix de la strategie</label>
-        <div class="strat-selector" id="stratSelector">
-          <button class="strat-btn active" data-strat="weighted" onclick="setStrategy('weighted')">
-            <span class="strat-icon">&#9878;</span>
-            <span class="strat-name">Ponderee</span>
-            <span class="strat-desc">70% historique + 30% recente</span>
-            <span class="strat-desc"><strong>9.2%</strong> victoires</span>
-          </button>
-          <button class="strat-btn" data-strat="trend" onclick="setStrategy('trend')">
-            <span class="strat-icon">&#8593;</span>
-            <span class="strat-name">Tendance</span>
-            <span class="strat-desc">Top 30 derniers tirages</span>
-            <span class="strat-desc">8.5% victoires</span>
-          </button>
-          <button class="strat-btn" data-strat="mix" onclick="setStrategy('mix')">
-            <span class="strat-icon">&#8644;</span>
-            <span class="strat-name">Mixte</span>
-            <span class="strat-desc">2 tendance + 3 en retard</span>
-            <span class="strat-desc">8.6% victoires</span>
-          </button>
-        </div>
-      </div>
-      <button class="generate-btn" onclick="generatePrediction()">Generer mes numeros</button>
-      <div class="balls-row" id="predictionBalls" style="min-height:66px"></div>
-      <div id="predictionStats" style="display:none">
-        <div class="prediction-score" id="predictionMetrics"></div>
-        <div class="quality-bar"><div class="fill" id="qualityFill"></div></div>
-        <div class="prediction-explain" id="predictionExplain"></div>
-      </div>
+      <div id="allPredictions"></div>
     </div>
     <div class="retro-divider"><hr><div class="diamond"></div><div class="diamond"></div><div class="diamond"></div><hr></div>
     <div class="card">
@@ -1261,6 +1303,7 @@ async function init() {
   renderHistory();
   document.getElementById('totalDraws').textContent = DATA.stats.totalDraws;
   document.getElementById('lastUpdate').textContent = DATA.lastDraw.date;
+  renderAllPredictions();
   loadBilan();
 }
 
@@ -1443,15 +1486,6 @@ function renderOverdue() {
 }
 
 // === PREDICTION ENGINE ===
-// Best strategy from deep search on 1825 draws:
-// weighted-20-7a3r (balls) + trend-25 (stars) = 9.21% win rate
-let currentStrategy = 'weighted';
-
-function setStrategy(name) {
-  currentStrategy = name;
-  document.querySelectorAll('.strat-btn').forEach(b => b.classList.toggle('active', b.dataset.strat === name));
-}
-
 function getRecentFreq(draws, count, maxNum) {
   const freq = {};
   for (let n = 1; n <= maxNum; n++) freq[n] = 0;
@@ -1471,7 +1505,6 @@ function topN(freq, n) {
     .sort((a, b) => a - b);
 }
 
-// Weighted combo: normalise all-time + recent, combine with weights, pick top 5
 function weightedBalls(allTimeFreq, draws, window, wAll, wRec) {
   const recentFreq = getRecentFreq(draws, window, 50);
   const maxAll = Math.max(...Object.values(allTimeFreq));
@@ -1483,67 +1516,72 @@ function weightedBalls(allTimeFreq, draws, window, wAll, wRec) {
   return topN(combined, 5);
 }
 
-function generatePrediction() {
+function computeAllPredictions() {
   const draws = DATA.draws;
   const s = DATA.stats;
-  let balls, stars;
 
-  if (currentStrategy === 'weighted') {
-    // WEIGHTED 70% all-time + 30% recent-20 + stars trend-25 : 9.21% victoires
-    balls = weightedBalls(s.ballFrequency, draws, 20, 0.7, 0.3);
-    stars = topN(getRecentFreq(draws, 25, 12), 2);
-  } else if (currentStrategy === 'trend') {
-    // TREND-30 + TREND-10 : 8.55% victoires
-    balls = topN(getRecentFreq(draws, 30, 50), 5);
-    stars = topN(getRecentFreq(draws, 10, 12), 2);
-  } else if (currentStrategy === 'mix') {
-    // MIX 2 hot recent-10 + 3 overdue : 8.6% victoires
-    const hot = topN(getRecentFreq(draws, 10, 50), 10);
-    const overdue = Object.entries(s.ballLastSeen).sort((a, b) => b[1] - a[1]).map(([n]) => parseInt(n));
-    balls = [];
-    for (const n of hot) { if (balls.length >= 2) break; balls.push(n); }
-    for (const n of overdue) { if (balls.length >= 5) break; if (!balls.includes(n)) balls.push(n); }
-    balls.sort((a, b) => a - b);
-    stars = topN(getRecentFreq(draws, 15, 12), 2);
+  // Strategy 1: Weighted 70/30 + trend-25 = 9.21%
+  const w_balls = weightedBalls(s.ballFrequency, draws, 20, 0.7, 0.3);
+  const w_stars = topN(getRecentFreq(draws, 25, 12), 2);
+
+  // Strategy 2: Trend-30 + trend-10 = 8.55%
+  const t_balls = topN(getRecentFreq(draws, 30, 50), 5);
+  const t_stars = topN(getRecentFreq(draws, 10, 12), 2);
+
+  // Strategy 3: Mix 2 hot + 3 overdue = 8.6%
+  const hot = topN(getRecentFreq(draws, 10, 50), 10);
+  const overdue = Object.entries(s.ballLastSeen).sort((a, b) => b[1] - a[1]).map(([n]) => parseInt(n));
+  let m_balls = [];
+  for (const n of hot) { if (m_balls.length >= 2) break; m_balls.push(n); }
+  for (const n of overdue) { if (m_balls.length >= 5) break; if (!m_balls.includes(n)) m_balls.push(n); }
+  m_balls.sort((a, b) => a - b);
+  const m_stars = topN(getRecentFreq(draws, 15, 12), 2);
+
+  return [
+    { name: 'Ponderee', icon: '\u2696', rate: '9.2%', balls: w_balls, stars: w_stars, desc: '70% frequence historique + 30% frequence recente (20 derniers tirages)', best: true },
+    { name: 'Mixte', icon: '\u21C4', rate: '8.6%', balls: m_balls, stars: m_stars, desc: '2 numeros tendance recente + 3 numeros en retard', best: false },
+    { name: 'Tendance', icon: '\u2191', rate: '8.5%', balls: t_balls, stars: t_stars, desc: 'Top 5 des 30 derniers tirages', best: false },
+  ];
+}
+
+function renderAllPredictions() {
+  const preds = computeAllPredictions();
+  const container = document.getElementById('allPredictions');
+
+  // Next draw date
+  const lastParts = DATA.lastDraw.date.split('/');
+  const now = new Date();
+  let next = new Date(now);
+  next.setHours(21, 0, 0, 0);
+  if (next <= now) next.setDate(next.getDate() + 1);
+  while (next.getDay() !== 2 && next.getDay() !== 5) next.setDate(next.getDate() + 1);
+  const joursFR = ['Dimanche', 'Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredi', 'Samedi'];
+  const moisFR = ['janvier', 'fevrier', 'mars', 'avril', 'mai', 'juin', 'juillet', 'aout', 'septembre', 'octobre', 'novembre', 'decembre'];
+  document.getElementById('predNextDate').textContent = joursFR[next.getDay()] + ' ' + next.getDate() + ' ' + moisFR[next.getMonth()] + ' ' + next.getFullYear() + (DATA.nextJackpot ? ' \u2014 ' + DATA.nextJackpot : '');
+
+  let html = '';
+  for (const p of preds) {
+    const ballsHtml = p.balls.map(function(b) { return '<div class="ball number">' + b + '</div>'; }).join('');
+    const starsHtml = p.stars.map(function(s) { return '<div class="ball star">' + s + '</div>'; }).join('');
+    const sum = p.balls.reduce(function(a, b) { return a + b; }, 0);
+    const evens = p.balls.filter(function(b) { return b % 2 === 0; }).length;
+    const highs = p.balls.filter(function(b) { return b > 25; }).length;
+
+    html += '<div class="pred-card' + (p.best ? ' best' : '') + '">' +
+      '<div class="pred-card-header">' +
+      '<span class="pred-card-icon">' + p.icon + '</span>' +
+      '<span class="pred-card-title">' + esc(p.name) + '</span>' +
+      '<span class="pred-card-rate">' + esc(p.rate) + '</span>' +
+      '</div>' +
+      '<div class="balls-row">' + ballsHtml + '<div class="plus-sign">+</div>' + starsHtml + '</div>' +
+      '<div class="pred-card-desc">' + esc(p.desc) + '</div>' +
+      '<div class="pred-card-metrics">' +
+      '<span class="pm">Somme: <strong>' + sum + '</strong></span>' +
+      '<span class="pm">Pairs/Imp: <strong>' + evens + '/' + (5-evens) + '</strong></span>' +
+      '<span class="pm">Hauts/Bas: <strong>' + highs + '/' + (5-highs) + '</strong></span>' +
+      '</div></div>';
   }
-
-  // Render result
-  const container = document.getElementById('predictionBalls');
-  container.innerHTML = '';
-  balls.forEach(b => { container.innerHTML += '<div class="ball number">' + b + '</div>'; });
-  container.innerHTML += '<div class="plus-sign">+</div>';
-  stars.forEach(st => { container.innerHTML += '<div class="ball star">' + st + '</div>'; });
-
-  // Show metrics
-  const sum = balls.reduce((a, c) => a + c, 0);
-  const evens = balls.filter(x => x % 2 === 0).length;
-  const highs = balls.filter(x => x > 25).length;
-  const decades = new Set(balls.map(x => Math.ceil(x / 10))).size;
-  const stratLabels = {
-    weighted: 'Ponderee (70% historique + 30% recente)',
-    trend: 'Tendance pure (30 derniers tirages)',
-    mix: 'Mixte (2 tendance + 3 en retard)',
-  };
-
-  document.getElementById('predictionStats').style.display = '';
-  document.getElementById('predictionMetrics').innerHTML = [
-    { val: sum, lbl: 'Somme', hint: '107-148 ideal' },
-    { val: evens + '/' + (5 - evens), lbl: 'Pairs/Imp.', hint: '2-3 pairs ideal' },
-    { val: highs + '/' + (5 - highs), lbl: 'Hauts/Bas', hint: '2-3 hauts ideal' },
-    { val: decades + '/5', lbl: 'Decades', hint: 'diversite' }
-  ].map(m => '<div class="metric"><div class="val">' + m.val + '</div><div class="lbl">' + m.lbl + '</div></div>').join('');
-
-  // Quality bar
-  const score = scoreCombination(balls);
-  const maxPossible = 80;
-  const pct = Math.min(100, Math.round(score / maxPossible * 100));
-  const fill = document.getElementById('qualityFill');
-  const color = pct > 75 ? 'var(--avocado)' : pct > 50 ? 'var(--mustard)' : 'var(--orange)';
-  fill.style.width = pct + '%';
-  fill.style.background = 'linear-gradient(90deg, ' + color + ', ' + color + ')';
-
-  document.getElementById('predictionExplain').textContent =
-    'Strategie : ' + stratLabels[currentStrategy] + ' \u2014 Profil statistique : ' + pct + '/100';
+  container.innerHTML = html;
 }
 
 function scoreCombination(balls) {
@@ -1580,17 +1618,6 @@ function scoreCombination(balls) {
   if (!hasConsec) score += 5;
 
   return score;
-}
-
-function weightedRandom(weights, exclude) {
-  const entries = Object.entries(weights).filter(([n]) => !exclude.includes(parseInt(n)));
-  const total = entries.reduce((sum, [, w]) => sum + w, 0);
-  let r = Math.random() * total;
-  for (const [n, w] of entries) {
-    r -= w;
-    if (r <= 0) return parseInt(n);
-  }
-  return parseInt(entries[entries.length - 1][0]);
 }
 
 // === HISTORY ===
