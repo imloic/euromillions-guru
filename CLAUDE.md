@@ -44,12 +44,11 @@ fdj/
 - Boules de loto avec effet 3D (CSS gradients radiaux)
 - Rainbow gradient en haut de chaque card
 
-## Fonctionnalites (5 onglets)
+## Fonctionnalites (4 onglets)
 1. **Dernier tirage** : boules + etoiles, analyse (somme, pairs/impairs, etc.), explication algo
 2. **Statistiques** : sous-onglets chauds / froids / en retard / etoiles
 3. **Prediction** : selecteur de strategie (3 choix), generateur, metriques, explication
-4. **Historique** : tableau pagine des tirages
-5. **Bilan** : KPIs (victoires, gains, ROI), distribution des rangs, historique predictions
+4. **Bilan** : KPIs (victoires, gains, ROI), distribution des rangs, historique predictions
 
 ## SEO
 - Schema JSON-LD : WebSite + FAQPage
