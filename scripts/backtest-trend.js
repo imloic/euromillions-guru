@@ -198,16 +198,13 @@ const totalPreds = predictions.length;
 const allWins = predictions.filter(p => p.result.rank > 0 || p.result.epRank > 0);
 console.log(`\nTOTAL: ${totalPreds} predictions, ${allWins.length} victoires (${(allWins.length / totalPreds * 100).toFixed(1)}%)`);
 
-// Keep last 200 per strategy (600 total) + pending real predictions
+// Keep all backtest predictions + pending real predictions
 const pending = (() => {
   try {
     return JSON.parse(readFileSync(PRED_FILE, "utf-8")).filter(p => !p.result);
   } catch { return []; }
 })();
 
-// Take last 200 draws worth of backtests (600 predictions = 200 draws × 3 strategies)
-const drawCount = Math.floor(predictions.length / 3);
-const keepCount = Math.min(drawCount, 200) * 3;
-const toSave = [...predictions.slice(-keepCount), ...pending];
+const toSave = [...predictions, ...pending];
 writeFileSync(PRED_FILE, JSON.stringify(toSave, null, 2));
-console.log(`\nSaved ${toSave.length} predictions (${keepCount} backtest + ${pending.length} pending) to predictions.json`);
+console.log(`\nSaved ${toSave.length} predictions (${predictions.length} backtest + ${pending.length} pending) to predictions.json`);

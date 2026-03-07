@@ -18,8 +18,15 @@ function parseCSV(content) {
 }
 
 function normalizeDate(dateStr) {
-  // Handle both YYYYMMDD and DD/MM/YYYY formats → return DD/MM/YYYY
-  if (dateStr.includes("/")) return dateStr;
+  // Handle YYYYMMDD, DD/MM/YYYY, and DD/MM/YY formats → return DD/MM/YYYY
+  if (dateStr.includes("/")) {
+    const parts = dateStr.split("/");
+    // Fix 2-digit year (e.g. 23/09/16 → 23/09/2016)
+    if (parts[2] && parts[2].length === 2) {
+      parts[2] = (parseInt(parts[2]) >= 50 ? "19" : "20") + parts[2];
+    }
+    return parts.join("/");
+  }
   // YYYYMMDD
   const y = dateStr.slice(0, 4);
   const m = dateStr.slice(4, 6);
