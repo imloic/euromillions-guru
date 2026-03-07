@@ -948,6 +948,13 @@ section.active { display: block; animation: fadeUp 0.3s ease; }
 .bilan-kpi.negative .kpi-val { color: var(--orange); }
 .bilan-kpi.neutral { background: rgba(92,51,23,0.03); }
 .bilan-kpi.neutral .kpi-val { color: var(--brown); }
+/* ===== SIMULATOR ===== */
+.sim-controls { display:flex; gap:0.6rem; margin-bottom:1rem; flex-wrap:wrap; }
+.sim-radio { display:flex; align-items:center; gap:0.4rem; font-size:0.88rem; color:var(--brown); cursor:pointer; padding:0.45rem 0.8rem; border-radius:8px; border:2px solid rgba(92,51,23,0.1); transition:all 0.2s; }
+.sim-radio:has(input:checked) { border-color:var(--orange); background:rgba(232,98,28,0.06); }
+.sim-radio input { accent-color:var(--orange); }
+.sim-chart-wrap { margin:1rem 0; background:rgba(92,51,23,0.03); border-radius:8px; padding:0.8rem 1rem; }
+.sim-best { font-size:0.85rem; color:var(--brown); opacity:0.7; text-align:center; margin-top:0.3rem; }
 
 .rank-bar-row {
   display: grid;
@@ -1227,6 +1234,21 @@ footer p {
         Backtest + predictions en temps reel.
       </p>
       <div class="bilan-kpis" id="bilanKpis"></div>
+    </div>
+    <div class="retro-divider"><hr><div class="diamond"></div><div class="diamond"></div><div class="diamond"></div><hr></div>
+    <div class="card">
+      <h2 class="card-title"><span class="icon" style="background:var(--burnt);color:white">&#128202;</span> Simulateur de gains</h2>
+      <p class="card-subtitle">Et si vous aviez joue nos predictions depuis le debut ?</p>
+      <div class="sim-controls">
+        <label class="sim-radio"><input type="radio" name="simGrids" value="3" checked onchange="renderSimulator()"> 3 grilles (10,50€)</label>
+        <label class="sim-radio"><input type="radio" name="simGrids" value="1" onchange="renderSimulator()"> 1 grille Ponderee (3,50€)</label>
+      </div>
+      <div class="bilan-kpis" id="simKpis"></div>
+      <div class="sim-chart-wrap">
+        <div style="font-size:0.78rem;color:var(--brown);opacity:0.5;margin-bottom:0.3rem">Evolution du solde</div>
+        <div id="simChart"></div>
+      </div>
+      <div id="simBest" class="sim-best"></div>
     </div>
     <div class="retro-divider"><hr><div class="diamond"></div><div class="diamond"></div><div class="diamond"></div><hr></div>
     <div class="card">
@@ -1641,6 +1663,7 @@ async function loadBilan() {
     PREDICTIONS = [];
   }
   renderBilan();
+  renderSimulator();
   renderNextDraw();
 }
 
@@ -1772,6 +1795,101 @@ function loadMoreBilan() {
   } else {
     btn.style.display = '';
   }
+}
+
+function renderSimulator() {
+  if (!PREDICTIONS || PREDICTIONS.length === 0) return;
+  var grids = parseInt(document.querySelector('input[name="simGrids"]:checked').value);
+  var evaluated = PREDICTIONS.filter(function(p) { return p.result; });
+
+  // Group by draw date
+  var byDraw = {};
+  for (var i = 0; i < evaluated.length; i++) {
+    var p = evaluated[i];
+    var date = p.result.drawDate;
+    if (!byDraw[date]) byDraw[date] = [];
+    byDraw[date].push(p);
+  }
+
+  // Sort dates chronologically
+  var dates = Object.keys(byDraw).sort(function(a, b) {
+    var pa = a.split('/'), pb = b.split('/');
+    return new Date(pa[2]+'-'+pa[1]+'-'+pa[0]) - new Date(pb[2]+'-'+pb[1]+'-'+pb[0]);
+  });
+
+  var totalSpent = 0, totalGained = 0, totalWins = 0;
+  var bestGain = 0, bestDate = '';
+  var history = [];
+
+  for (var d = 0; d < dates.length; d++) {
+    var preds = byDraw[dates[d]];
+    var selected;
+    if (grids === 1) {
+      var weighted = preds.find(function(p) { return p.strategy && p.strategy.startsWith('weighted'); });
+      selected = weighted ? [weighted] : [preds[0]];
+    } else {
+      selected = preds.slice(0, 3);
+    }
+
+    var cost = selected.length * 3.50;
+    var gain = 0, drawWins = 0;
+    for (var s = 0; s < selected.length; s++) {
+      var g = (selected[s].result.totalGain != null) ? selected[s].result.totalGain : selected[s].result.gain;
+      gain += g;
+      if (g > 0) drawWins++;
+    }
+
+    totalSpent += cost;
+    totalGained += gain;
+    totalWins += drawWins;
+    if (gain > bestGain) { bestGain = gain; bestDate = dates[d]; }
+    history.push(totalGained - totalSpent);
+  }
+
+  var net = totalGained - totalSpent;
+  var roi = ((totalGained / totalSpent) * 100).toFixed(0);
+
+  document.getElementById('simKpis').innerHTML = [
+    { val: dates.length, lbl: 'Tirages', cls: 'neutral' },
+    { val: totalSpent.toFixed(0) + '\u20ac', lbl: 'Total mis\u00e9', cls: 'neutral' },
+    { val: totalGained.toFixed(0) + '\u20ac', lbl: 'Total gagn\u00e9', cls: totalGained > 0 ? 'positive' : 'neutral' },
+    { val: (net >= 0 ? '+' : '') + net.toFixed(0) + '\u20ac', lbl: 'Solde net', cls: net >= 0 ? 'positive' : 'negative' },
+    { val: totalWins, lbl: 'Victoires', cls: totalWins > 0 ? 'positive' : 'neutral' },
+    { val: roi + '%', lbl: 'Retour', cls: parseInt(roi) >= 100 ? 'positive' : 'negative' },
+  ].map(function(k) { return '<div class="bilan-kpi ' + k.cls + '"><div class="kpi-val">' + k.val + '</div><div class="kpi-lbl">' + k.lbl + '</div></div>'; }).join('');
+
+  // SVG sparkline chart
+  if (history.length > 1) {
+    var w = 600, h = 100, pad = 5;
+    var min = Math.min.apply(null, history.concat([0]));
+    var max = Math.max.apply(null, history.concat([0]));
+    var range = max - min || 1;
+    var zeroY = (h - pad - ((0 - min) / range) * (h - 2 * pad)).toFixed(1);
+
+    var pts = [];
+    for (var j = 0; j < history.length; j++) {
+      var x = (pad + (j / (history.length - 1)) * (w - 2 * pad)).toFixed(1);
+      var y = (h - pad - ((history[j] - min) / range) * (h - 2 * pad)).toFixed(1);
+      pts.push(x + ',' + y);
+    }
+
+    var areaPoints = pad + ',' + zeroY + ' ' + pts.join(' ') + ' ' + (w - pad) + ',' + zeroY;
+    var lineColor = net >= 0 ? 'var(--avocado)' : 'var(--orange)';
+    var fillColor = net >= 0 ? 'rgba(94,123,58,0.15)' : 'rgba(232,98,28,0.12)';
+
+    document.getElementById('simChart').innerHTML =
+      '<svg viewBox="0 0 ' + w + ' ' + h + '" preserveAspectRatio="none" style="width:100%;height:100px">' +
+      '<polygon points="' + areaPoints + '" fill="' + fillColor + '"/>' +
+      '<line x1="' + pad + '" y1="' + zeroY + '" x2="' + (w - pad) + '" y2="' + zeroY + '" stroke="rgba(92,51,23,0.15)" stroke-dasharray="4"/>' +
+      '<polyline points="' + pts.join(' ') + '" fill="none" stroke="' + lineColor + '" stroke-width="2" stroke-linejoin="round"/>' +
+      '</svg>';
+  }
+
+  // Best gain + period
+  var period = dates.length > 0 ? dates[0] + ' \u2192 ' + dates[dates.length - 1] : '';
+  document.getElementById('simBest').innerHTML =
+    (bestGain > 0 ? '&#127942; Plus gros gain : <strong>' + bestGain.toFixed(2) + '\u20ac</strong> le ' + esc(bestDate) + '<br>' : '') +
+    '<span style="opacity:0.5">' + esc(period) + ' (' + dates.length + ' tirages)</span>';
 }
 
 function formatMoney(amount) {
