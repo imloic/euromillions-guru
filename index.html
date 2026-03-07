@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>EuroMillions Guru | Statistiques, tendances et predictions depuis 2004</title>
-<meta name="description" content="Analysez plus de 1900 tirages EuroMillions depuis 2004. Numeros chauds, froids, en retard. 3 generateurs intelligents backtestes sur 20 ans avec Etoile+ (35% de victoires). Gratuit.">
+<meta name="description" content="Analysez plus de 1900 tirages EuroMillions depuis 2004. Numeros chauds, froids, en retard. 3 generateurs intelligents backtestes sur 20 ans avec Etoile+ (40% de victoires). Simulateur de gains inclus. Gratuit.">
 <link rel="canonical" href="https://millions.imloic.cloud/">
 <link rel="icon" href="favicon.ico" sizes="32x32">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
@@ -13,7 +13,7 @@
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://millions.imloic.cloud/">
 <meta property="og:title" content="EuroMillions Guru | Statistiques et predictions depuis 2004">
-<meta property="og:description" content="Plus de 1900 tirages analyses. 3 generateurs intelligents backtestes sur 20 ans avec Etoile+. 35% de victoires. Statistiques completes et gratuites.">
+<meta property="og:description" content="Plus de 1900 tirages analyses. 3 generateurs intelligents backtestes sur 20 ans avec Etoile+. 40% de victoires. Simulateur de gains et statistiques completes.">
 <meta property="og:image" content="https://millions.imloic.cloud/og-image.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
@@ -42,7 +42,7 @@
       "name": "Comment fonctionne le generateur de numeros EuroMillions ?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Notre algorithme combine la frequence historique (depuis 2004) et la tendance recente (20 derniers tirages) avec une ponderation 70/30. Cette strategie a ete backtestee sur plus de 1800 tirages et atteint 9.2% de victoires contre 7.9% au hasard."
+        "text": "Notre algorithme combine la frequence historique (depuis 2004) et la tendance recente (20 derniers tirages) avec une ponderation 70/30. Avec l'option Etoile+ (1€ de plus par grille), le taux de victoire atteint 40% sur plus de 1800 tirages backtestes."
       }
     },
     {
@@ -1212,14 +1212,15 @@ footer p {
         </div>
         <div class="strategy-item s3">
           <h4>3. 636 combinaisons testees</h4>
-          <p>53 strategies de boules x 12 strategies d'etoiles, toutes testees sur plus de 1800 tirages. La strategie "Ponderee" domine avec 168 victoires (9.21%).</p>
+          <p>53 strategies de boules x 12 strategies d'etoiles, toutes testees sur plus de 1800 tirages. La strategie "Ponderee" domine avec le meilleur taux de victoire (9.2% jeu principal, 40% avec Etoile+).</p>
         </div>
       </div>
       <div class="algo-disclaimer">
         <strong>Resultats du backtest (plus de 1800 tirages) :</strong>
-        Ponderee 70/30 = 168 victoires (9.21%) &bull;
-        Tendance pure = 156 (8.55%) &bull;
-        Aleatoire = 144 (7.89%).
+        Ponderee 70/30 = ~9.2% &bull;
+        Tendance pure = ~8.5% &bull;
+        Aleatoire = ~7.9%.
+        Avec Etoile+ : ~40% de victoires toutes strategies confondues.
         La loterie reste 100% aleatoire, mais la ponderation historique + recente offre le meilleur taux de victoire mesure.
       </div>
     </div>
@@ -1281,7 +1282,7 @@ footer p {
   <p>
     <strong>EuroMillions Guru</strong> &mdash; <span id="totalDraws"></span> tirages analyses depuis 2004<br>
     Donnees officielles FDJ &mdash; Mis a jour : <span id="lastUpdate"></span><br>
-    636 strategies backtestees &mdash; Meilleure : 9.2% de victoires (vs 7.9% hasard)<br>
+    636 strategies backtestees &mdash; 40% de victoires avec Etoile+ (9.2% jeu principal)<br>
     <small>Jouez responsablement &mdash; Ce site est un outil d'analyse statistique, pas un conseil de jeu.
     La loterie est 100% aleatoire. 18+ | <a href="https://www.joueurs-info-service.fr/" rel="noopener" target="_blank" style="color:var(--mustard)">Joueurs Info Service</a></small>
   </p>
@@ -1343,7 +1344,7 @@ function renderNextDraw() {
       var p = pending[pending.length - 1];
       var ballsHtml = p.balls.map(function(b) { return '<div class="ball number" style="width:42px;height:42px;font-size:1rem">' + b + '</div>'; }).join('');
       var starsHtml = p.stars.map(function(s) { return '<div class="ball star" style="width:42px;height:42px;font-size:1rem">' + s + '</div>'; }).join('');
-      predHtml = '<div class="nd-label">Notre prediction (strategie Ponderee 9.2%)</div>' +
+      predHtml = '<div class="nd-label">Notre prediction (strategie Ponderee)</div>' +
         '<div class="balls-row">' + ballsHtml + '<div class="plus-sign">+</div>' + starsHtml + '</div>';
     }
   }
@@ -1354,7 +1355,7 @@ function renderNextDraw() {
     var stars = topN(getRecentFreq(DATA.draws, 25, 12), 2);
     var ballsHtml = balls.map(function(b) { return '<div class="ball number" style="width:42px;height:42px;font-size:1rem">' + b + '</div>'; }).join('');
     var starsHtml = stars.map(function(s) { return '<div class="ball star" style="width:42px;height:42px;font-size:1rem">' + s + '</div>'; }).join('');
-    predHtml = '<div class="nd-label">Notre prediction (strategie Ponderee 9.2%)</div>' +
+    predHtml = '<div class="nd-label">Notre prediction (strategie Ponderee)</div>' +
       '<div class="balls-row">' + ballsHtml + '<div class="plus-sign">+</div>' + starsHtml + '</div>';
   }
 
