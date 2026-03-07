@@ -48,7 +48,7 @@ JACKPOT=$(curl -sL "https://www.fdj.fr/jeux-de-tirage/euromillions-my-million" |
   grep -oE 'Près de [0-9]+' | grep -oE '[0-9]+' | head -1)
 if [ -n "$JACKPOT" ]; then
   echo "Next jackpot: ~${JACKPOT} M"
-  node -e "
+  node --input-type=commonjs -e "
     const fs = require('fs');
     const f = '$PUBLIC_DIR/data.json';
     const d = JSON.parse(fs.readFileSync(f, 'utf-8'));
@@ -63,4 +63,4 @@ fi
 node "$DIR/scripts/predictions.js" auto
 
 echo "[$(date)] Done. Latest draw:"
-node -e "const d=JSON.parse(require('fs').readFileSync('$PUBLIC_DIR/data.json','utf-8'));console.log(d.lastDraw.date, d.lastDraw.balls.join('-'), '+', d.lastDraw.stars.join('-'))"
+node --input-type=commonjs -e "const d=JSON.parse(require('fs').readFileSync('$PUBLIC_DIR/data.json','utf-8'));console.log(d.lastDraw.date, d.lastDraw.balls.join('-'), '+', d.lastDraw.stars.join('-'))"

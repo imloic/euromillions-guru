@@ -52,7 +52,7 @@ jobs:
             grep -oE 'Près de [0-9]+' | grep -oE '[0-9]+' | head -1)
           if [ -n "$JACKPOT" ]; then
             echo "Jackpot: ~${JACKPOT}M"
-            node -e "
+            node --input-type=commonjs -e "
               const fs = require('fs');
               const f = 'public/data.json';
               const d = JSON.parse(fs.readFileSync(f, 'utf-8'));
@@ -83,7 +83,7 @@ jobs:
           if git diff --cached --quiet; then
             echo "No changes to commit"
           else
-            LAST_DRAW=$(node -e "const d=JSON.parse(require('fs').readFileSync('public/data.json','utf-8'));console.log(d.lastDraw.date)")
+            LAST_DRAW=$(node --input-type=commonjs -e "const d=JSON.parse(require('fs').readFileSync('public/data.json','utf-8'));console.log(d.lastDraw.date)")
             git commit -m "data: update tirage $LAST_DRAW"
             git push
           fi
