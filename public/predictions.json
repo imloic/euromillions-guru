@@ -31,9 +31,13 @@
       "matchedBalls": 1,
       "matchedStars": 0,
       "rank": 0,
-      "rankLabel": "1+0",
+      "rankLabel": "0+0",
       "gain": 0,
-      "net": -2.5
+      "epRank": 0,
+      "epLabel": "",
+      "epGain": 0,
+      "totalGain": 0,
+      "net": -3.5
     }
   },
   {
@@ -70,7 +74,11 @@
       "rank": 13,
       "rankLabel": "2+0",
       "gain": 3.6,
-      "net": 1.1
+      "epRank": 0,
+      "epLabel": "",
+      "epGain": 0,
+      "totalGain": 3.6,
+      "net": 0.10000000000000009
     }
   },
   {
@@ -107,7 +115,11 @@
       "rank": 0,
       "rankLabel": "0+0",
       "gain": 0,
-      "net": -2.5
+      "epRank": 0,
+      "epLabel": "",
+      "epGain": 0,
+      "totalGain": 0,
+      "net": -3.5
     }
   },
   {
@@ -144,7 +156,11 @@
       "rank": 0,
       "rankLabel": "0+0",
       "gain": 0,
-      "net": -2.5
+      "epRank": 0,
+      "epLabel": "",
+      "epGain": 0,
+      "totalGain": 0,
+      "net": -3.5
     }
   },
   {
@@ -179,9 +195,13 @@
       "matchedBalls": 1,
       "matchedStars": 1,
       "rank": 0,
-      "rankLabel": "1+1",
+      "rankLabel": "0+0",
       "gain": 0,
-      "net": -2.5
+      "epRank": 9,
+      "epLabel": "1+1★",
+      "epGain": 2.7,
+      "totalGain": 2.7,
+      "net": -0.7999999999999998
     }
   },
   {
@@ -218,7 +238,11 @@
       "rank": 0,
       "rankLabel": "0+0",
       "gain": 0,
-      "net": -2.5
+      "epRank": 0,
+      "epLabel": "",
+      "epGain": 0,
+      "totalGain": 0,
+      "net": -3.5
     }
   },
   {
@@ -253,9 +277,13 @@
       "matchedBalls": 1,
       "matchedStars": 0,
       "rank": 0,
-      "rankLabel": "1+0",
+      "rankLabel": "0+0",
       "gain": 0,
-      "net": -2.5
+      "epRank": 0,
+      "epLabel": "",
+      "epGain": 0,
+      "totalGain": 0,
+      "net": -3.5
     }
   },
   {
@@ -290,9 +318,13 @@
       "matchedBalls": 0,
       "matchedStars": 1,
       "rank": 0,
-      "rankLabel": "0+1",
+      "rankLabel": "0+0",
       "gain": 0,
-      "net": -2.5
+      "epRank": 10,
+      "epLabel": "0+★",
+      "epGain": 2.5,
+      "totalGain": 2.5,
+      "net": -1
     }
   },
   {
@@ -327,9 +359,13 @@
       "matchedBalls": 0,
       "matchedStars": 1,
       "rank": 0,
-      "rankLabel": "0+1",
+      "rankLabel": "0+0",
       "gain": 0,
-      "net": -2.5
+      "epRank": 10,
+      "epLabel": "0+★",
+      "epGain": 2.3,
+      "totalGain": 2.3,
+      "net": -1.2000000000000002
     }
   },
   {
@@ -366,7 +402,11 @@
       "rank": 0,
       "rankLabel": "0+0",
       "gain": 0,
-      "net": -2.5
+      "epRank": 0,
+      "epLabel": "",
+      "epGain": 0,
+      "totalGain": 0,
+      "net": -3.5
     }
   },
   {
@@ -403,7 +443,11 @@
       "rank": 12,
       "rankLabel": "2+1",
       "gain": 6.1,
-      "net": 3.5999999999999996
+      "epRank": 7,
+      "epLabel": "2+1★",
+      "epGain": 4.4,
+      "totalGain": 10.5,
+      "net": 7
     }
   },
   {
@@ -440,7 +484,11 @@
       "rank": 0,
       "rankLabel": "0+0",
       "gain": 0,
-      "net": -2.5
+      "epRank": 0,
+      "epLabel": "",
+      "epGain": 0,
+      "totalGain": 0,
+      "net": -3.5
     }
   },
   {
@@ -477,7 +525,11 @@
       "rank": 0,
       "rankLabel": "0+0",
       "gain": 0,
-      "net": -2.5
+      "epRank": 0,
+      "epLabel": "",
+      "epGain": 0,
+      "totalGain": 0,
+      "net": -3.5
     }
   },
   {
@@ -512,9 +564,13 @@
       "matchedBalls": 1,
       "matchedStars": 0,
       "rank": 0,
-      "rankLabel": "1+0",
+      "rankLabel": "0+0",
       "gain": 0,
-      "net": -2.5
+      "epRank": 0,
+      "epLabel": "",
+      "epGain": 0,
+      "totalGain": 0,
+      "net": -3.5
     }
   },
   {
@@ -549,9 +605,13 @@
       "matchedBalls": 0,
       "matchedStars": 1,
       "rank": 0,
-      "rankLabel": "0+1",
+      "rankLabel": "0+0",
       "gain": 0,
-      "net": -2.5
+      "epRank": 10,
+      "epLabel": "0+★",
+      "epGain": 2.5,
+      "totalGain": 2.5,
+      "net": -1
     }
   },
   {
@@ -586,9 +646,13 @@
       "matchedBalls": 1,
       "matchedStars": 0,
       "rank": 0,
-      "rankLabel": "1+0",
+      "rankLabel": "0+0",
       "gain": 0,
-      "net": -2.5
+      "epRank": 0,
+      "epLabel": "",
+      "epGain": 0,
+      "totalGain": 0,
+      "net": -3.5
     }
   },
   {
@@ -625,7 +689,11 @@
       "rank": 0,
       "rankLabel": "0+0",
       "gain": 0,
-      "net": -2.5
+      "epRank": 0,
+      "epLabel": "",
+      "epGain": 0,
+      "totalGain": 0,
+      "net": -3.5
     }
   },
   {
@@ -660,9 +728,13 @@
       "matchedBalls": 0,
       "matchedStars": 1,
       "rank": 0,
-      "rankLabel": "0+1",
+      "rankLabel": "0+0",
       "gain": 0,
-      "net": -2.5
+      "epRank": 10,
+      "epLabel": "0+★",
+      "epGain": 2.4,
+      "totalGain": 2.4,
+      "net": -1.1
     }
   },
   {
@@ -697,9 +769,13 @@
       "matchedBalls": 1,
       "matchedStars": 0,
       "rank": 0,
-      "rankLabel": "1+0",
+      "rankLabel": "0+0",
       "gain": 0,
-      "net": -2.5
+      "epRank": 0,
+      "epLabel": "",
+      "epGain": 0,
+      "totalGain": 0,
+      "net": -3.5
     }
   },
   {
@@ -736,7 +812,11 @@
       "rank": 0,
       "rankLabel": "0+0",
       "gain": 0,
-      "net": -2.5
+      "epRank": 0,
+      "epLabel": "",
+      "epGain": 0,
+      "totalGain": 0,
+      "net": -3.5
     }
   },
   {
@@ -773,7 +853,11 @@
       "rank": 12,
       "rankLabel": "2+1",
       "gain": 5.1,
-      "net": 2.5999999999999996
+      "epRank": 7,
+      "epLabel": "2+1★",
+      "epGain": 3,
+      "totalGain": 8.1,
+      "net": 4.6
     }
   },
   {
@@ -808,9 +892,13 @@
       "matchedBalls": 0,
       "matchedStars": 1,
       "rank": 0,
-      "rankLabel": "0+1",
+      "rankLabel": "0+0",
       "gain": 0,
-      "net": -2.5
+      "epRank": 10,
+      "epLabel": "0+★",
+      "epGain": 2.7,
+      "totalGain": 2.7,
+      "net": -0.7999999999999998
     }
   },
   {
@@ -847,7 +935,11 @@
       "rank": 0,
       "rankLabel": "0+0",
       "gain": 0,
-      "net": -2.5
+      "epRank": 0,
+      "epLabel": "",
+      "epGain": 0,
+      "totalGain": 0,
+      "net": -3.5
     }
   },
   {
@@ -882,9 +974,13 @@
       "matchedBalls": 1,
       "matchedStars": 1,
       "rank": 0,
-      "rankLabel": "1+1",
+      "rankLabel": "0+0",
       "gain": 0,
-      "net": -2.5
+      "epRank": 9,
+      "epLabel": "1+1★",
+      "epGain": 2.5,
+      "totalGain": 2.5,
+      "net": -1
     }
   },
   {
@@ -919,9 +1015,13 @@
       "matchedBalls": 1,
       "matchedStars": 1,
       "rank": 0,
-      "rankLabel": "1+1",
+      "rankLabel": "0+0",
       "gain": 0,
-      "net": -2.5
+      "epRank": 9,
+      "epLabel": "1+1★",
+      "epGain": 2.4,
+      "totalGain": 2.4,
+      "net": -1.1
     }
   },
   {
@@ -958,7 +1058,11 @@
       "rank": 13,
       "rankLabel": "2+0",
       "gain": 4.3,
-      "net": 1.7999999999999998
+      "epRank": 0,
+      "epLabel": "",
+      "epGain": 0,
+      "totalGain": 4.3,
+      "net": 0.7999999999999998
     }
   },
   {
@@ -993,9 +1097,13 @@
       "matchedBalls": 1,
       "matchedStars": 1,
       "rank": 0,
-      "rankLabel": "1+1",
+      "rankLabel": "0+0",
       "gain": 0,
-      "net": -2.5
+      "epRank": 9,
+      "epLabel": "1+1★",
+      "epGain": 2.5,
+      "totalGain": 2.5,
+      "net": -1
     }
   },
   {
@@ -1030,9 +1138,13 @@
       "matchedBalls": 0,
       "matchedStars": 1,
       "rank": 0,
-      "rankLabel": "0+1",
+      "rankLabel": "0+0",
       "gain": 0,
-      "net": -2.5
+      "epRank": 10,
+      "epLabel": "0+★",
+      "epGain": 2.4,
+      "totalGain": 2.4,
+      "net": -1.1
     }
   },
   {
@@ -1069,7 +1181,11 @@
       "rank": 0,
       "rankLabel": "0+0",
       "gain": 0,
-      "net": -2.5
+      "epRank": 0,
+      "epLabel": "",
+      "epGain": 0,
+      "totalGain": 0,
+      "net": -3.5
     }
   },
   {
@@ -1104,9 +1220,13 @@
       "matchedBalls": 1,
       "matchedStars": 1,
       "rank": 0,
-      "rankLabel": "1+1",
+      "rankLabel": "0+0",
       "gain": 0,
-      "net": -2.5
+      "epRank": 9,
+      "epLabel": "1+1★",
+      "epGain": 2.9,
+      "totalGain": 2.9,
+      "net": -0.6000000000000001
     }
   },
   {
@@ -1141,9 +1261,13 @@
       "matchedBalls": 1,
       "matchedStars": 1,
       "rank": 0,
-      "rankLabel": "1+1",
+      "rankLabel": "0+0",
       "gain": 0,
-      "net": -2.5
+      "epRank": 9,
+      "epLabel": "1+1★",
+      "epGain": 2.4,
+      "totalGain": 2.4,
+      "net": -1.1
     }
   },
   {
@@ -1180,7 +1304,11 @@
       "rank": 13,
       "rankLabel": "2+0",
       "gain": 3.8,
-      "net": 1.2999999999999998
+      "epRank": 0,
+      "epLabel": "",
+      "epGain": 0,
+      "totalGain": 3.8,
+      "net": 0.2999999999999998
     }
   },
   {
@@ -1215,9 +1343,13 @@
       "matchedBalls": 1,
       "matchedStars": 0,
       "rank": 0,
-      "rankLabel": "1+0",
+      "rankLabel": "0+0",
       "gain": 0,
-      "net": -2.5
+      "epRank": 0,
+      "epLabel": "",
+      "epGain": 0,
+      "totalGain": 0,
+      "net": -3.5
     }
   },
   {
@@ -1252,9 +1384,13 @@
       "matchedBalls": 0,
       "matchedStars": 1,
       "rank": 0,
-      "rankLabel": "0+1",
+      "rankLabel": "0+0",
       "gain": 0,
-      "net": -2.5
+      "epRank": 10,
+      "epLabel": "0+★",
+      "epGain": 2.4,
+      "totalGain": 2.4,
+      "net": -1.1
     }
   },
   {
@@ -1289,9 +1425,13 @@
       "matchedBalls": 1,
       "matchedStars": 0,
       "rank": 0,
-      "rankLabel": "1+0",
+      "rankLabel": "0+0",
       "gain": 0,
-      "net": -2.5
+      "epRank": 0,
+      "epLabel": "",
+      "epGain": 0,
+      "totalGain": 0,
+      "net": -3.5
     }
   },
   {
@@ -1328,7 +1468,11 @@
       "rank": 0,
       "rankLabel": "0+0",
       "gain": 0,
-      "net": -2.5
+      "epRank": 0,
+      "epLabel": "",
+      "epGain": 0,
+      "totalGain": 0,
+      "net": -3.5
     }
   },
   {
@@ -1365,7 +1509,11 @@
       "rank": 0,
       "rankLabel": "0+0",
       "gain": 0,
-      "net": -2.5
+      "epRank": 0,
+      "epLabel": "",
+      "epGain": 0,
+      "totalGain": 0,
+      "net": -3.5
     }
   },
   {
@@ -1402,7 +1550,11 @@
       "rank": 13,
       "rankLabel": "2+0",
       "gain": 4.4,
-      "net": 1.9000000000000004
+      "epRank": 0,
+      "epLabel": "",
+      "epGain": 0,
+      "totalGain": 4.4,
+      "net": 0.9000000000000004
     }
   },
   {
@@ -1437,9 +1589,13 @@
       "matchedBalls": 1,
       "matchedStars": 0,
       "rank": 0,
-      "rankLabel": "1+0",
+      "rankLabel": "0+0",
       "gain": 0,
-      "net": -2.5
+      "epRank": 0,
+      "epLabel": "",
+      "epGain": 0,
+      "totalGain": 0,
+      "net": -3.5
     }
   },
   {
@@ -1474,9 +1630,13 @@
       "matchedBalls": 1,
       "matchedStars": 0,
       "rank": 0,
-      "rankLabel": "1+0",
+      "rankLabel": "0+0",
       "gain": 0,
-      "net": -2.5
+      "epRank": 0,
+      "epLabel": "",
+      "epGain": 0,
+      "totalGain": 0,
+      "net": -3.5
     }
   },
   {
@@ -1511,9 +1671,13 @@
       "matchedBalls": 1,
       "matchedStars": 1,
       "rank": 0,
-      "rankLabel": "1+1",
+      "rankLabel": "0+0",
       "gain": 0,
-      "net": -2.5
+      "epRank": 9,
+      "epLabel": "1+1★",
+      "epGain": 2.4,
+      "totalGain": 2.4,
+      "net": -1.1
     }
   },
   {
@@ -1550,7 +1714,11 @@
       "rank": 0,
       "rankLabel": "0+0",
       "gain": 0,
-      "net": -2.5
+      "epRank": 0,
+      "epLabel": "",
+      "epGain": 0,
+      "totalGain": 0,
+      "net": -3.5
     }
   },
   {
@@ -1587,7 +1755,11 @@
       "rank": 0,
       "rankLabel": "0+0",
       "gain": 0,
-      "net": -2.5
+      "epRank": 0,
+      "epLabel": "",
+      "epGain": 0,
+      "totalGain": 0,
+      "net": -3.5
     }
   },
   {
@@ -1622,9 +1794,13 @@
       "matchedBalls": 1,
       "matchedStars": 0,
       "rank": 0,
-      "rankLabel": "1+0",
+      "rankLabel": "0+0",
       "gain": 0,
-      "net": -2.5
+      "epRank": 0,
+      "epLabel": "",
+      "epGain": 0,
+      "totalGain": 0,
+      "net": -3.5
     }
   },
   {
@@ -1661,7 +1837,11 @@
       "rank": 0,
       "rankLabel": "0+0",
       "gain": 0,
-      "net": -2.5
+      "epRank": 0,
+      "epLabel": "",
+      "epGain": 0,
+      "totalGain": 0,
+      "net": -3.5
     }
   },
   {
@@ -1696,9 +1876,13 @@
       "matchedBalls": 1,
       "matchedStars": 0,
       "rank": 0,
-      "rankLabel": "1+0",
+      "rankLabel": "0+0",
       "gain": 0,
-      "net": -2.5
+      "epRank": 0,
+      "epLabel": "",
+      "epGain": 0,
+      "totalGain": 0,
+      "net": -3.5
     }
   },
   {
@@ -1733,9 +1917,13 @@
       "matchedBalls": 1,
       "matchedStars": 1,
       "rank": 0,
-      "rankLabel": "1+1",
+      "rankLabel": "0+0",
       "gain": 0,
-      "net": -2.5
+      "epRank": 9,
+      "epLabel": "1+1★",
+      "epGain": 2.4,
+      "totalGain": 2.4,
+      "net": -1.1
     }
   },
   {
@@ -1772,7 +1960,11 @@
       "rank": 0,
       "rankLabel": "0+0",
       "gain": 0,
-      "net": -2.5
+      "epRank": 0,
+      "epLabel": "",
+      "epGain": 0,
+      "totalGain": 0,
+      "net": -3.5
     }
   },
   {
@@ -1809,7 +2001,11 @@
       "rank": 0,
       "rankLabel": "0+0",
       "gain": 0,
-      "net": -2.5
+      "epRank": 0,
+      "epLabel": "",
+      "epGain": 0,
+      "totalGain": 0,
+      "net": -3.5
     }
   },
   {
@@ -1846,7 +2042,11 @@
       "rank": 0,
       "rankLabel": "0+0",
       "gain": 0,
-      "net": -2.5
+      "epRank": 0,
+      "epLabel": "",
+      "epGain": 0,
+      "totalGain": 0,
+      "net": -3.5
     }
   },
   {
@@ -1883,7 +2083,11 @@
       "rank": 0,
       "rankLabel": "0+0",
       "gain": 0,
-      "net": -2.5
+      "epRank": 0,
+      "epLabel": "",
+      "epGain": 0,
+      "totalGain": 0,
+      "net": -3.5
     }
   },
   {
@@ -1918,9 +2122,13 @@
       "matchedBalls": 1,
       "matchedStars": 0,
       "rank": 0,
-      "rankLabel": "1+0",
+      "rankLabel": "0+0",
       "gain": 0,
-      "net": -2.5
+      "epRank": 0,
+      "epLabel": "",
+      "epGain": 0,
+      "totalGain": 0,
+      "net": -3.5
     }
   },
   {
@@ -1957,7 +2165,11 @@
       "rank": 0,
       "rankLabel": "0+0",
       "gain": 0,
-      "net": -2.5
+      "epRank": 0,
+      "epLabel": "",
+      "epGain": 0,
+      "totalGain": 0,
+      "net": -3.5
     }
   },
   {
@@ -1992,9 +2204,13 @@
       "matchedBalls": 1,
       "matchedStars": 1,
       "rank": 0,
-      "rankLabel": "1+1",
+      "rankLabel": "0+0",
       "gain": 0,
-      "net": -2.5
+      "epRank": 9,
+      "epLabel": "1+1★",
+      "epGain": 2.2,
+      "totalGain": 2.2,
+      "net": -1.2999999999999998
     }
   },
   {
@@ -2029,9 +2245,13 @@
       "matchedBalls": 0,
       "matchedStars": 1,
       "rank": 0,
-      "rankLabel": "0+1",
+      "rankLabel": "0+0",
       "gain": 0,
-      "net": -2.5
+      "epRank": 10,
+      "epLabel": "0+★",
+      "epGain": 2.2,
+      "totalGain": 2.2,
+      "net": -1.2999999999999998
     }
   },
   {
@@ -2066,9 +2286,13 @@
       "matchedBalls": 1,
       "matchedStars": 1,
       "rank": 0,
-      "rankLabel": "1+1",
+      "rankLabel": "0+0",
       "gain": 0,
-      "net": -2.5
+      "epRank": 9,
+      "epLabel": "1+1★",
+      "epGain": 2.8,
+      "totalGain": 2.8,
+      "net": -0.7000000000000002
     }
   },
   {
@@ -2103,9 +2327,13 @@
       "matchedBalls": 1,
       "matchedStars": 0,
       "rank": 0,
-      "rankLabel": "1+0",
+      "rankLabel": "0+0",
       "gain": 0,
-      "net": -2.5
+      "epRank": 0,
+      "epLabel": "",
+      "epGain": 0,
+      "totalGain": 0,
+      "net": -3.5
     }
   },
   {
@@ -2142,7 +2370,11 @@
       "rank": 0,
       "rankLabel": "0+0",
       "gain": 0,
-      "net": -2.5
+      "epRank": 0,
+      "epLabel": "",
+      "epGain": 0,
+      "totalGain": 0,
+      "net": -3.5
     }
   },
   {
@@ -2177,9 +2409,13 @@
       "matchedBalls": 1,
       "matchedStars": 0,
       "rank": 0,
-      "rankLabel": "1+0",
+      "rankLabel": "0+0",
       "gain": 0,
-      "net": -2.5
+      "epRank": 0,
+      "epLabel": "",
+      "epGain": 0,
+      "totalGain": 0,
+      "net": -3.5
     }
   },
   {
@@ -2216,7 +2452,11 @@
       "rank": 0,
       "rankLabel": "0+0",
       "gain": 0,
-      "net": -2.5
+      "epRank": 0,
+      "epLabel": "",
+      "epGain": 0,
+      "totalGain": 0,
+      "net": -3.5
     }
   },
   {
@@ -2253,7 +2493,11 @@
       "rank": 0,
       "rankLabel": "0+0",
       "gain": 0,
-      "net": -2.5
+      "epRank": 0,
+      "epLabel": "",
+      "epGain": 0,
+      "totalGain": 0,
+      "net": -3.5
     }
   },
   {
@@ -2290,7 +2534,11 @@
       "rank": 0,
       "rankLabel": "0+0",
       "gain": 0,
-      "net": -2.5
+      "epRank": 0,
+      "epLabel": "",
+      "epGain": 0,
+      "totalGain": 0,
+      "net": -3.5
     }
   },
   {
@@ -2325,9 +2573,13 @@
       "matchedBalls": 0,
       "matchedStars": 1,
       "rank": 0,
-      "rankLabel": "0+1",
+      "rankLabel": "0+0",
       "gain": 0,
-      "net": -2.5
+      "epRank": 10,
+      "epLabel": "0+★",
+      "epGain": 2.3,
+      "totalGain": 2.3,
+      "net": -1.2000000000000002
     }
   },
   {
@@ -2362,9 +2614,13 @@
       "matchedBalls": 0,
       "matchedStars": 1,
       "rank": 0,
-      "rankLabel": "0+1",
+      "rankLabel": "0+0",
       "gain": 0,
-      "net": -2.5
+      "epRank": 10,
+      "epLabel": "0+★",
+      "epGain": 2.8,
+      "totalGain": 2.8,
+      "net": -0.7000000000000002
     }
   },
   {
@@ -2401,7 +2657,11 @@
       "rank": 0,
       "rankLabel": "0+0",
       "gain": 0,
-      "net": -2.5
+      "epRank": 0,
+      "epLabel": "",
+      "epGain": 0,
+      "totalGain": 0,
+      "net": -3.5
     }
   },
   {
@@ -2436,9 +2696,13 @@
       "matchedBalls": 1,
       "matchedStars": 0,
       "rank": 0,
-      "rankLabel": "1+0",
+      "rankLabel": "0+0",
       "gain": 0,
-      "net": -2.5
+      "epRank": 0,
+      "epLabel": "",
+      "epGain": 0,
+      "totalGain": 0,
+      "net": -3.5
     }
   },
   {
@@ -2475,7 +2739,11 @@
       "rank": 0,
       "rankLabel": "0+0",
       "gain": 0,
-      "net": -2.5
+      "epRank": 0,
+      "epLabel": "",
+      "epGain": 0,
+      "totalGain": 0,
+      "net": -3.5
     }
   },
   {
@@ -2510,9 +2778,13 @@
       "matchedBalls": 1,
       "matchedStars": 0,
       "rank": 0,
-      "rankLabel": "1+0",
+      "rankLabel": "0+0",
       "gain": 0,
-      "net": -2.5
+      "epRank": 0,
+      "epLabel": "",
+      "epGain": 0,
+      "totalGain": 0,
+      "net": -3.5
     }
   },
   {
@@ -2547,9 +2819,13 @@
       "matchedBalls": 0,
       "matchedStars": 1,
       "rank": 0,
-      "rankLabel": "0+1",
+      "rankLabel": "0+0",
       "gain": 0,
-      "net": -2.5
+      "epRank": 10,
+      "epLabel": "0+★",
+      "epGain": 2.5,
+      "totalGain": 2.5,
+      "net": -1
     }
   },
   {
@@ -2586,7 +2862,11 @@
       "rank": 0,
       "rankLabel": "0+0",
       "gain": 0,
-      "net": -2.5
+      "epRank": 0,
+      "epLabel": "",
+      "epGain": 0,
+      "totalGain": 0,
+      "net": -3.5
     }
   },
   {
@@ -2623,7 +2903,11 @@
       "rank": 0,
       "rankLabel": "0+0",
       "gain": 0,
-      "net": -2.5
+      "epRank": 0,
+      "epLabel": "",
+      "epGain": 0,
+      "totalGain": 0,
+      "net": -3.5
     }
   },
   {
@@ -2658,9 +2942,13 @@
       "matchedBalls": 1,
       "matchedStars": 0,
       "rank": 0,
-      "rankLabel": "1+0",
+      "rankLabel": "0+0",
       "gain": 0,
-      "net": -2.5
+      "epRank": 0,
+      "epLabel": "",
+      "epGain": 0,
+      "totalGain": 0,
+      "net": -3.5
     }
   },
   {
@@ -2695,9 +2983,13 @@
       "matchedBalls": 1,
       "matchedStars": 0,
       "rank": 0,
-      "rankLabel": "1+0",
+      "rankLabel": "0+0",
       "gain": 0,
-      "net": -2.5
+      "epRank": 0,
+      "epLabel": "",
+      "epGain": 0,
+      "totalGain": 0,
+      "net": -3.5
     }
   },
   {
@@ -2734,7 +3026,11 @@
       "rank": 0,
       "rankLabel": "0+0",
       "gain": 0,
-      "net": -2.5
+      "epRank": 0,
+      "epLabel": "",
+      "epGain": 0,
+      "totalGain": 0,
+      "net": -3.5
     }
   },
   {
@@ -2771,7 +3067,11 @@
       "rank": 11,
       "rankLabel": "1+2",
       "gain": 5.8,
-      "net": 3.3
+      "epRank": 8,
+      "epLabel": "1+2★",
+      "epGain": 8.9,
+      "totalGain": 14.7,
+      "net": 11.2
     }
   },
   {
@@ -2808,7 +3108,11 @@
       "rank": 0,
       "rankLabel": "0+0",
       "gain": 0,
-      "net": -2.5
+      "epRank": 0,
+      "epLabel": "",
+      "epGain": 0,
+      "totalGain": 0,
+      "net": -3.5
     }
   },
   {
@@ -2845,7 +3149,11 @@
       "rank": 0,
       "rankLabel": "0+0",
       "gain": 0,
-      "net": -2.5
+      "epRank": 0,
+      "epLabel": "",
+      "epGain": 0,
+      "totalGain": 0,
+      "net": -3.5
     }
   },
   {
@@ -2882,7 +3190,11 @@
       "rank": 0,
       "rankLabel": "0+0",
       "gain": 0,
-      "net": -2.5
+      "epRank": 0,
+      "epLabel": "",
+      "epGain": 0,
+      "totalGain": 0,
+      "net": -3.5
     }
   },
   {
@@ -2917,9 +3229,13 @@
       "matchedBalls": 1,
       "matchedStars": 1,
       "rank": 0,
-      "rankLabel": "1+1",
+      "rankLabel": "0+0",
       "gain": 0,
-      "net": -2.5
+      "epRank": 9,
+      "epLabel": "1+1★",
+      "epGain": 2.5,
+      "totalGain": 2.5,
+      "net": -1
     }
   },
   {
@@ -2954,9 +3270,13 @@
       "matchedBalls": 0,
       "matchedStars": 1,
       "rank": 0,
-      "rankLabel": "0+1",
+      "rankLabel": "0+0",
       "gain": 0,
-      "net": -2.5
+      "epRank": 10,
+      "epLabel": "0+★",
+      "epGain": 2.5,
+      "totalGain": 2.5,
+      "net": -1
     }
   },
   {
@@ -2993,7 +3313,11 @@
       "rank": 0,
       "rankLabel": "0+0",
       "gain": 0,
-      "net": -2.5
+      "epRank": 0,
+      "epLabel": "",
+      "epGain": 0,
+      "totalGain": 0,
+      "net": -3.5
     }
   },
   {
@@ -3028,9 +3352,13 @@
       "matchedBalls": 1,
       "matchedStars": 1,
       "rank": 0,
-      "rankLabel": "1+1",
+      "rankLabel": "0+0",
       "gain": 0,
-      "net": -2.5
+      "epRank": 9,
+      "epLabel": "1+1★",
+      "epGain": 2.6,
+      "totalGain": 2.6,
+      "net": -0.8999999999999999
     }
   },
   {
@@ -3065,9 +3393,13 @@
       "matchedBalls": 0,
       "matchedStars": 1,
       "rank": 0,
-      "rankLabel": "0+1",
+      "rankLabel": "0+0",
       "gain": 0,
-      "net": -2.5
+      "epRank": 10,
+      "epLabel": "0+★",
+      "epGain": 2.4,
+      "totalGain": 2.4,
+      "net": -1.1
     }
   },
   {
@@ -3104,7 +3436,11 @@
       "rank": 0,
       "rankLabel": "0+0",
       "gain": 0,
-      "net": -2.5
+      "epRank": 0,
+      "epLabel": "",
+      "epGain": 0,
+      "totalGain": 0,
+      "net": -3.5
     }
   },
   {
@@ -3141,7 +3477,11 @@
       "rank": 0,
       "rankLabel": "0+0",
       "gain": 0,
-      "net": -2.5
+      "epRank": 0,
+      "epLabel": "",
+      "epGain": 0,
+      "totalGain": 0,
+      "net": -3.5
     }
   },
   {
@@ -3176,9 +3516,13 @@
       "matchedBalls": 1,
       "matchedStars": 1,
       "rank": 0,
-      "rankLabel": "1+1",
+      "rankLabel": "0+0",
       "gain": 0,
-      "net": -2.5
+      "epRank": 9,
+      "epLabel": "1+1★",
+      "epGain": 2.9,
+      "totalGain": 2.9,
+      "net": -0.6000000000000001
     }
   },
   {
@@ -3215,7 +3559,11 @@
       "rank": 0,
       "rankLabel": "0+0",
       "gain": 0,
-      "net": -2.5
+      "epRank": 0,
+      "epLabel": "",
+      "epGain": 0,
+      "totalGain": 0,
+      "net": -3.5
     }
   },
   {
@@ -3250,9 +3598,13 @@
       "matchedBalls": 1,
       "matchedStars": 0,
       "rank": 0,
-      "rankLabel": "1+0",
+      "rankLabel": "0+0",
       "gain": 0,
-      "net": -2.5
+      "epRank": 0,
+      "epLabel": "",
+      "epGain": 0,
+      "totalGain": 0,
+      "net": -3.5
     }
   },
   {
@@ -3289,7 +3641,11 @@
       "rank": 13,
       "rankLabel": "2+0",
       "gain": 3.7,
-      "net": 1.2000000000000002
+      "epRank": 0,
+      "epLabel": "",
+      "epGain": 0,
+      "totalGain": 3.7,
+      "net": 0.20000000000000018
     }
   },
   {
@@ -3326,7 +3682,11 @@
       "rank": 0,
       "rankLabel": "0+0",
       "gain": 0,
-      "net": -2.5
+      "epRank": 0,
+      "epLabel": "",
+      "epGain": 0,
+      "totalGain": 0,
+      "net": -3.5
     }
   },
   {
@@ -3363,7 +3723,11 @@
       "rank": 0,
       "rankLabel": "0+0",
       "gain": 0,
-      "net": -2.5
+      "epRank": 0,
+      "epLabel": "",
+      "epGain": 0,
+      "totalGain": 0,
+      "net": -3.5
     }
   },
   {
@@ -3400,7 +3764,11 @@
       "rank": 0,
       "rankLabel": "0+0",
       "gain": 0,
-      "net": -2.5
+      "epRank": 0,
+      "epLabel": "",
+      "epGain": 0,
+      "totalGain": 0,
+      "net": -3.5
     }
   },
   {
@@ -3437,7 +3805,11 @@
       "rank": 0,
       "rankLabel": "0+0",
       "gain": 0,
-      "net": -2.5
+      "epRank": 0,
+      "epLabel": "",
+      "epGain": 0,
+      "totalGain": 0,
+      "net": -3.5
     }
   },
   {
@@ -3472,9 +3844,13 @@
       "matchedBalls": 0,
       "matchedStars": 1,
       "rank": 0,
-      "rankLabel": "0+1",
+      "rankLabel": "0+0",
       "gain": 0,
-      "net": -2.5
+      "epRank": 10,
+      "epLabel": "0+★",
+      "epGain": 2.7,
+      "totalGain": 2.7,
+      "net": -0.7999999999999998
     }
   },
   {
@@ -3511,7 +3887,11 @@
       "rank": 0,
       "rankLabel": "0+0",
       "gain": 0,
-      "net": -2.5
+      "epRank": 0,
+      "epLabel": "",
+      "epGain": 0,
+      "totalGain": 0,
+      "net": -3.5
     }
   },
   {
@@ -3546,9 +3926,13 @@
       "matchedBalls": 1,
       "matchedStars": 0,
       "rank": 0,
-      "rankLabel": "1+0",
+      "rankLabel": "0+0",
       "gain": 0,
-      "net": -2.5
+      "epRank": 0,
+      "epLabel": "",
+      "epGain": 0,
+      "totalGain": 0,
+      "net": -3.5
     }
   },
   {
@@ -3585,7 +3969,11 @@
       "rank": 0,
       "rankLabel": "0+0",
       "gain": 0,
-      "net": -2.5
+      "epRank": 0,
+      "epLabel": "",
+      "epGain": 0,
+      "totalGain": 0,
+      "net": -3.5
     }
   },
   {
@@ -3620,9 +4008,13 @@
       "matchedBalls": 1,
       "matchedStars": 0,
       "rank": 0,
-      "rankLabel": "1+0",
+      "rankLabel": "0+0",
       "gain": 0,
-      "net": -2.5
+      "epRank": 0,
+      "epLabel": "",
+      "epGain": 0,
+      "totalGain": 0,
+      "net": -3.5
     }
   },
   {
@@ -3657,9 +4049,13 @@
       "matchedBalls": 0,
       "matchedStars": 1,
       "rank": 0,
-      "rankLabel": "0+1",
+      "rankLabel": "0+0",
       "gain": 0,
-      "net": -2.5
+      "epRank": 10,
+      "epLabel": "0+★",
+      "epGain": 2.4,
+      "totalGain": 2.4,
+      "net": -1.1
     }
   },
   {
@@ -3694,9 +4090,13 @@
       "matchedBalls": 1,
       "matchedStars": 1,
       "rank": 0,
-      "rankLabel": "1+1",
+      "rankLabel": "0+0",
       "gain": 0,
-      "net": -2.5
+      "epRank": 9,
+      "epLabel": "1+1★",
+      "epGain": 2.8,
+      "totalGain": 2.8,
+      "net": -0.7000000000000002
     }
   },
   {
@@ -3733,7 +4133,11 @@
       "rank": 0,
       "rankLabel": "0+0",
       "gain": 0,
-      "net": -2.5
+      "epRank": 0,
+      "epLabel": "",
+      "epGain": 0,
+      "totalGain": 0,
+      "net": -3.5
     }
   },
   {
@@ -3770,7 +4174,11 @@
       "rank": 0,
       "rankLabel": "0+0",
       "gain": 0,
-      "net": -2.5
+      "epRank": 0,
+      "epLabel": "",
+      "epGain": 0,
+      "totalGain": 0,
+      "net": -3.5
     }
   },
   {
@@ -3805,9 +4213,13 @@
       "matchedBalls": 1,
       "matchedStars": 0,
       "rank": 0,
-      "rankLabel": "1+0",
+      "rankLabel": "0+0",
       "gain": 0,
-      "net": -2.5
+      "epRank": 0,
+      "epLabel": "",
+      "epGain": 0,
+      "totalGain": 0,
+      "net": -3.5
     }
   },
   {
@@ -3842,9 +4254,13 @@
       "matchedBalls": 1,
       "matchedStars": 0,
       "rank": 0,
-      "rankLabel": "1+0",
+      "rankLabel": "0+0",
       "gain": 0,
-      "net": -2.5
+      "epRank": 0,
+      "epLabel": "",
+      "epGain": 0,
+      "totalGain": 0,
+      "net": -3.5
     }
   },
   {
@@ -3879,9 +4295,13 @@
       "matchedBalls": 0,
       "matchedStars": 1,
       "rank": 0,
-      "rankLabel": "0+1",
+      "rankLabel": "0+0",
       "gain": 0,
-      "net": -2.5
+      "epRank": 10,
+      "epLabel": "0+★",
+      "epGain": 2,
+      "totalGain": 2,
+      "net": -1.5
     }
   },
   {
@@ -3918,7 +4338,11 @@
       "rank": 13,
       "rankLabel": "2+0",
       "gain": 4.3,
-      "net": 1.7999999999999998
+      "epRank": 0,
+      "epLabel": "",
+      "epGain": 0,
+      "totalGain": 4.3,
+      "net": 0.7999999999999998
     }
   },
   {
@@ -3955,7 +4379,11 @@
       "rank": 0,
       "rankLabel": "0+0",
       "gain": 0,
-      "net": -2.5
+      "epRank": 0,
+      "epLabel": "",
+      "epGain": 0,
+      "totalGain": 0,
+      "net": -3.5
     }
   },
   {
@@ -3990,9 +4418,13 @@
       "matchedBalls": 1,
       "matchedStars": 0,
       "rank": 0,
-      "rankLabel": "1+0",
+      "rankLabel": "0+0",
       "gain": 0,
-      "net": -2.5
+      "epRank": 0,
+      "epLabel": "",
+      "epGain": 0,
+      "totalGain": 0,
+      "net": -3.5
     }
   },
   {
@@ -4029,7 +4461,11 @@
       "rank": 0,
       "rankLabel": "0+0",
       "gain": 0,
-      "net": -2.5
+      "epRank": 0,
+      "epLabel": "",
+      "epGain": 0,
+      "totalGain": 0,
+      "net": -3.5
     }
   },
   {
@@ -4066,7 +4502,11 @@
       "rank": 0,
       "rankLabel": "0+0",
       "gain": 0,
-      "net": -2.5
+      "epRank": 0,
+      "epLabel": "",
+      "epGain": 0,
+      "totalGain": 0,
+      "net": -3.5
     }
   },
   {
@@ -4103,7 +4543,11 @@
       "rank": 0,
       "rankLabel": "0+0",
       "gain": 0,
-      "net": -2.5
+      "epRank": 0,
+      "epLabel": "",
+      "epGain": 0,
+      "totalGain": 0,
+      "net": -3.5
     }
   },
   {
@@ -4140,7 +4584,11 @@
       "rank": 0,
       "rankLabel": "0+0",
       "gain": 0,
-      "net": -2.5
+      "epRank": 0,
+      "epLabel": "",
+      "epGain": 0,
+      "totalGain": 0,
+      "net": -3.5
     }
   },
   {
@@ -4177,7 +4625,11 @@
       "rank": 12,
       "rankLabel": "2+1",
       "gain": 5.5,
-      "net": 3
+      "epRank": 7,
+      "epLabel": "2+1★",
+      "epGain": 4.1,
+      "totalGain": 9.6,
+      "net": 6.1
     }
   },
   {
@@ -4214,7 +4666,11 @@
       "rank": 0,
       "rankLabel": "0+0",
       "gain": 0,
-      "net": -2.5
+      "epRank": 0,
+      "epLabel": "",
+      "epGain": 0,
+      "totalGain": 0,
+      "net": -3.5
     }
   },
   {
@@ -4249,9 +4705,13 @@
       "matchedBalls": 0,
       "matchedStars": 1,
       "rank": 0,
-      "rankLabel": "0+1",
+      "rankLabel": "0+0",
       "gain": 0,
-      "net": -2.5
+      "epRank": 10,
+      "epLabel": "0+★",
+      "epGain": 2.4,
+      "totalGain": 2.4,
+      "net": -1.1
     }
   },
   {
@@ -4286,9 +4746,13 @@
       "matchedBalls": 1,
       "matchedStars": 1,
       "rank": 0,
-      "rankLabel": "1+1",
+      "rankLabel": "0+0",
       "gain": 0,
-      "net": -2.5
+      "epRank": 9,
+      "epLabel": "1+1★",
+      "epGain": 2.3,
+      "totalGain": 2.3,
+      "net": -1.2000000000000002
     }
   },
   {
@@ -4323,9 +4787,13 @@
       "matchedBalls": 1,
       "matchedStars": 0,
       "rank": 0,
-      "rankLabel": "1+0",
+      "rankLabel": "0+0",
       "gain": 0,
-      "net": -2.5
+      "epRank": 0,
+      "epLabel": "",
+      "epGain": 0,
+      "totalGain": 0,
+      "net": -3.5
     }
   },
   {
@@ -4360,9 +4828,13 @@
       "matchedBalls": 1,
       "matchedStars": 0,
       "rank": 0,
-      "rankLabel": "1+0",
+      "rankLabel": "0+0",
       "gain": 0,
-      "net": -2.5
+      "epRank": 0,
+      "epLabel": "",
+      "epGain": 0,
+      "totalGain": 0,
+      "net": -3.5
     }
   },
   {
@@ -4397,9 +4869,13 @@
       "matchedBalls": 1,
       "matchedStars": 1,
       "rank": 0,
-      "rankLabel": "1+1",
+      "rankLabel": "0+0",
       "gain": 0,
-      "net": -2.5
+      "epRank": 9,
+      "epLabel": "1+1★",
+      "epGain": 2.7,
+      "totalGain": 2.7,
+      "net": -0.7999999999999998
     }
   },
   {
@@ -4434,9 +4910,13 @@
       "matchedBalls": 0,
       "matchedStars": 1,
       "rank": 0,
-      "rankLabel": "0+1",
+      "rankLabel": "0+0",
       "gain": 0,
-      "net": -2.5
+      "epRank": 10,
+      "epLabel": "0+★",
+      "epGain": 2.5,
+      "totalGain": 2.5,
+      "net": -1
     }
   },
   {
@@ -4473,7 +4953,11 @@
       "rank": 0,
       "rankLabel": "0+0",
       "gain": 0,
-      "net": -2.5
+      "epRank": 0,
+      "epLabel": "",
+      "epGain": 0,
+      "totalGain": 0,
+      "net": -3.5
     }
   },
   {
@@ -4508,9 +4992,13 @@
       "matchedBalls": 1,
       "matchedStars": 0,
       "rank": 0,
-      "rankLabel": "1+0",
+      "rankLabel": "0+0",
       "gain": 0,
-      "net": -2.5
+      "epRank": 0,
+      "epLabel": "",
+      "epGain": 0,
+      "totalGain": 0,
+      "net": -3.5
     }
   },
   {
@@ -4547,7 +5035,11 @@
       "rank": 12,
       "rankLabel": "2+1",
       "gain": 5.8,
-      "net": 3.3
+      "epRank": 7,
+      "epLabel": "2+1★",
+      "epGain": 3.9,
+      "totalGain": 9.7,
+      "net": 6.199999999999999
     }
   },
   {
@@ -4584,7 +5076,11 @@
       "rank": 0,
       "rankLabel": "0+0",
       "gain": 0,
-      "net": -2.5
+      "epRank": 0,
+      "epLabel": "",
+      "epGain": 0,
+      "totalGain": 0,
+      "net": -3.5
     }
   },
   {
@@ -4621,7 +5117,11 @@
       "rank": 0,
       "rankLabel": "0+0",
       "gain": 0,
-      "net": -2.5
+      "epRank": 0,
+      "epLabel": "",
+      "epGain": 0,
+      "totalGain": 0,
+      "net": -3.5
     }
   },
   {
@@ -4656,9 +5156,13 @@
       "matchedBalls": 1,
       "matchedStars": 1,
       "rank": 0,
-      "rankLabel": "1+1",
+      "rankLabel": "0+0",
       "gain": 0,
-      "net": -2.5
+      "epRank": 9,
+      "epLabel": "1+1★",
+      "epGain": 2,
+      "totalGain": 2,
+      "net": -1.5
     }
   },
   {
@@ -4693,9 +5197,13 @@
       "matchedBalls": 1,
       "matchedStars": 0,
       "rank": 0,
-      "rankLabel": "1+0",
+      "rankLabel": "0+0",
       "gain": 0,
-      "net": -2.5
+      "epRank": 0,
+      "epLabel": "",
+      "epGain": 0,
+      "totalGain": 0,
+      "net": -3.5
     }
   },
   {
@@ -4730,9 +5238,13 @@
       "matchedBalls": 1,
       "matchedStars": 0,
       "rank": 0,
-      "rankLabel": "1+0",
+      "rankLabel": "0+0",
       "gain": 0,
-      "net": -2.5
+      "epRank": 0,
+      "epLabel": "",
+      "epGain": 0,
+      "totalGain": 0,
+      "net": -3.5
     }
   },
   {
@@ -4767,9 +5279,13 @@
       "matchedBalls": 1,
       "matchedStars": 0,
       "rank": 0,
-      "rankLabel": "1+0",
+      "rankLabel": "0+0",
       "gain": 0,
-      "net": -2.5
+      "epRank": 0,
+      "epLabel": "",
+      "epGain": 0,
+      "totalGain": 0,
+      "net": -3.5
     }
   },
   {
@@ -4804,9 +5320,13 @@
       "matchedBalls": 0,
       "matchedStars": 1,
       "rank": 0,
-      "rankLabel": "0+1",
+      "rankLabel": "0+0",
       "gain": 0,
-      "net": -2.5
+      "epRank": 10,
+      "epLabel": "0+★",
+      "epGain": 2.1,
+      "totalGain": 2.1,
+      "net": -1.4
     }
   },
   {
@@ -4843,7 +5363,11 @@
       "rank": 12,
       "rankLabel": "2+1",
       "gain": 5.6,
-      "net": 3.0999999999999996
+      "epRank": 7,
+      "epLabel": "2+1★",
+      "epGain": 2.5,
+      "totalGain": 8.1,
+      "net": 4.6
     }
   },
   {
@@ -4878,9 +5402,13 @@
       "matchedBalls": 0,
       "matchedStars": 1,
       "rank": 0,
-      "rankLabel": "0+1",
+      "rankLabel": "0+0",
       "gain": 0,
-      "net": -2.5
+      "epRank": 10,
+      "epLabel": "0+★",
+      "epGain": 2.6,
+      "totalGain": 2.6,
+      "net": -0.8999999999999999
     }
   },
   {
@@ -4917,7 +5445,11 @@
       "rank": 13,
       "rankLabel": "2+0",
       "gain": 3.9,
-      "net": 1.4
+      "epRank": 0,
+      "epLabel": "",
+      "epGain": 0,
+      "totalGain": 3.9,
+      "net": 0.3999999999999999
     }
   },
   {
@@ -4952,9 +5484,13 @@
       "matchedBalls": 1,
       "matchedStars": 0,
       "rank": 0,
-      "rankLabel": "1+0",
+      "rankLabel": "0+0",
       "gain": 0,
-      "net": -2.5
+      "epRank": 0,
+      "epLabel": "",
+      "epGain": 0,
+      "totalGain": 0,
+      "net": -3.5
     }
   },
   {
@@ -4991,7 +5527,11 @@
       "rank": 13,
       "rankLabel": "2+0",
       "gain": 3.8,
-      "net": 1.2999999999999998
+      "epRank": 0,
+      "epLabel": "",
+      "epGain": 0,
+      "totalGain": 3.8,
+      "net": 0.2999999999999998
     }
   },
   {
@@ -5028,7 +5568,11 @@
       "rank": 0,
       "rankLabel": "0+0",
       "gain": 0,
-      "net": -2.5
+      "epRank": 0,
+      "epLabel": "",
+      "epGain": 0,
+      "totalGain": 0,
+      "net": -3.5
     }
   },
   {
@@ -5063,9 +5607,13 @@
       "matchedBalls": 1,
       "matchedStars": 0,
       "rank": 0,
-      "rankLabel": "1+0",
+      "rankLabel": "0+0",
       "gain": 0,
-      "net": -2.5
+      "epRank": 0,
+      "epLabel": "",
+      "epGain": 0,
+      "totalGain": 0,
+      "net": -3.5
     }
   },
   {
@@ -5102,7 +5650,11 @@
       "rank": 0,
       "rankLabel": "0+0",
       "gain": 0,
-      "net": -2.5
+      "epRank": 0,
+      "epLabel": "",
+      "epGain": 0,
+      "totalGain": 0,
+      "net": -3.5
     }
   },
   {
@@ -5139,7 +5691,11 @@
       "rank": 0,
       "rankLabel": "0+0",
       "gain": 0,
-      "net": -2.5
+      "epRank": 0,
+      "epLabel": "",
+      "epGain": 0,
+      "totalGain": 0,
+      "net": -3.5
     }
   },
   {
@@ -5174,9 +5730,13 @@
       "matchedBalls": 1,
       "matchedStars": 1,
       "rank": 0,
-      "rankLabel": "1+1",
+      "rankLabel": "0+0",
       "gain": 0,
-      "net": -2.5
+      "epRank": 9,
+      "epLabel": "1+1★",
+      "epGain": 2.4,
+      "totalGain": 2.4,
+      "net": -1.1
     }
   },
   {
@@ -5211,9 +5771,13 @@
       "matchedBalls": 1,
       "matchedStars": 0,
       "rank": 0,
-      "rankLabel": "1+0",
+      "rankLabel": "0+0",
       "gain": 0,
-      "net": -2.5
+      "epRank": 0,
+      "epLabel": "",
+      "epGain": 0,
+      "totalGain": 0,
+      "net": -3.5
     }
   },
   {
@@ -5248,9 +5812,13 @@
       "matchedBalls": 1,
       "matchedStars": 0,
       "rank": 0,
-      "rankLabel": "1+0",
+      "rankLabel": "0+0",
       "gain": 0,
-      "net": -2.5
+      "epRank": 0,
+      "epLabel": "",
+      "epGain": 0,
+      "totalGain": 0,
+      "net": -3.5
     }
   },
   {
@@ -5287,7 +5855,11 @@
       "rank": 0,
       "rankLabel": "0+0",
       "gain": 0,
-      "net": -2.5
+      "epRank": 0,
+      "epLabel": "",
+      "epGain": 0,
+      "totalGain": 0,
+      "net": -3.5
     }
   },
   {
@@ -5324,7 +5896,11 @@
       "rank": 0,
       "rankLabel": "0+0",
       "gain": 0,
-      "net": -2.5
+      "epRank": 0,
+      "epLabel": "",
+      "epGain": 0,
+      "totalGain": 0,
+      "net": -3.5
     }
   },
   {
@@ -5361,7 +5937,11 @@
       "rank": 0,
       "rankLabel": "0+0",
       "gain": 0,
-      "net": -2.5
+      "epRank": 0,
+      "epLabel": "",
+      "epGain": 0,
+      "totalGain": 0,
+      "net": -3.5
     }
   },
   {
@@ -5398,7 +5978,11 @@
       "rank": 12,
       "rankLabel": "2+1",
       "gain": 6.8,
-      "net": 4.3
+      "epRank": 7,
+      "epLabel": "2+1★",
+      "epGain": 5.3,
+      "totalGain": 12.1,
+      "net": 8.6
     }
   },
   {
@@ -5435,7 +6019,11 @@
       "rank": 0,
       "rankLabel": "0+0",
       "gain": 0,
-      "net": -2.5
+      "epRank": 0,
+      "epLabel": "",
+      "epGain": 0,
+      "totalGain": 0,
+      "net": -3.5
     }
   },
   {
@@ -5472,7 +6060,11 @@
       "rank": 0,
       "rankLabel": "0+0",
       "gain": 0,
-      "net": -2.5
+      "epRank": 0,
+      "epLabel": "",
+      "epGain": 0,
+      "totalGain": 0,
+      "net": -3.5
     }
   },
   {
@@ -5507,9 +6099,13 @@
       "matchedBalls": 1,
       "matchedStars": 0,
       "rank": 0,
-      "rankLabel": "1+0",
+      "rankLabel": "0+0",
       "gain": 0,
-      "net": -2.5
+      "epRank": 0,
+      "epLabel": "",
+      "epGain": 0,
+      "totalGain": 0,
+      "net": -3.5
     }
   },
   {
@@ -5544,9 +6140,13 @@
       "matchedBalls": 1,
       "matchedStars": 0,
       "rank": 0,
-      "rankLabel": "1+0",
+      "rankLabel": "0+0",
       "gain": 0,
-      "net": -2.5
+      "epRank": 0,
+      "epLabel": "",
+      "epGain": 0,
+      "totalGain": 0,
+      "net": -3.5
     }
   },
   {
@@ -5583,7 +6183,11 @@
       "rank": 0,
       "rankLabel": "0+0",
       "gain": 0,
-      "net": -2.5
+      "epRank": 0,
+      "epLabel": "",
+      "epGain": 0,
+      "totalGain": 0,
+      "net": -3.5
     }
   },
   {
@@ -5618,9 +6222,13 @@
       "matchedBalls": 1,
       "matchedStars": 0,
       "rank": 0,
-      "rankLabel": "1+0",
+      "rankLabel": "0+0",
       "gain": 0,
-      "net": -2.5
+      "epRank": 0,
+      "epLabel": "",
+      "epGain": 0,
+      "totalGain": 0,
+      "net": -3.5
     }
   },
   {
@@ -5655,9 +6263,13 @@
       "matchedBalls": 1,
       "matchedStars": 0,
       "rank": 0,
-      "rankLabel": "1+0",
+      "rankLabel": "0+0",
       "gain": 0,
-      "net": -2.5
+      "epRank": 0,
+      "epLabel": "",
+      "epGain": 0,
+      "totalGain": 0,
+      "net": -3.5
     }
   },
   {
@@ -5692,9 +6304,13 @@
       "matchedBalls": 1,
       "matchedStars": 1,
       "rank": 0,
-      "rankLabel": "1+1",
+      "rankLabel": "0+0",
       "gain": 0,
-      "net": -2.5
+      "epRank": 9,
+      "epLabel": "1+1★",
+      "epGain": 1.9,
+      "totalGain": 1.9,
+      "net": -1.6
     }
   },
   {
@@ -5731,7 +6347,11 @@
       "rank": 0,
       "rankLabel": "0+0",
       "gain": 0,
-      "net": -2.5
+      "epRank": 0,
+      "epLabel": "",
+      "epGain": 0,
+      "totalGain": 0,
+      "net": -3.5
     }
   },
   {
@@ -5768,7 +6388,11 @@
       "rank": 0,
       "rankLabel": "0+0",
       "gain": 0,
-      "net": -2.5
+      "epRank": 0,
+      "epLabel": "",
+      "epGain": 0,
+      "totalGain": 0,
+      "net": -3.5
     }
   },
   {
@@ -5803,9 +6427,13 @@
       "matchedBalls": 0,
       "matchedStars": 1,
       "rank": 0,
-      "rankLabel": "0+1",
+      "rankLabel": "0+0",
       "gain": 0,
-      "net": -2.5
+      "epRank": 10,
+      "epLabel": "0+★",
+      "epGain": 2.4,
+      "totalGain": 2.4,
+      "net": -1.1
     }
   },
   {
@@ -5840,9 +6468,13 @@
       "matchedBalls": 1,
       "matchedStars": 0,
       "rank": 0,
-      "rankLabel": "1+0",
+      "rankLabel": "0+0",
       "gain": 0,
-      "net": -2.5
+      "epRank": 0,
+      "epLabel": "",
+      "epGain": 0,
+      "totalGain": 0,
+      "net": -3.5
     }
   },
   {
@@ -5879,7 +6511,11 @@
       "rank": 0,
       "rankLabel": "0+0",
       "gain": 0,
-      "net": -2.5
+      "epRank": 0,
+      "epLabel": "",
+      "epGain": 0,
+      "totalGain": 0,
+      "net": -3.5
     }
   },
   {
@@ -5914,9 +6550,13 @@
       "matchedBalls": 0,
       "matchedStars": 1,
       "rank": 0,
-      "rankLabel": "0+1",
+      "rankLabel": "0+0",
       "gain": 0,
-      "net": -2.5
+      "epRank": 10,
+      "epLabel": "0+★",
+      "epGain": 2.6,
+      "totalGain": 2.6,
+      "net": -0.8999999999999999
     }
   },
   {
@@ -5951,9 +6591,13 @@
       "matchedBalls": 1,
       "matchedStars": 0,
       "rank": 0,
-      "rankLabel": "1+0",
+      "rankLabel": "0+0",
       "gain": 0,
-      "net": -2.5
+      "epRank": 0,
+      "epLabel": "",
+      "epGain": 0,
+      "totalGain": 0,
+      "net": -3.5
     }
   },
   {
@@ -5990,7 +6634,11 @@
       "rank": 13,
       "rankLabel": "2+0",
       "gain": 3.9,
-      "net": 1.4
+      "epRank": 0,
+      "epLabel": "",
+      "epGain": 0,
+      "totalGain": 3.9,
+      "net": 0.3999999999999999
     }
   },
   {
@@ -6027,7 +6675,11 @@
       "rank": 0,
       "rankLabel": "0+0",
       "gain": 0,
-      "net": -2.5
+      "epRank": 0,
+      "epLabel": "",
+      "epGain": 0,
+      "totalGain": 0,
+      "net": -3.5
     }
   },
   {
@@ -6062,9 +6714,13 @@
       "matchedBalls": 1,
       "matchedStars": 0,
       "rank": 0,
-      "rankLabel": "1+0",
+      "rankLabel": "0+0",
       "gain": 0,
-      "net": -2.5
+      "epRank": 0,
+      "epLabel": "",
+      "epGain": 0,
+      "totalGain": 0,
+      "net": -3.5
     }
   },
   {
@@ -6101,7 +6757,11 @@
       "rank": 0,
       "rankLabel": "0+0",
       "gain": 0,
-      "net": -2.5
+      "epRank": 0,
+      "epLabel": "",
+      "epGain": 0,
+      "totalGain": 0,
+      "net": -3.5
     }
   },
   {
@@ -6138,7 +6798,11 @@
       "rank": 0,
       "rankLabel": "0+0",
       "gain": 0,
-      "net": -2.5
+      "epRank": 0,
+      "epLabel": "",
+      "epGain": 0,
+      "totalGain": 0,
+      "net": -3.5
     }
   },
   {
@@ -6173,9 +6837,13 @@
       "matchedBalls": 0,
       "matchedStars": 1,
       "rank": 0,
-      "rankLabel": "0+1",
+      "rankLabel": "0+0",
       "gain": 0,
-      "net": -2.5
+      "epRank": 10,
+      "epLabel": "0+★",
+      "epGain": 2.3,
+      "totalGain": 2.3,
+      "net": -1.2000000000000002
     }
   },
   {
@@ -6210,9 +6878,13 @@
       "matchedBalls": 0,
       "matchedStars": 1,
       "rank": 0,
-      "rankLabel": "0+1",
+      "rankLabel": "0+0",
       "gain": 0,
-      "net": -2.5
+      "epRank": 10,
+      "epLabel": "0+★",
+      "epGain": 2.4,
+      "totalGain": 2.4,
+      "net": -1.1
     }
   },
   {
@@ -6249,7 +6921,11 @@
       "rank": 0,
       "rankLabel": "0+0",
       "gain": 0,
-      "net": -2.5
+      "epRank": 0,
+      "epLabel": "",
+      "epGain": 0,
+      "totalGain": 0,
+      "net": -3.5
     }
   },
   {
@@ -6286,7 +6962,11 @@
       "rank": 0,
       "rankLabel": "0+0",
       "gain": 0,
-      "net": -2.5
+      "epRank": 0,
+      "epLabel": "",
+      "epGain": 0,
+      "totalGain": 0,
+      "net": -3.5
     }
   },
   {
@@ -6321,9 +7001,13 @@
       "matchedBalls": 0,
       "matchedStars": 1,
       "rank": 0,
-      "rankLabel": "0+1",
+      "rankLabel": "0+0",
       "gain": 0,
-      "net": -2.5
+      "epRank": 10,
+      "epLabel": "0+★",
+      "epGain": 2.4,
+      "totalGain": 2.4,
+      "net": -1.1
     }
   },
   {
@@ -6360,7 +7044,11 @@
       "rank": 13,
       "rankLabel": "2+0",
       "gain": 4,
-      "net": 1.5
+      "epRank": 0,
+      "epLabel": "",
+      "epGain": 0,
+      "totalGain": 4,
+      "net": 0.5
     }
   },
   {
@@ -6397,7 +7085,11 @@
       "rank": 0,
       "rankLabel": "0+0",
       "gain": 0,
-      "net": -2.5
+      "epRank": 0,
+      "epLabel": "",
+      "epGain": 0,
+      "totalGain": 0,
+      "net": -3.5
     }
   },
   {
@@ -6434,7 +7126,11 @@
       "rank": 0,
       "rankLabel": "0+0",
       "gain": 0,
-      "net": -2.5
+      "epRank": 0,
+      "epLabel": "",
+      "epGain": 0,
+      "totalGain": 0,
+      "net": -3.5
     }
   },
   {
@@ -6469,9 +7165,13 @@
       "matchedBalls": 1,
       "matchedStars": 0,
       "rank": 0,
-      "rankLabel": "1+0",
+      "rankLabel": "0+0",
       "gain": 0,
-      "net": -2.5
+      "epRank": 0,
+      "epLabel": "",
+      "epGain": 0,
+      "totalGain": 0,
+      "net": -3.5
     }
   },
   {
@@ -6506,9 +7206,13 @@
       "matchedBalls": 0,
       "matchedStars": 1,
       "rank": 0,
-      "rankLabel": "0+1",
+      "rankLabel": "0+0",
       "gain": 0,
-      "net": -2.5
+      "epRank": 10,
+      "epLabel": "0+★",
+      "epGain": 2.6,
+      "totalGain": 2.6,
+      "net": -0.8999999999999999
     }
   },
   {
@@ -6543,9 +7247,13 @@
       "matchedBalls": 1,
       "matchedStars": 0,
       "rank": 0,
-      "rankLabel": "1+0",
+      "rankLabel": "0+0",
       "gain": 0,
-      "net": -2.5
+      "epRank": 0,
+      "epLabel": "",
+      "epGain": 0,
+      "totalGain": 0,
+      "net": -3.5
     }
   },
   {
@@ -6580,9 +7288,13 @@
       "matchedBalls": 0,
       "matchedStars": 1,
       "rank": 0,
-      "rankLabel": "0+1",
+      "rankLabel": "0+0",
       "gain": 0,
-      "net": -2.5
+      "epRank": 10,
+      "epLabel": "0+★",
+      "epGain": 2.4,
+      "totalGain": 2.4,
+      "net": -1.1
     }
   },
   {
@@ -6619,7 +7331,11 @@
       "rank": 0,
       "rankLabel": "0+0",
       "gain": 0,
-      "net": -2.5
+      "epRank": 0,
+      "epLabel": "",
+      "epGain": 0,
+      "totalGain": 0,
+      "net": -3.5
     }
   },
   {
@@ -6656,7 +7372,11 @@
       "rank": 12,
       "rankLabel": "2+1",
       "gain": 6.1,
-      "net": 3.5999999999999996
+      "epRank": 7,
+      "epLabel": "2+1★",
+      "epGain": 4.9,
+      "totalGain": 11,
+      "net": 7.5
     }
   },
   {
@@ -6693,7 +7413,11 @@
       "rank": 0,
       "rankLabel": "0+0",
       "gain": 0,
-      "net": -2.5
+      "epRank": 0,
+      "epLabel": "",
+      "epGain": 0,
+      "totalGain": 0,
+      "net": -3.5
     }
   },
   {
@@ -6730,7 +7454,11 @@
       "rank": 13,
       "rankLabel": "2+0",
       "gain": 3.7,
-      "net": 1.2000000000000002
+      "epRank": 0,
+      "epLabel": "",
+      "epGain": 0,
+      "totalGain": 3.7,
+      "net": 0.20000000000000018
     }
   },
   {
@@ -6765,9 +7493,13 @@
       "matchedBalls": 1,
       "matchedStars": 0,
       "rank": 0,
-      "rankLabel": "1+0",
+      "rankLabel": "0+0",
       "gain": 0,
-      "net": -2.5
+      "epRank": 0,
+      "epLabel": "",
+      "epGain": 0,
+      "totalGain": 0,
+      "net": -3.5
     }
   },
   {
@@ -6804,7 +7536,11 @@
       "rank": 11,
       "rankLabel": "1+2",
       "gain": 9.1,
-      "net": 6.6
+      "epRank": 8,
+      "epLabel": "1+2★",
+      "epGain": 13.3,
+      "totalGain": 22.4,
+      "net": 18.9
     }
   },
   {
@@ -6841,7 +7577,11 @@
       "rank": 0,
       "rankLabel": "0+0",
       "gain": 0,
-      "net": -2.5
+      "epRank": 0,
+      "epLabel": "",
+      "epGain": 0,
+      "totalGain": 0,
+      "net": -3.5
     }
   },
   {
@@ -6876,9 +7616,13 @@
       "matchedBalls": 1,
       "matchedStars": 1,
       "rank": 0,
-      "rankLabel": "1+1",
+      "rankLabel": "0+0",
       "gain": 0,
-      "net": -2.5
+      "epRank": 9,
+      "epLabel": "1+1★",
+      "epGain": 2.3,
+      "totalGain": 2.3,
+      "net": -1.2000000000000002
     }
   },
   {
@@ -6915,7 +7659,11 @@
       "rank": 13,
       "rankLabel": "2+0",
       "gain": 3.7,
-      "net": 1.2000000000000002
+      "epRank": 0,
+      "epLabel": "",
+      "epGain": 0,
+      "totalGain": 3.7,
+      "net": 0.20000000000000018
     }
   },
   {
@@ -6952,7 +7700,11 @@
       "rank": 0,
       "rankLabel": "0+0",
       "gain": 0,
-      "net": -2.5
+      "epRank": 0,
+      "epLabel": "",
+      "epGain": 0,
+      "totalGain": 0,
+      "net": -3.5
     }
   },
   {
@@ -6987,9 +7739,13 @@
       "matchedBalls": 0,
       "matchedStars": 1,
       "rank": 0,
-      "rankLabel": "0+1",
+      "rankLabel": "0+0",
       "gain": 0,
-      "net": -2.5
+      "epRank": 10,
+      "epLabel": "0+★",
+      "epGain": 2.6,
+      "totalGain": 2.6,
+      "net": -0.8999999999999999
     }
   },
   {
@@ -7024,9 +7780,13 @@
       "matchedBalls": 1,
       "matchedStars": 0,
       "rank": 0,
-      "rankLabel": "1+0",
+      "rankLabel": "0+0",
       "gain": 0,
-      "net": -2.5
+      "epRank": 0,
+      "epLabel": "",
+      "epGain": 0,
+      "totalGain": 0,
+      "net": -3.5
     }
   },
   {
@@ -7063,7 +7823,11 @@
       "rank": 0,
       "rankLabel": "0+0",
       "gain": 0,
-      "net": -2.5
+      "epRank": 0,
+      "epLabel": "",
+      "epGain": 0,
+      "totalGain": 0,
+      "net": -3.5
     }
   },
   {
@@ -7100,7 +7864,11 @@
       "rank": 0,
       "rankLabel": "0+0",
       "gain": 0,
-      "net": -2.5
+      "epRank": 0,
+      "epLabel": "",
+      "epGain": 0,
+      "totalGain": 0,
+      "net": -3.5
     }
   },
   {
@@ -7135,9 +7903,13 @@
       "matchedBalls": 0,
       "matchedStars": 1,
       "rank": 0,
-      "rankLabel": "0+1",
+      "rankLabel": "0+0",
       "gain": 0,
-      "net": -2.5
+      "epRank": 10,
+      "epLabel": "0+★",
+      "epGain": 2.7,
+      "totalGain": 2.7,
+      "net": -0.7999999999999998
     }
   },
   {
@@ -7172,9 +7944,13 @@
       "matchedBalls": 1,
       "matchedStars": 0,
       "rank": 0,
-      "rankLabel": "1+0",
+      "rankLabel": "0+0",
       "gain": 0,
-      "net": -2.5
+      "epRank": 0,
+      "epLabel": "",
+      "epGain": 0,
+      "totalGain": 0,
+      "net": -3.5
     }
   },
   {
@@ -7211,7 +7987,11 @@
       "rank": 0,
       "rankLabel": "0+0",
       "gain": 0,
-      "net": -2.5
+      "epRank": 0,
+      "epLabel": "",
+      "epGain": 0,
+      "totalGain": 0,
+      "net": -3.5
     }
   },
   {
@@ -7248,7 +8028,11 @@
       "rank": 0,
       "rankLabel": "0+0",
       "gain": 0,
-      "net": -2.5
+      "epRank": 0,
+      "epLabel": "",
+      "epGain": 0,
+      "totalGain": 0,
+      "net": -3.5
     }
   },
   {
@@ -7285,7 +8069,11 @@
       "rank": 0,
       "rankLabel": "0+0",
       "gain": 0,
-      "net": -2.5
+      "epRank": 0,
+      "epLabel": "",
+      "epGain": 0,
+      "totalGain": 0,
+      "net": -3.5
     }
   },
   {
@@ -7320,9 +8108,13 @@
       "matchedBalls": 1,
       "matchedStars": 1,
       "rank": 0,
-      "rankLabel": "1+1",
+      "rankLabel": "0+0",
       "gain": 0,
-      "net": -2.5
+      "epRank": 9,
+      "epLabel": "1+1★",
+      "epGain": 2.7,
+      "totalGain": 2.7,
+      "net": -0.7999999999999998
     }
   },
   {
@@ -7359,7 +8151,11 @@
       "rank": 12,
       "rankLabel": "2+1",
       "gain": 5.6,
-      "net": 3.0999999999999996
+      "epRank": 7,
+      "epLabel": "2+1★",
+      "epGain": 3.7,
+      "totalGain": 9.3,
+      "net": 5.800000000000001
     }
   },
   {
@@ -7396,7 +8192,11 @@
       "rank": 0,
       "rankLabel": "0+0",
       "gain": 0,
-      "net": -2.5
+      "epRank": 0,
+      "epLabel": "",
+      "epGain": 0,
+      "totalGain": 0,
+      "net": -3.5
     }
   },
   {
@@ -7433,7 +8233,11 @@
       "rank": 0,
       "rankLabel": "0+0",
       "gain": 0,
-      "net": -2.5
+      "epRank": 0,
+      "epLabel": "",
+      "epGain": 0,
+      "totalGain": 0,
+      "net": -3.5
     }
   },
   {

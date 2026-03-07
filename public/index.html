@@ -1653,10 +1653,10 @@ function renderBilan() {
     return;
   }
 
-  const totalSpent = evaluated.length * 2.50;
-  const totalGained = evaluated.reduce((sum, p) => sum + p.result.gain, 0);
+  const totalSpent = evaluated.length * 3.50;
+  const totalGained = evaluated.reduce((sum, p) => sum + ((p.result.totalGain != null) ? p.result.totalGain : p.result.gain), 0);
   const totalNet = totalGained - totalSpent;
-  const wins = evaluated.filter(p => p.result.rank > 0);
+  const wins = evaluated.filter(p => ((p.result.totalGain != null) ? p.result.totalGain : p.result.gain) > 0);
   const bestRank = wins.length > 0 ? Math.min(...wins.map(p => p.result.rank)) : 0;
   const roi = ((totalGained / totalSpent) * 100).toFixed(0);
 
@@ -1740,15 +1740,19 @@ function loadMoreBilan() {
     var drawBalls = r.drawBalls.map(function(b) { return '<span class="mini-ball number">' + b + '</span>'; }).join('');
     var drawStars = r.drawStars.map(function(s) { return '<span class="mini-ball star">' + s + '</span>'; }).join('');
     var matchLabel = r.matchedBalls + '+' + r.matchedStars;
-    var isWin = r.rank > 0;
-    var gainText = isWin ? '+' + r.gain + '\u20ac' : '-2.50\u20ac';
+    var totalGain = (r.totalGain != null) ? r.totalGain : r.gain;
+    var isWin = totalGain > 0;
+    var gainText = isWin ? '+' + totalGain.toFixed(1) + '\u20ac' : '-3.50\u20ac';
+    var matchExtra = '';
+    if (r.rank > 0) matchExtra += ' R' + r.rank;
+    if (r.epRank > 0) matchExtra += ' \u2b50' + r.epRank;
 
     tbody.innerHTML += '<tr>' +
       '<td style="white-space:nowrap;font-size:0.72rem">' + esc(r.drawDate) + '</td>' +
       '<td>' + stratTag(p.strategy) + '</td>' +
       '<td>' + predBalls + ' ' + predStars + '</td>' +
       '<td>' + drawBalls + ' ' + drawStars + '</td>' +
-      '<td><span class="match-badge ' + (isWin ? 'win' : 'loss') + '">' + matchLabel + (isWin ? ' R' + r.rank : '') + '</span></td>' +
+      '<td><span class="match-badge ' + (isWin ? 'win' : 'loss') + '">' + matchLabel + matchExtra + '</span></td>' +
       '<td class="gain-cell ' + (isWin ? 'win' : 'loss') + '">' + gainText + '</td></tr>';
   });
 

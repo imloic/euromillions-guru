@@ -23,7 +23,21 @@ const PRIZE_TIERS = [
   { rank: 13, balls: 2, stars: 0, label: "2+0", odds: "1/22",          avgGain: 4 },
 ];
 
-const TICKET_PRICE = 2.50;
+const TICKET_PRICE = 3.50; // 2.50€ + 1€ Étoile+
+
+// Étoile+ prize tiers (requires at least 1 star match)
+const EP_TIERS = [
+  { rank: 1,  balls: 5, minStars: 1, label: "5+★" },
+  { rank: 2,  balls: 4, minStars: 2, label: "4+2★" },
+  { rank: 3,  balls: 4, minStars: 1, label: "4+1★" },
+  { rank: 4,  balls: 3, minStars: 2, label: "3+2★" },
+  { rank: 5,  balls: 3, minStars: 1, label: "3+1★" },
+  { rank: 6,  balls: 2, minStars: 2, label: "2+2★" },
+  { rank: 7,  balls: 2, minStars: 1, label: "2+1★" },
+  { rank: 8,  balls: 1, minStars: 2, label: "1+2★" },
+  { rank: 9,  balls: 1, minStars: 1, label: "1+1★" },
+  { rank: 10, balls: 0, minStars: 1, label: "0+★" },
+];
 
 // === LOAD DATA ===
 const data = JSON.parse(readFileSync(DATA_FILE, "utf-8"));
@@ -170,6 +184,23 @@ function evaluateAll() {
       }
     }
 
+    // Étoile+ gain (requires at least 1 star match)
+    let epGain = 0;
+    let epRank = 0;
+    let epLabel = "";
+    if (matchedStars >= 1) {
+      const epTier = EP_TIERS.find(t => t.balls === matchedBalls && matchedStars >= t.minStars);
+      if (epTier) {
+        epRank = epTier.rank;
+        epLabel = epTier.label;
+        if (draw.gainsEP && draw.gainsEP[epTier.rank] > 0) {
+          epGain = draw.gainsEP[epTier.rank];
+        }
+      }
+    }
+
+    const totalGain = actualGain + epGain;
+
     pred.result = {
       drawDate: draw.date,
       drawBalls: draw.balls,
@@ -179,12 +210,16 @@ function evaluateAll() {
       rank: tier ? tier.rank : 0,
       rankLabel: tier ? tier.label : "0+0",
       gain: actualGain,
-      net: actualGain - TICKET_PRICE,
+      epRank,
+      epLabel,
+      epGain,
+      totalGain,
+      net: totalGain - TICKET_PRICE,
     };
 
     console.log(`Evaluated: ${pred.balls.join("-")} + ${pred.stars.join("-")} vs ${draw.balls.join("-")} + ${draw.stars.join("-")}`);
-    console.log(`  Matched: ${matchedBalls} balls, ${matchedStars} stars → Rang ${tier ? tier.rank : '-'} (${tier ? tier.label : 'aucun gain'})`);
-    console.log(`  Gain: ${actualGain > 0 ? actualGain + '€' : '0€'} | Net: ${(actualGain - TICKET_PRICE).toFixed(2)}€`);
+    console.log(`  Matched: ${matchedBalls} balls, ${matchedStars} stars → Rang ${tier ? tier.rank : '-'} (${tier ? tier.label : 'aucun gain'})${epGain > 0 ? ' + Étoile+ R' + epRank + ' (' + epGain + '€)' : ''}`);
+    console.log(`  Gain: ${totalGain > 0 ? totalGain + '€' : '0€'} | Net: ${(totalGain - TICKET_PRICE).toFixed(2)}€`);
     evaluated++;
   }
 
@@ -211,15 +246,15 @@ function printSummary() {
   console.log("\n=== BILAN ===");
   for (const [strat, preds] of Object.entries(byStrategy)) {
     const spent = preds.length * TICKET_PRICE;
-    const gained = preds.reduce((sum, p) => sum + p.result.gain, 0);
-    const wins = preds.filter(p => p.result.rank > 0);
+    const gained = preds.reduce((sum, p) => sum + (p.result.totalGain ?? p.result.gain), 0);
+    const wins = preds.filter(p => (p.result.rank > 0) || (p.result.epRank > 0));
     const bestRank = wins.length > 0 ? Math.min(...wins.map(p => p.result.rank)) : 0;
     console.log(`[${strat}] ${wins.length}/${preds.length} victoires (${(wins.length/preds.length*100).toFixed(1)}%) | Gains: ${gained.toFixed(2)}€ / Mise: ${spent.toFixed(2)}€ | Net: ${(gained - spent).toFixed(2)}€${bestRank > 0 ? ` | Meilleur: rang ${bestRank}` : ''}`);
   }
 
   const totalSpent = evaluated.length * TICKET_PRICE;
-  const totalGained = evaluated.reduce((sum, p) => sum + p.result.gain, 0);
-  const wins = evaluated.filter(p => p.result.rank > 0);
+  const totalGained = evaluated.reduce((sum, p) => sum + (p.result.totalGain ?? p.result.gain), 0);
+  const wins = evaluated.filter(p => (p.result.rank > 0) || (p.result.epRank > 0));
   console.log(`TOTAL: ${wins.length}/${evaluated.length} victoires | Gains: ${totalGained.toFixed(2)}€ / Mise: ${totalSpent.toFixed(2)}€ | Net: ${(totalGained - totalSpent).toFixed(2)}€`);
 }
 

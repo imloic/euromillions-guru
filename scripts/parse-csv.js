@@ -85,6 +85,13 @@ for (const file of files) {
       gains[r] = parseFloat(val.replace(",", ".")) || 0;
     }
 
+    // Extract Étoile+ gains (10 ranks)
+    const gainsEP = {};
+    for (let r = 1; r <= 10; r++) {
+      const val = row[`rapport_du_rang${r}_Etoile+`] || "0";
+      gainsEP[r] = parseFloat(val.replace(",", ".")) || 0;
+    }
+
     allDraws.push({
       date,
       day: row["jour_de_tirage"],
@@ -95,6 +102,7 @@ for (const file of files) {
       jackpotAmount,
       myMillion: row["numero_My_Million"] || null,
       gains,
+      gainsEP,
     });
   }
 }
