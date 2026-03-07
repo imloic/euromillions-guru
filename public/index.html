@@ -1223,8 +1223,8 @@ footer p {
     <div class="card">
       <h2 class="card-title"><span class="icon" style="background:var(--avocado);color:white">&#128176;</span> Bilan des prédictions</h2>
       <p style="font-size:0.92rem;color:var(--brown);opacity:0.6;margin-bottom:1rem;line-height:1.5">
-        Si on avait joué une grille à 2,50€ à chaque tirage avec la stratégie <strong>Pondérée 70/30</strong> (la meilleure), voici les résultats.
-        Backtest sur les 200 derniers tirages + prédictions en temps réel.
+        3 grilles jouées à chaque tirage (7,50€/tirage) : <strong>Pondérée</strong>, <strong>Tendance</strong> et <strong>Mixte</strong>.
+        Backtest + prédictions en temps réel.
       </p>
       <div class="bilan-kpis" id="bilanKpis"></div>
     </div>
@@ -1239,7 +1239,7 @@ footer p {
       <div class="bilan-table-wrap">
         <table class="history-table" id="bilanTable">
           <thead>
-            <tr><th>Tirage</th><th>Prédiction</th><th>Résultat</th><th>Match</th><th>Gain</th></tr>
+            <tr><th>Tirage</th><th>Stratégie</th><th>Prédiction</th><th>Résultat</th><th>Match</th><th>Gain</th></tr>
           </thead>
           <tbody id="bilanBody"></tbody>
         </table>
@@ -1607,6 +1607,15 @@ function scoreCombination(balls) {
 let PREDICTIONS = null;
 let bilanPage = 0;
 const BILAN_PAGE_SIZE = 20;
+const STRATEGY_NAMES = {
+  'weighted-20-7a3r+trend-25': { name: 'Pondérée', cls: 's1' },
+  'trend-30+trend-10': { name: 'Tendance', cls: 's2' },
+  'mixed-hot10-overdue+trend-15': { name: 'Mixte', cls: 's3' },
+};
+function stratTag(strategy) {
+  var s = STRATEGY_NAMES[strategy] || { name: 'Autre', cls: '' };
+  return '<span class="strategy-tag ' + s.cls + '">' + esc(s.name) + '</span>';
+}
 
 const PRIZE_TIERS = [
   { rank: 1,  balls: 5, stars: 2, label: "5+2", avgGain: 50000000 },
@@ -1687,17 +1696,17 @@ function renderBilan() {
   document.getElementById('bilanBody').innerHTML = '';
   loadMoreBilan();
 
-  // Next prediction
+  // Next predictions (all pending)
   if (pending.length > 0) {
-    const p = pending[pending.length - 1];
-    const ballsHtml = p.balls.map(function(b) { return '<span class="mini-ball number">' + b + '</span>'; }).join('');
-    const starsHtml = p.stars.map(function(s) { return '<span class="mini-ball star">' + s + '</span>'; }).join('');
-    document.getElementById('nextPrédiction').innerHTML =
-      '<div class="next-pred-box">' +
-      '<div class="next-pred-label">Prédiction pour le prochain tirage :</div>' +
-      '<div>' + ballsHtml + ' ' + starsHtml + '</div>' +
-      '<span class="pending-badge">En attente du tirage</span>' +
-      '</div>';
+    var html = '<div class="next-pred-label">Prédictions pour le prochain tirage :</div>';
+    pending.forEach(function(p) {
+      var ballsHtml = p.balls.map(function(b) { return '<span class="mini-ball number">' + b + '</span>'; }).join('');
+      var starsHtml = p.stars.map(function(s) { return '<span class="mini-ball star">' + s + '</span>'; }).join('');
+      html += '<div class="next-pred-box" style="margin-bottom:0.5rem">' +
+        stratTag(p.strategy) + ' ' + ballsHtml + ' ' + starsHtml +
+        ' <span class="pending-badge">En attente</span></div>';
+    });
+    document.getElementById('nextPrédiction').innerHTML = html;
   } else {
     document.getElementById('nextPrédiction').innerHTML =
       '<p style="color:var(--brown);opacity:0.5;font-size:0.85rem">Aucune prédiction en attente.</p>';
@@ -1736,6 +1745,7 @@ function loadMoreBilan() {
 
     tbody.innerHTML += '<tr>' +
       '<td style="white-space:nowrap;font-size:0.72rem">' + esc(r.drawDate) + '</td>' +
+      '<td>' + stratTag(p.strategy) + '</td>' +
       '<td>' + predBalls + ' ' + predStars + '</td>' +
       '<td>' + drawBalls + ' ' + drawStars + '</td>' +
       '<td><span class="match-badge ' + (isWin ? 'win' : 'loss') + '">' + matchLabel + (isWin ? ' R' + r.rank : '') + '</span></td>' +
