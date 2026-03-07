@@ -1,0 +1,89 @@
+name: Update EuroMillions Data
+
+on:
+  schedule:
+    # Mardi et vendredi a 22h30 heure de Paris (21h30 UTC hiver, 20h30 UTC ete)
+    # On lance aux deux horaires pour couvrir le changement d'heure
+    - cron: '30 20 * * 2,5'
+    - cron: '30 21 * * 2,5'
+  workflow_dispatch: # Permet de lancer manuellement
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Download all FDJ CSVs
+        run: |
+          mkdir -p data/csv
+          ZIPS=(
+            "1a2b3c4d-9876-4562-b3fc-2c963f66afa8"
+            "1a2b3c4d-9876-4562-b3fc-2c963f66afa9"
+            "1a2b3c4d-9876-4562-b3fc-2c963f66afb6"
+            "1a2b3c4d-9876-4562-b3fc-2c963f66afc6"
+            "1a2b3c4d-9876-4562-b3fc-2c963f66afd6"
+            "1a2b3c4d-9876-4562-b3fc-2c963f66afe6"
+          )
+          BASE_URL="https://www.sto.api.fdj.fr/anonymous/service-draw-info/v3/documentations"
+          for uuid in "${ZIPS[@]}"; do
+            curl -sL -o "/tmp/em_${uuid}.zip" "$BASE_URL/$uuid"
+            if file "/tmp/em_${uuid}.zip" | grep -q "Zip archive"; then
+              unzip -o -j "/tmp/em_${uuid}.zip" -d data/csv/ '*.csv'
+              echo "Extracted: $uuid"
+            else
+              echo "WARNING: $uuid not a valid ZIP"
+            fi
+          done
+
+      - name: Parse CSVs into data.json
+        run: node scripts/parse-csv.js
+
+      - name: Fetch next jackpot
+        continue-on-error: true
+        run: |
+          JACKPOT=$(curl -sL "https://www.fdj.fr/jeux-de-tirage/euromillions-my-million" | \
+            grep -oE 'Près de [0-9]+' | grep -oE '[0-9]+' | head -1)
+          if [ -n "$JACKPOT" ]; then
+            echo "Jackpot: ~${JACKPOT}M"
+            node -e "
+              const fs = require('fs');
+              const f = 'public/data.json';
+              const d = JSON.parse(fs.readFileSync(f, 'utf-8'));
+              d.nextJackpot = 'Jackpot : ~${JACKPOT} millions';
+              fs.writeFileSync(f, JSON.stringify(d));
+            "
+          fi
+
+      - name: Generate predictions
+        run: node scripts/predictions.js auto
+
+      - name: Update sitemap lastmod
+        run: |
+          TODAY=$(date -u +%Y-%m-%d)
+          sed -i "s|<lastmod>.*</lastmod>|<lastmod>${TODAY}</lastmod>|" public/sitemap.xml
+
+      - name: Copy to root (Dokploy static build)
+        run: |
+          cp public/data.json data.json
+          cp public/predictions.json predictions.json
+          cp public/sitemap.xml sitemap.xml
+
+      - name: Commit and push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add public/data.json public/predictions.json public/sitemap.xml data.json predictions.json sitemap.xml
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            LAST_DRAW=$(node -e "const d=JSON.parse(require('fs').readFileSync('public/data.json','utf-8'));console.log(d.lastDraw.date)")
+            git commit -m "data: update tirage $LAST_DRAW"
+            git push
+          fi

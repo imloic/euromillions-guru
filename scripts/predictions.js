@@ -48,65 +48,95 @@ if (action === "auto" || action === "evaluate") {
 // Save
 writePredictions();
 
-// === GENERATE PREDICTION ===
-// Best strategy from deep search on 1825 draws:
-// weighted-20-7a3r (balls) + trend-25 (stars) = 9.21% win rate
-function generatePrediction() {
-  const lastDrawDate = data.lastDraw.date;
-  const pendingPred = predictions.find(p => !p.result && p.forDrawAfter === lastDrawDate);
-  if (pendingPred) {
-    console.log("Prediction already exists for next draw after", lastDrawDate);
-    return;
+// === HELPER FUNCTIONS ===
+function getRecentFreq(draws, window, max) {
+  const freq = {};
+  for (let n = 1; n <= max; n++) freq[n] = 0;
+  const key = max <= 12 ? 'stars' : 'balls';
+  for (let j = 0; j < Math.min(window, draws.length); j++) {
+    for (const v of draws[j][key]) freq[v]++;
   }
+  return freq;
+}
 
-  const draws = data.draws;
-  const s = data.stats;
+function topN(freq, n) {
+  return Object.entries(freq)
+    .sort((a, b) => b[1] - a[1])
+    .slice(0, n)
+    .map(([v]) => parseInt(v))
+    .sort((a, b) => a - b);
+}
 
-  // WEIGHTED-20-7a3r: 70% all-time freq + 30% recent-20 freq, top 5
-  const recentFreq = {};
-  for (let n = 1; n <= 50; n++) recentFreq[n] = 0;
-  for (let j = 0; j < Math.min(20, draws.length); j++) {
-    for (const b of draws[j].balls) recentFreq[b]++;
-  }
-  const maxAll = Math.max(...Object.values(s.ballFrequency));
+function weightedBalls(allTimeFreq, draws, window, wAll, wRec) {
+  const recentFreq = getRecentFreq(draws, window, 50);
+  const maxAll = Math.max(...Object.values(allTimeFreq));
   const maxRec = Math.max(...Object.values(recentFreq)) || 1;
   const combined = {};
   for (let i = 1; i <= 50; i++) {
-    combined[i] = (s.ballFrequency[i] / maxAll) * 0.7 + (recentFreq[i] / maxRec) * 0.3;
+    combined[i] = (allTimeFreq[i] / maxAll) * wAll + (recentFreq[i] / maxRec) * wRec;
   }
-  const balls = Object.entries(combined)
+  return Object.entries(combined)
     .sort((a, b) => b[1] - a[1])
     .slice(0, 5)
     .map(([n]) => parseInt(n))
     .sort((a, b) => a - b);
+}
 
-  // TREND-25: top 2 stars from last 25 draws
-  const starFreq = {};
-  for (let n = 1; n <= 12; n++) starFreq[n] = 0;
-  for (let j = 0; j < Math.min(25, draws.length); j++) {
-    for (const st of draws[j].stars) starFreq[st]++;
+// === COMPUTE ALL 3 STRATEGIES (same as website) ===
+function computeAllStrategies() {
+  const draws = data.draws;
+  const s = data.stats;
+
+  // Strategy 1: Pondérée - weighted 70/30 + trend-25 = 9.2%
+  const w_balls = weightedBalls(s.ballFrequency, draws, 20, 0.7, 0.3);
+  const w_stars = topN(getRecentFreq(draws, 25, 12), 2);
+
+  // Strategy 2: Tendance - trend-30 + trend-10 = 8.5%
+  const t_balls = topN(getRecentFreq(draws, 30, 50), 5);
+  const t_stars = topN(getRecentFreq(draws, 10, 12), 2);
+
+  // Strategy 3: Mixte - 2 hot + 3 overdue = 8.6%
+  const hot = topN(getRecentFreq(draws, 10, 50), 10);
+  const overdue = Object.entries(s.ballLastSeen).sort((a, b) => b[1] - a[1]).map(([n]) => parseInt(n));
+  let m_balls = [];
+  for (const n of hot) { if (m_balls.length >= 2) break; m_balls.push(n); }
+  for (const n of overdue) { if (m_balls.length >= 5) break; if (!m_balls.includes(n)) m_balls.push(n); }
+  m_balls.sort((a, b) => a - b);
+  const m_stars = topN(getRecentFreq(draws, 15, 12), 2);
+
+  return [
+    { name: "Pondérée", strategy: "weighted-20-7a3r+trend-25", balls: w_balls, stars: w_stars },
+    { name: "Tendance", strategy: "trend-30+trend-10", balls: t_balls, stars: t_stars },
+    { name: "Mixte", strategy: "mixed-hot10-overdue+trend-15", balls: m_balls, stars: m_stars },
+  ];
+}
+
+// === GENERATE PREDICTIONS (all 3 strategies) ===
+function generatePrediction() {
+  const lastDrawDate = data.lastDraw.date;
+  const pendingPreds = predictions.filter(p => !p.result && p.forDrawAfter === lastDrawDate);
+  if (pendingPreds.length >= 3) {
+    console.log("All 3 predictions already exist for next draw after", lastDrawDate);
+    return;
   }
-  const stars = Object.entries(starFreq)
-    .sort((a, b) => b[1] - a[1])
-    .slice(0, 2)
-    .map(([n]) => parseInt(n))
-    .sort((a, b) => a - b);
 
-  const score = scoreCombination(balls);
+  const strategies = computeAllStrategies();
+  for (const strat of strategies) {
+    const exists = predictions.find(p => !p.result && p.forDrawAfter === lastDrawDate && p.strategy === strat.strategy);
+    if (exists) continue;
 
-  const pred = {
-    generatedAt: new Date().toISOString(),
-    forDrawAfter: lastDrawDate,
-    balls,
-    stars,
-    qualityScore: score,
-    strategy: "weighted-20-7a3r+trend-25",
-    result: null,
-  };
-
-  predictions.push(pred);
-  console.log(`Generated prediction: ${pred.balls.join("-")} + ${pred.stars.join("-")} (score: ${pred.qualityScore})`);
-  console.log(`Strategy: weighted-20-7a3r (balls) + trend-25 (stars)`);
+    const pred = {
+      generatedAt: new Date().toISOString(),
+      forDrawAfter: lastDrawDate,
+      balls: strat.balls,
+      stars: strat.stars,
+      qualityScore: scoreCombination(strat.balls),
+      strategy: strat.strategy,
+      result: null,
+    };
+    predictions.push(pred);
+    console.log(`Generated [${strat.name}]: ${pred.balls.join("-")} + ${pred.stars.join("-")} (score: ${pred.qualityScore})`);
+  }
   console.log(`For next draw after ${lastDrawDate}`);
 }
 
@@ -170,19 +200,27 @@ function printSummary() {
   const evaluated = predictions.filter(p => p.result);
   if (evaluated.length === 0) return;
 
-  const totalSpent = evaluated.length * TICKET_PRICE;
-  const totalGained = evaluated.reduce((sum, p) => sum + p.result.gain, 0);
-  const totalNet = totalGained - totalSpent;
-  const wins = evaluated.filter(p => p.result.rank > 0);
-  const bestRank = wins.length > 0 ? Math.min(...wins.map(p => p.result.rank)) : 0;
+  // Group by strategy
+  const byStrategy = {};
+  for (const p of evaluated) {
+    const s = p.strategy || "unknown";
+    if (!byStrategy[s]) byStrategy[s] = [];
+    byStrategy[s].push(p);
+  }
 
   console.log("\n=== BILAN ===");
-  console.log(`Tirages joues: ${evaluated.length}`);
-  console.log(`Total mise: ${totalSpent.toFixed(2)}€`);
-  console.log(`Total gains: ${totalGained.toFixed(2)}€`);
-  console.log(`Net: ${totalNet >= 0 ? '+' : ''}${totalNet.toFixed(2)}€`);
-  console.log(`Victoires: ${wins.length}/${evaluated.length} (${(wins.length/evaluated.length*100).toFixed(1)}%)`);
-  if (bestRank > 0) console.log(`Meilleur rang: ${bestRank}`);
+  for (const [strat, preds] of Object.entries(byStrategy)) {
+    const spent = preds.length * TICKET_PRICE;
+    const gained = preds.reduce((sum, p) => sum + p.result.gain, 0);
+    const wins = preds.filter(p => p.result.rank > 0);
+    const bestRank = wins.length > 0 ? Math.min(...wins.map(p => p.result.rank)) : 0;
+    console.log(`[${strat}] ${wins.length}/${preds.length} victoires (${(wins.length/preds.length*100).toFixed(1)}%) | Gains: ${gained.toFixed(2)}€ / Mise: ${spent.toFixed(2)}€ | Net: ${(gained - spent).toFixed(2)}€${bestRank > 0 ? ` | Meilleur: rang ${bestRank}` : ''}`);
+  }
+
+  const totalSpent = evaluated.length * TICKET_PRICE;
+  const totalGained = evaluated.reduce((sum, p) => sum + p.result.gain, 0);
+  const wins = evaluated.filter(p => p.result.rank > 0);
+  console.log(`TOTAL: ${wins.length}/${evaluated.length} victoires | Gains: ${totalGained.toFixed(2)}€ / Mise: ${totalSpent.toFixed(2)}€ | Net: ${(totalGained - totalSpent).toFixed(2)}€`);
 }
 
 // === SCORING (same as website) ===

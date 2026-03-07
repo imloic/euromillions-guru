@@ -7415,6 +7415,79 @@
     ],
     "qualityScore": 80,
     "strategy": "weighted-20-7a3r+trend-25",
+    "result": {
+      "drawDate": "06/03/2026",
+      "drawBalls": [
+        15,
+        16,
+        19,
+        28,
+        37
+      ],
+      "drawStars": [
+        6,
+        9
+      ],
+      "matchedBalls": 0,
+      "matchedStars": 0,
+      "rank": 0,
+      "rankLabel": "0+0",
+      "gain": 0,
+      "net": -2.5
+    }
+  },
+  {
+    "generatedAt": "2026-03-07T20:44:59.046Z",
+    "forDrawAfter": "06/03/2026",
+    "balls": [
+      10,
+      24,
+      27,
+      34,
+      42
+    ],
+    "stars": [
+      5,
+      10
+    ],
+    "qualityScore": 80,
+    "strategy": "weighted-20-7a3r+trend-25",
+    "result": null
+  },
+  {
+    "generatedAt": "2026-03-07T20:47:29.975Z",
+    "forDrawAfter": "06/03/2026",
+    "balls": [
+      10,
+      13,
+      34,
+      42,
+      44
+    ],
+    "stars": [
+      5,
+      6
+    ],
+    "qualityScore": 85,
+    "strategy": "trend-30+trend-10",
+    "result": null
+  },
+  {
+    "generatedAt": "2026-03-07T20:47:29.977Z",
+    "forDrawAfter": "06/03/2026",
+    "balls": [
+      1,
+      3,
+      6,
+      38,
+      45
+    ],
+    "stars": [
+      5,
+      6
+    ],
+    "qualityScore": 75,
+    "strategy": "mixed-hot10-overdue+trend-15",
     "result": null
   }
 ]

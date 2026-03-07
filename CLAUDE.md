@@ -5,7 +5,7 @@ Site de statistiques et predictions EuroMillions avec un look retro annees 70.
 Site 100% statique, ultra-leger, zero framework JS.
 
 ## Architecture
-- **Donnees** : CSV FDJ (2004-2026, ~1925 tirages) -> script Node parse -> `public/data.json`
+- **Donnees** : CSV FDJ (2004-2026, ~1926+ tirages) -> script Node parse -> `public/data.json`
 - **Predictions** : Script Node genere et evalue -> `public/predictions.json`
 - **Site** : HTML + CSS + JS vanilla (aucun framework, 1 seul fichier)
 - **Style** : Retro 70s / loto vintage (couleurs chaudes, typo groovy, grain)
@@ -26,14 +26,14 @@ fdj/
     update-data.sh       # Cron: telecharge CSV + re-parse + predictions
   public/
     index.html           # Site principal (SPA-like, tout en 1 fichier)
-    data.json            # Donnees generees (1925 tirages)
+    data.json            # Donnees generees (auto-updated)
     predictions.json     # 200 backtest + predictions en attente
 ```
 
 ## Strategie de prediction (meilleure trouvee)
 - **Boules** : `weighted-20-7a3r` = 70% frequence all-time + 30% frequence 20 derniers tirages, top 5
 - **Etoiles** : `trend-25` = top 2 etoiles des 25 derniers tirages
-- **Resultat** : 9.21% de victoires sur 1825 tirages (vs 7.89% hasard = +16.7%)
+- **Resultat** : 9.21% de victoires sur 1800+ tirages (vs 7.89% hasard = +16.7%)
 - Recherche : 53 strategies boules x 12 strategies etoiles = 636 combinaisons testees
 - 3 strategies disponibles sur le site : Ponderee (9.2%), Tendance (8.5%), Mixte (8.6%)
 

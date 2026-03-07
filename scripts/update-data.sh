@@ -10,23 +10,34 @@ PUBLIC_DIR="$DIR/public"
 
 echo "[$(date)] Updating EuroMillions data..."
 
-# Download latest ZIP (2020-present, updated after each draw)
-curl -sL -o "/tmp/em_latest.zip" \
-  "https://www.sto.api.fdj.fr/anonymous/service-draw-info/v3/documentations/1a2b3c4d-9876-4562-b3fc-2c963f66afe6"
+# Download all 6 FDJ ZIP files (2004-present)
+ZIPS=(
+  "1a2b3c4d-9876-4562-b3fc-2c963f66afa8"  # 2004-2011
+  "1a2b3c4d-9876-4562-b3fc-2c963f66afa9"  # 2011-2014
+  "1a2b3c4d-9876-4562-b3fc-2c963f66afb6"  # 2014-2016
+  "1a2b3c4d-9876-4562-b3fc-2c963f66afc6"  # 2016-2019
+  "1a2b3c4d-9876-4562-b3fc-2c963f66afd6"  # 2019-2020
+  "1a2b3c4d-9876-4562-b3fc-2c963f66afe6"  # 2020-present
+)
 
-# Verify it's a valid ZIP, extract safely (no path traversal)
-if file "/tmp/em_latest.zip" | grep -q "Zip archive"; then
-  # Check for path traversal attempts (zip slip)
-  if unzip -l "/tmp/em_latest.zip" | grep -qE '(\.\./)'; then
-    echo "ERROR: ZIP contains path traversal - aborting"
-    exit 1
+BASE_URL="https://www.sto.api.fdj.fr/anonymous/service-draw-info/v3/documentations"
+
+for uuid in "${ZIPS[@]}"; do
+  ZIP_FILE="/tmp/em_${uuid}.zip"
+  curl -sL -o "$ZIP_FILE" "$BASE_URL/$uuid"
+
+  if file "$ZIP_FILE" | grep -q "Zip archive"; then
+    if unzip -l "$ZIP_FILE" | grep -qE '(\.\./)'; then
+      echo "ERROR: ZIP $uuid contains path traversal - skipping"
+      continue
+    fi
+    unzip -o -j "$ZIP_FILE" -d "$CSV_DIR/" '*.csv'
+    echo "Extracted: $uuid"
+  else
+    echo "WARNING: $uuid is not a valid ZIP - skipping"
   fi
-  unzip -o -j "/tmp/em_latest.zip" -d "$CSV_DIR/" '*.csv'
-  echo "CSV updated"
-else
-  echo "ERROR: Downloaded file is not a valid ZIP"
-  exit 1
-fi
+done
+echo "All CSVs updated"
 
 # Re-parse all CSVs into data.json
 node "$DIR/scripts/parse-csv.js"
@@ -34,7 +45,7 @@ node "$DIR/scripts/parse-csv.js"
 # Fetch next jackpot from FDJ website
 echo "Fetching next jackpot..."
 JACKPOT=$(curl -sL "https://www.fdj.fr/jeux-de-tirage/euromillions-my-million" | \
-  grep -oP 'Près de \K[0-9]+(?= millions)' | head -1)
+  grep -oE 'Près de [0-9]+' | grep -oE '[0-9]+' | head -1)
 if [ -n "$JACKPOT" ]; then
   echo "Next jackpot: ~${JACKPOT} M"
   node -e "
