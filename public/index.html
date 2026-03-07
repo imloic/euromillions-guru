@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>EuroMillions Guru | Statistiques, tendances et prédictions depuis 2004</title>
-<meta name="description" content="Analysez plus de 1900 tirages EuroMillions depuis 2004. Numéros chauds, froids, en retard. 3 générateurs intelligents backtestés sur 20 ans de données (jusqu'à 9.2% de victoires). Gratuit.">
+<meta name="description" content="Analysez plus de 1900 tirages EuroMillions depuis 2004. Numéros chauds, froids, en retard. 3 générateurs intelligents backtestés sur 20 ans avec Étoile+ (35% de victoires). Gratuit.">
 <link rel="canonical" href="https://millions.imloic.cloud/">
 <link rel="icon" href="favicon.ico" sizes="32x32">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
@@ -13,14 +13,14 @@
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://millions.imloic.cloud/">
 <meta property="og:title" content="EuroMillions Guru | Statistiques et prédictions depuis 2004">
-<meta property="og:description" content="Plus de 1900 tirages analysés. 3 générateurs intelligents backtestés sur 20 ans : jusqu'à 9.2% de victoires. Statistiques complètes et gratuites.">
+<meta property="og:description" content="Plus de 1900 tirages analysés. 3 générateurs intelligents backtestés sur 20 ans avec Étoile+. 35% de victoires. Statistiques complètes et gratuites.">
 <meta property="og:image" content="https://millions.imloic.cloud/og-image.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:locale" content="fr_FR">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="EuroMillions Guru | Statistiques et prédictions">
-<meta name="twitter:description" content="Analysez 20 ans de tirages EuroMillions. 3 générateurs intelligents avec 636 stratégies backtestées.">
+<meta name="twitter:description" content="Analysez 20 ans de tirages EuroMillions. 3 générateurs intelligents avec Étoile+. 636 stratégies backtestées.">
 <meta name="twitter:image" content="https://millions.imloic.cloud/og-image.jpg">
 <script type="application/ld+json">
 {
@@ -42,7 +42,7 @@
       "name": "Comment fonctionne le générateur de numéros EuroMillions ?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Notre algorithme combine la fréquence historique (depuis 2004) et la tendance récente (20 derniers tirages) avec une pondération 70/30. Cette stratégie a été backtestée sur plus de 1800 tirages et atteint 9.2% de victoires contre 7.9% au hasard."
+        "text": "Notre algorithme combine la fréquence historique (depuis 2004) et la tendance récente (20 derniers tirages) avec une pondération 70/30. Avec l'option Étoile+ (1€ de plus par grille), le taux de victoire atteint 35% sur plus de 1800 tirages backtestés."
       }
     },
     {
@@ -1223,7 +1223,7 @@ footer p {
     <div class="card">
       <h2 class="card-title"><span class="icon" style="background:var(--avocado);color:white">&#128176;</span> Bilan des prédictions</h2>
       <p style="font-size:0.92rem;color:var(--brown);opacity:0.6;margin-bottom:1rem;line-height:1.5">
-        3 grilles jouées à chaque tirage (7,50€/tirage) : <strong>Pondérée</strong>, <strong>Tendance</strong> et <strong>Mixte</strong>.
+        3 grilles avec Étoile+ à chaque tirage (10,50€/tirage) : <strong>Pondérée</strong>, <strong>Tendance</strong> et <strong>Mixte</strong>.
         Backtest + prédictions en temps réel.
       </p>
       <div class="bilan-kpis" id="bilanKpis"></div>
@@ -1657,7 +1657,6 @@ function renderBilan() {
   const totalGained = evaluated.reduce((sum, p) => sum + ((p.result.totalGain != null) ? p.result.totalGain : p.result.gain), 0);
   const totalNet = totalGained - totalSpent;
   const wins = evaluated.filter(p => ((p.result.totalGain != null) ? p.result.totalGain : p.result.gain) > 0);
-  const bestRank = wins.length > 0 ? Math.min(...wins.map(p => p.result.rank)) : 0;
   const roi = ((totalGained / totalSpent) * 100).toFixed(0);
 
   // KPIs
@@ -1672,16 +1671,26 @@ function renderBilan() {
 
   // Rank distribution
   const rankCounts = {};
+  let epOnlyCount = 0;
+  let noGainCount = 0;
   for (const p of evaluated) {
-    const key = p.result.rank || 0;
-    rankCounts[key] = (rankCounts[key] || 0) + 1;
+    if (p.result.rank > 0) {
+      rankCounts[p.result.rank] = (rankCounts[p.result.rank] || 0) + 1;
+    } else if (p.result.epRank > 0) {
+      epOnlyCount++;
+    } else {
+      noGainCount++;
+    }
   }
-  const maxCount = Math.max(...Object.values(rankCounts));
+  const allCounts = [...Object.values(rankCounts), epOnlyCount, noGainCount].filter(c => c > 0);
+  const maxCount = Math.max(...allCounts);
   const ranksEl = document.getElementById('bilanRanks');
   let ranksHtml = '';
-  // Show "Aucun gain" first, then winning ranks from 13 to 1
-  if (rankCounts[0]) {
-    ranksHtml += rankBarRow('Aucun gain', rankCounts[0], maxCount, false);
+  if (noGainCount > 0) {
+    ranksHtml += rankBarRow('Aucun gain', noGainCount, maxCount, false);
+  }
+  if (epOnlyCount > 0) {
+    ranksHtml += rankBarRow('Étoile+ seule', epOnlyCount, maxCount, true);
   }
   for (let r = 13; r >= 1; r--) {
     if (rankCounts[r]) {
