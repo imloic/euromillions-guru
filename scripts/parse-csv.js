@@ -175,8 +175,12 @@ const stats = {
     .map(([n, f]) => ({ number: parseInt(n), count: f })),
 };
 
+// generatedAt dérivé du dernier tirage (déterministe) : deux exécutions sur
+// les mêmes CSV produisent un fichier identique octet pour octet, et le garde
+// "git diff --cached --quiet" du workflow évite alors le commit en double.
+const [ld, lm, ly] = allDraws[0].date.split("/");
 const data = {
-  generatedAt: new Date().toISOString(),
+  generatedAt: `${ly}-${lm}-${ld}T21:05:00.000Z`,
   draws: allDraws, // All draws since 2004
   lastDraw: allDraws[0],
   stats,

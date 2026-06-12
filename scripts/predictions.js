@@ -290,6 +290,7 @@ function scoreCombination(balls) {
 
 
 function writePredictions() {
-  writeFileSync(PRED_FILE, JSON.stringify(predictions, null, 2));
+  // Compact : le pretty-print gonflait le fichier de ~30% (1,6 Mo d'indentation)
+  writeFileSync(PRED_FILE, JSON.stringify(predictions));
   console.log(`\nSaved ${predictions.length} predictions to ${PRED_FILE}`);
 }
